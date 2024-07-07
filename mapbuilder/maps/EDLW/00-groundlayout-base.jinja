@@ -1,0 +1,17 @@
+// ------------------------------------------------------------------
+//                                 EDLW
+// ------------------------------------------------------------------
+
+// ------------ Ground Layout | Only Perimeter and Roads ------------
+
+MAP:Perimeter
+AIRPORT:EDLW
+FOLDER:Airport Layout
+ACTIVE:1
+{{ data.edlw_layout['layout']['Base']['Base'] | to_poly('Base', 'layout-base') }}
+
+MAP:Roads
+AIRPORT:EDLW
+FOLDER:Airport Layout
+COLOR:layout-building
+{{ data.edlw_layout['layout']['Roads']['Roads'][''] | to_line('Roads') }}

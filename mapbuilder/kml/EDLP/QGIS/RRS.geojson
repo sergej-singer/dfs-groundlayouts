@@ -1,0 +1,11 @@
+{
+"type": "FeatureCollection",
+"name": "RRS",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
+"features": [
+{ "type": "Feature", "properties": { "Name": "06 600", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 473008.746400158910546, 5717945.780466147698462 ], [ 472978.75723263254622, 5717961.60193557292223 ], [ 473005.196119746251497, 5717978.714961489662528 ], [ 473008.746400158910546, 5717945.780466147698462 ] ] ] } },
+{ "type": "Feature", "properties": { "Name": "06 1500", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 473763.764232192304917, 5718434.468847617506981 ], [ 473733.775659902195912, 5718450.285856865346432 ], [ 473760.209430508199148, 5718467.402822750620544 ], [ 473763.764232192304917, 5718434.468847617506981 ] ] ] } },
+{ "type": "Feature", "properties": { "Name": "24 1500", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 473081.006280146306381, 5717992.035844360478222 ], [ 473051.017166555917356, 5718007.856886923313141 ], [ 473077.45556668099016, 5718024.970289903692901 ], [ 473081.006280146306381, 5717992.035844360478222 ] ] ] } },
+{ "type": "Feature", "properties": { "Name": "24 600", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 473836.010204585210886, 5718480.734994035214186 ], [ 473806.021686243067961, 5718496.551576442085207 ], [ 473832.454969795013312, 5718513.668919359333813 ], [ 473836.010204585210886, 5718480.734994035214186 ] ] ] } }
+]
+}

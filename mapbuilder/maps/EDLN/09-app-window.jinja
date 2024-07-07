@@ -1,0 +1,79 @@
+// ------------------------- Approach Window ------------------------
+
+MAP:Airspace C:A
+AIRPORT:EDLN
+FOLDER:Approach Window
+COLOR:layout-runway
+{{ data.rawdata['airspace/airspace_c/eddl_eddk_c_dashed.txt'] }}
+
+MAP:EDLN CTR:A
+AIRPORT:EDLN
+FOLDER:Approach Window
+ACTIVE:1
+STYLE:SOLID:1
+COLOR:layout-runway
+{{ data.rawdata['airspace/ctr/edln.txt'] }}
+
+MAP:EDLN Extended Centerlines:A
+AIRPORT:EDLN
+FOLDER:Approach Window
+ACTIVE:1
+STYLE:SOLID:1
+COLOR:layout-runway
+// 31
+{{ ecl_dashes(runways.EDLN['31'], 12) }}
+{{ marker_ticks(runways.EDLN['31'], [4], 0, 0.325) }}
+{{ marker_ticks(runways.EDLN['31'], [7.9], 0.5, 1) }}
+// 13
+{{ ecl_dashes(runways.EDLN['13'], 12) }}
+{{ marker_ticks(runways.EDLN['13'], [4], 0, 0.325) }}
+{{ marker_ticks(runways.EDLN['13'], [8.8], 0.5, 1) }}
+
+MAP:EDDL CTR:A
+AIRPORT:EDLN
+FOLDER:Approach Window
+ACTIVE:1
+STYLE:SOLID:1
+COLOR:layout-runway
+{{ data.rawdata['airspace/ctr/eddl.txt'] }}
+
+MAP:EDDL Extended Centerlines:A
+AIRPORT:EDLN
+FOLDER:Approach Window
+ACTIVE:1
+STYLE:SOLID:1
+COLOR:layout-runway
+// 23L
+{{ ecl_dashes(runways.EDDL['23L'], 15) }}
+// 05R
+{{ ecl_dashes(runways.EDDL['05R'], 15) }}
+// 23R
+{{ ecl_dashes(runways.EDDL['23R'], 15) }}
+// 05L
+{{ ecl_dashes(runways.EDDL['05L'], 15) }}
+
+COLOR:appwindow-runway
+// 23L/05R
+LINE:51.281228055556:6.7554280555556:51.294279444444:6.7828013888889
+
+// 23R/05L
+LINE:51.285328888889:6.7521444444444:51.296743611111:6.7761116666667
+
+MAP:Airfields:A
+AIRPORT:EDLN
+FOLDER:Approach Window
+ACTIVE:1
+COLOR:layout-runway
+SYMBOL:AIRPORT:EDLF
+SYMBOL:AIRPORT:EDLK
+
+MAP:VFR Points:A
+AIRPORT:EDLN
+FOLDER:Approach Window
+COLOR:layout-runway
+SYMBOL:VFR:LN-W:W:10:-7
+SYMBOL:VFR:LN-R:R:10:-7
+SYMBOL:VFR:LN-G:G:10:-7
+SYMBOL:VFR:LN-M:M:10:-7
+SYMBOL:VFR:LN-K1:K1:13:-7
+SYMBOL:VFR:LN-K2:K2:13:-7

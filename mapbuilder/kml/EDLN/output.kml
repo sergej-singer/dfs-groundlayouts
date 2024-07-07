@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document id="root_doc">
+    <Folder>
+      <name>closures</name>
+      <Placemark>
+        <name>E#1</name>
+        <Point>
+          <coordinates>
+            6.49910475502461,51.231206910349,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>E#2</name>
+        <Point>
+          <coordinates>
+            6.50019766359607,51.2306581666262,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>E#3</name>
+        <Point>
+          <coordinates>
+            6.50109721643723,51.2302033189958,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>E#4</name>
+        <Point>
+          <coordinates>
+            6.50208725614445,51.2297125254301,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Apron#1</name>
+        <Point>
+          <coordinates>
+            6.49783134964964,51.2320300515523,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Apron#2</name>
+        <Point>
+          <coordinates>
+            6.4984994334792,51.2316946311614,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Apron#3</name>
+        <Point>
+          <coordinates>
+            6.50439038421393,51.2292341857928,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Apron#4</name>
+        <Point>
+          <coordinates>
+            6.50558044974066,51.2286904212392,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Runway 28#1</name>
+        <Point>
+          <coordinates>
+            6.49817713367681,51.2347465647548,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Runway 28#2</name>
+        <Point>
+          <coordinates>
+            6.49639894545939,51.2349674266253,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Document id="labels_stands">
+      <name>labels_stands</name>
+      <Placemark id="labels_stands.1">
+        <name>A1</name>
+        <Point>
+          <coordinates>
+            6.5025624873604,51.2292845636386,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="labels_stands.2">
+        <name>A2</name>
+        <Point>
+          <coordinates>
+            6.5029374617646,51.2290967468502,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="labels_stands.3">
+        <name>A3</name>
+        <Point>
+          <coordinates>
+            6.5033123732478,51.2289092578747,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="labels_stands.4">
+        <name>A4</name>
+        <Point>
+          <coordinates>
+            6.503686600296,51.2287213317323,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="labels_stands.5">
+        <name>A5</name>
+        <Point>
+          <coordinates>
+            6.504061712354,51.228532782339,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="labels_stands.6">
+        <name>A6</name>
+        <Point>
+          <coordinates>
+            6.5044375960061,51.228344562617,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="labels_stands.7">
+        <name>Commercial Area</name>
+        <Point>
+          <coordinates>
+            6.49506210886401,51.2296259526415,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="labels_stands.8">
+        <name>Maint</name>
+        <Point>
+          <coordinates>
+            6.50142523880687,51.2346136100234,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Document>
+  </Document>
+</kml>

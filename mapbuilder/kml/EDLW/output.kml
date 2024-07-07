@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document id="root_doc">
+    <Folder>
+      <name>tora</name>
+      <Placemark>
+        <name>06 B</name>
+        <Point>
+          <coordinates>
+            7.60659406148804,51.5158724418657,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>24 C</name>
+        <Point>
+          <coordinates>
+            7.62267211172383,51.5215542760859,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>06 A</name>
+        <Point>
+          <coordinates>
+            7.60299829521033,51.5145981781586,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>24 D</name>
+        <Point>
+          <coordinates>
+            7.62649837403219,51.5229043531953,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Document id="labels_buffer">
+      <name>labels_buffer</name>
+      <Placemark id="labels_buffer.1">
+        <Polygon>
+          <extrude>0</extrude>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+                7.62578023603326,51.521220355755,0
+                7.62596998134039,51.5212887029026,0
+                7.62603216794571,51.5212249112973,0
+                7.62583877433437,51.5211593366134,0
+                7.62578023603326,51.521220355755,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark id="labels_buffer.2">
+        <Polygon>
+          <extrude>0</extrude>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+                7.60165339588864,51.5115323229265,0
+                7.60153690340999,51.5116710643893,0
+                7.60162989067835,51.5117020328992,0
+                7.60174925359731,51.5115608531973,0
+                7.60165339588864,51.5115323229265,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark id="labels_buffer.3">
+        <Polygon>
+          <extrude>0</extrude>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+                7.6173506642667,51.5182491339469,0
+                7.61754040957383,51.5183174810946,0
+                7.61760259617915,51.5182536894893,0
+                7.61740920256781,51.5181881148054,0
+                7.6173506642667,51.5182491339469,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark id="labels_buffer.4">
+        <Polygon>
+          <extrude>0</extrude>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+                7.60627396343772,51.5144535541554,0
+                7.60646370874484,51.514521901303,0
+                7.60652589535017,51.5144581096977,0
+                7.60633250173882,51.5143925350138,0
+                7.60627396343772,51.5144535541554,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark id="labels_buffer.5">
+        <Polygon>
+          <extrude>0</extrude>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+                7.60791794668125,51.5154218036873,0
+                7.60810769198838,51.5154901508349,0
+                7.6081698785937,51.5154263592297,0
+                7.60797648498236,51.5153607845457,0
+                7.60791794668125,51.5154218036873,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark id="labels_buffer.6">
+        <Polygon>
+          <extrude>0</extrude>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+                7.60045182920673,51.5115725394213,0
+                7.60064157451386,51.5116408865689,0
+                7.60070376111919,51.5115770949636,0
+                7.60051036750784,51.5115115202797,0
+                7.60045182920673,51.5115725394213,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark id="labels_buffer.7">
+        <Polygon>
+          <extrude>0</extrude>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+                7.6092036474339,51.5146595792677,0
+                7.60939339274103,51.5147279264153,0
+                7.60945557934636,51.51466413481,0
+                7.60926218573501,51.5145985601261,0
+                7.6092036474339,51.5146595792677,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark id="labels_buffer.8">
+        <Polygon>
+          <extrude>0</extrude>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+                7.62377033863842,51.521058405836,0
+                7.62365384615977,51.5211971472988,0
+                7.62374683342813,51.5212281158087,0
+                7.62386619634709,51.5210869361068,0
+                7.62377033863842,51.521058405836,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+    </Document>
+  </Document>
+</kml>

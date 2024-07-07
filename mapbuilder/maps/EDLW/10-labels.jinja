@@ -1,0 +1,35 @@
+// ----------------------------- Labels -----------------------------
+MAP:Taxiways
+AIRPORT:EDLW
+FOLDER:Labels
+ACTIVE:1
+ZOOM:400
+{{ data.edlw_layout['layout']['Labels']['Labels Buffer'][''] | to_poly('', 'layout-taxiway') }}
+FONTSIZE:=:10
+COLOR:layout-label-taxiway
+{% for taxiway, geom in data.edlw_layout['layout']['Labels']['Taxiways'].items() %}
+{{- geom | to_text(taxiway) -}}
+{% endfor %}
+
+MAP:Stands
+AIRPORT:EDLW
+FOLDER:Labels
+ACTIVE:1
+ZOOM:500
+FONTSIZE:=:9
+COLOR:layout-label-stand
+{% for stand, geom in data.edlw_layout['layout']['Labels']['Stands'].items() %}
+{{- geom | to_text(stand) -}}
+{% endfor %}
+
+MAP:Apron Stopbars
+AIRPORT:EDLW
+FOLDER:Labels
+ACTIVE:1
+ZOOM:500
+FONTSIZE:=:9
+TEXTALIGN:BR
+COLOR:layout-label-stand
+{% for holdingpoint in ['STOP 1', 'STOP 2'] %}
+{{- data.edlw_layout['layout']['Holding Points'][ holdingpoint | string ] | to_text(holdingpoint) }}
+{% endfor %}
