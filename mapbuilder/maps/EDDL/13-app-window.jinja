@@ -1,0 +1,59 @@
+// ------------------------- Approach Window ------------------------
+
+MAP:DE/NL Border:A
+AIRPORT:EDLV
+FOLDER:Approach Window
+ACTIVE:1
+COLOR:layout-taxiway
+{{ data.edlv_layout['layout']['Border']['Border'] | to_line('Border') }}
+
+MAP:TMZ:A
+AIRPORT:EDLV
+FOLDER:Approach Window
+ACTIVE:1
+STYLE:Dot:1
+COLOR:layout-runway
+{{ data.rawdata['airspace/tmz/edlv_tmz.txt'] }}
+
+MAP:CTR:A
+AIRPORT:EDLV
+FOLDER:Approach Window
+ACTIVE:1
+STYLE:SOLID:1
+COLOR:layout-runway
+{{ data.rawdata['airspace/ctr/edlv.txt'] }}
+{{ data.rawdata['airspace/airspace_d/edlv_d.txt'] }}
+{{ data.rawdata['airspace/ctr/ehdp.txt'] }}
+{{ data.rawdata['airspace/ctr/ehvk.txt'] }}
+
+MAP:Extended Centerlines:A
+AIRPORT:EDLV
+FOLDER:Approach Window
+ACTIVE:1
+STYLE:SOLID:1
+COLOR:layout-runway
+// 27
+{{ ecl_dashes(runways.EDLV['27'], 12) }}
+{{ marker_ticks(runways.EDLV['27'], [4], 0, 0.325) }}
+{{ marker_ticks(runways.EDLV['27'], [8.9], 0.5, 1) }}
+// 09
+{{ ecl_dashes(runways.EDLV['09'], 12) }}
+{{ marker_ticks(runways.EDLV['09'], [4], 0, 0.325) }}
+{{ marker_ticks(runways.EDLV['09'], [7.4], 0.5, 1) }}
+
+MAP:Airfields:A
+AIRPORT:EDLV
+FOLDER:Approach Window
+ACTIVE:1
+COLOR:layout-runway
+SYMBOL:AIRPORT:EDLG
+SYMBOL:AIRPORT:EDLX
+SYMBOL:AIRPORT:EDLC
+
+MAP:VFR Points:A
+AIRPORT:EDLV
+FOLDER:Approach Window
+COLOR:layout-runway
+SYMBOL:VFR:LV-N:N:10:-7
+SYMBOL:VFR:LV-S:S:10:-7
+

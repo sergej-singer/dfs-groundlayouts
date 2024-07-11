@@ -36,10 +36,19 @@ source = "aixm/EDLV_AerodromeMapping_2024-06-13_2024-06-13_snapshot.xml"
 type = "kml"
 source = "kml/EDLV/layout.kml"
 
+[data.eddl]
+type = "aixm"
+source = "aixm/EDDL_AerodromeMapping_2024-06-13_2024-06-13_snapshot.xml"
+
+[data.eddl_layout]
+type = "kml"
+source = "kml/EDDL/layout.kml"
+
 [profiles]
 
 [profiles.Default]
 maps = [
+    { map = "EDDL", target = "grp/eddl.txt" },
     { map = "EDLP", target = "grp/edlp.txt" },
     { map = "EDLW", target = "grp/edlw.txt" },
     { map = "EDLN", target = "grp/edln.txt" },
@@ -59,6 +68,28 @@ aliases = [ "Default" ]
 #aliases = [ "bright" ]
 
 [runways]
+
+#-----------EDDL--------------
+
+[runways.EDDL.23L]
+thr = [ 51.294278, 6.782787 ]
+bearing = 233
+loc = [ 51.277864, 6.748345 ]
+
+[runways.EDDL.05R]
+thr = [ 51.281248, 6.755424 ] 
+bearing = 53
+loc = [ 51.297669, 6.789874 ]
+
+[runways.EDDL.23R]
+thr = [ 51.296757, 6.776128 ]
+bearing = 233
+loc = [ 51.281945, 6.745040 ]
+
+[runways.EDDL.05L]
+thr = [ 51.285295, 6.752085 ] 
+bearing = 53
+loc = [ 51.300616, 6.784241 ]
 
 #-----------EDLP--------------
 
@@ -103,24 +134,3 @@ loc = [ 51.602973, 6.118241 ]
 thr = [ 51.602834, 6.124530 ] 
 bearing = 92
 
-#-----------EDDL--------------
-
-[runways.EDDL.23L]
-thr = [ 51.294278, 6.782787 ]
-bearing = 233
-loc = [ 51.277864, 6.748345 ]
-
-[runways.EDDL.05R]
-thr = [ 51.281248, 6.755424 ] 
-bearing = 53
-loc = [ 51.297669, 6.789874 ]
-
-[runways.EDDL.23R]
-thr = [ 51.296757, 6.776128 ]
-bearing = 233
-loc = [ 51.281945, 6.745040 ]
-
-[runways.EDDL.05L]
-thr = [ 51.285295, 6.752085 ] 
-bearing = 53
-loc = [ 51.300616, 6.784241 ]

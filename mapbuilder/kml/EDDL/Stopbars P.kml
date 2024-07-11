@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Folder><name>Stopbars_P</name>
+  <Placemark>
+	<name>A I</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>6.12471697234365,51.6019921460913 6.12449573031102,51.6019996969463 6.12449631406624,51.6020190759913 6.12472073777674,51.6020117830393 6.12471697234365,51.6019921460913</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>B</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>6.12965814540794,51.6018988855212 6.12943690428059,51.6019064457169 6.12943749014249,51.6019258247699 6.12966191297453,51.6019185223435 6.12965814540794,51.6018988855212</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>C</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>6.15473256709559,51.6013464645169 6.15451057209127,51.6013523635874 6.15451050498743,51.6013716754398 6.15473277316732,51.6013659345693 6.15473256709559,51.6013464645169</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>D I</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>6.15967233394851,51.6012200844739 6.15930289410765,51.6012295631547 6.15929345845941,51.6012488397506 6.15967372337195,51.6012394457477 6.15967233394851,51.6012200844739</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>G</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>6.15482550442849,51.6029845199263 6.15462167804212,51.6029898457347 6.1546231923598,51.6030091220016 6.15482742846934,51.6030040334895 6.15482550442849,51.6029845199263</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>F</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>6.12973648793258,51.6035397991727 6.12953265784992,51.6035450812961 6.12953416153041,51.6035643577218 6.12973840120673,51.6035593129803 6.12973648793258,51.6035397991727</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>E</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>6.12533977105086,51.6036363916213 6.12459388514656,51.6036556963792 6.12459538673304,51.6036749728357 6.12534168243811,51.6036559054713 6.12533977105086,51.6036363916213</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>H</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>6.15561225642292,51.6039756794581 6.15561967320819,51.6041700106511 6.15565065220067,51.6041694367561 6.15564362412791,51.6039748550623 6.15561225642292,51.6039756794581</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>D III</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>6.15922165054036,51.6006949607586 6.15923018994498,51.600733143193 6.15964185242044,51.6007229735298 6.15963907361589,51.6006842509792 6.15922165054036,51.6006949607586</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<name>A III</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>6.12471604426323,51.6014921791564 6.12471796579751,51.6014534167375 6.12446516029262,51.6014598275454 6.12446736402046,51.6014982483606 6.12471604426323,51.6014921791564</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+</Folder>
+</Document></kml>

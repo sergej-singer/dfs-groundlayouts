@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Folder><name>Labels_Stands</name>
+  <Placemark>
+	<name>1</name>
+      <Point><coordinates>6.1489279935361,51.5999438397243</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2</name>
+      <Point><coordinates>6.1489054741007,51.5995574928281</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>3</name>
+      <Point><coordinates>6.1488489433354,51.5991717058973</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>6</name>
+      <Point><coordinates>6.1470519332491,51.5992119724109</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>5</name>
+      <Point><coordinates>6.1470741065709,51.5995977614446</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>4</name>
+      <Point><coordinates>6.1470960598289,51.5999832927814</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>7</name>
+      <Point><coordinates>6.1467526329303,51.5999920050068</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>8</name>
+      <Point><coordinates>6.1467310610493,51.59960604726</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>9</name>
+      <Point><coordinates>6.1467077454978,51.5992194101693</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>GAT 1</name>
+      <Point><coordinates>6.15585525217309,51.5993134375602</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>GAT 2</name>
+      <Point><coordinates>6.16147586592031,51.599549355841</coordinates></Point>
+  </Placemark>
+</Folder>
+</Document></kml>

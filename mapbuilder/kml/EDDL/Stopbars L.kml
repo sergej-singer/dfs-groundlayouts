@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Folder><name>Stopbars_L</name>
+  <Placemark>
+	<name>D I</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+      <LineString><coordinates>6.1592858876717,51.6012695534052 6.15967486832177,51.6012591412212</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>A I</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+      <LineString><coordinates>6.12449744377603,51.6020387715707 6.12472396902565,51.6020313086161</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>B</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+      <LineString><coordinates>6.12943862199317,51.6019455203348 6.12966554876298,51.6019381621029</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>C</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+      <LineString><coordinates>6.15450888034198,51.6013914331959 6.15473391597678,51.601385630058</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>G</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+      <LineString><coordinates>6.15482490774824,51.6029651408387 6.15462108144877,51.6029704666473 6.15482490774824,51.6029651408387</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>F</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+      <LineString><coordinates>6.12973590194969,51.6035204201236 6.12953207195395,51.6035257022474 6.12973590194969,51.6035204201236</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>E</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+      <LineString><coordinates>6.12533918694268,51.6036170125794 6.12459330135642,51.6036363173385 6.12533918694268,51.6036170125794</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>H</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+      <LineString><coordinates>6.15568267644559,51.6041687159576 6.15567564823573,51.6039741342637</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>GAT 2</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+      <LineString><coordinates>6.15977889011859,51.599942331007 6.15994022196113,51.6001232107816</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>GAT 1</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+      <LineString><coordinates>6.15448834099292,51.5999298557422 6.15465344938128,51.5998691954717</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>GAT 1</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+      <LineString><coordinates>6.15504826429887,51.599756034427 6.1552753267555,51.5998625952717</coordinates></LineString>
+  </Placemark>
+</Folder>
+</Document></kml>

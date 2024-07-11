@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Folder><name>TORA</name>
+  <Placemark>
+	<name>09 A E</name>
+      <Point><coordinates>6.12500134090454,51.6024162968404</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>09 B F</name>
+      <Point><coordinates>6.12997731242511,51.6023054876863</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>27 C G</name>
+      <Point><coordinates>6.15428340237803,51.6017611743167</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>27 D H</name>
+      <Point><coordinates>6.15902562063418,51.6016543872265</coordinates></Point>
+  </Placemark>
+</Folder>
+</Document></kml>

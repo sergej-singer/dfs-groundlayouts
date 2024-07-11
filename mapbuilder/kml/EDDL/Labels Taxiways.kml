@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Folder><name>Labels_Taxiways</name>
+  <Placemark>
+	<name>S#1</name>
+      <Point><coordinates>6.13320890150848,51.6007387311602</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>N#1</name>
+      <Point><coordinates>6.1334813116671,51.6045537609531</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>S#2</name>
+      <Point><coordinates>6.15101140689454,51.6003862958227</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>N#2</name>
+      <Point><coordinates>6.15115134766878,51.6041779302001</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>D</name>
+      <Point><coordinates>6.15949290668912,51.6009901215495</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>H</name>
+      <Point><coordinates>6.15962497443152,51.6032620409714</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>C</name>
+      <Point><coordinates>6.15461401619949,51.6011000055906</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>G</name>
+      <Point><coordinates>6.15474584011851,51.6033719267585</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>B</name>
+      <Point><coordinates>6.12952233443023,51.6016619119025</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>F</name>
+      <Point><coordinates>6.12965290433995,51.6039338417903</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>A</name>
+      <Point><coordinates>6.12458758917297,51.6017717873387</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>E</name>
+      <Point><coordinates>6.12477243045318,51.6040425061908</coordinates></Point>
+  </Placemark>
+</Folder>
+</Document></kml>
