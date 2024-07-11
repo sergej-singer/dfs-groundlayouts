@@ -1,9 +1,8 @@
-// -------------------------- Leadin Lines --------------------------
+// ----------------------------- Stands -----------------------------
 {% set default = 0.000005 %}
-MAP:Leadin Lines
+MAP:Stands
 AIRPORT:EDDL
-FOLDER:Airport Layout
-ACTIVE:1
+FOLDER:Stands
 COLOR:layout-taxiline-grey
 
 // A-Stands
@@ -64,10 +63,10 @@ STYLE:Dot
 // V-Stands East
 
 STYLE:Solid
-{% for desig in ['AE_LSH1', 'AE_V03_1', 'AE_V05_1', 'AE_V07_1', 'AE_V12_1', 'AE_V12_2', 'AE_V12_3', 'AE_V12_4', 'AE_V14_1', 'AE_V14_2', 'AE_V14_3', 'AE_V16_1', 'AE_V16_2', 'AE_V16_3', 'AE_V17_1', 'AE_V17_2', 'AE_V17_3', 'AE_V19_1', 'AE_V19_2', 'AE_V19_3', 'AE_V20_1', 'AE_V20_2', 'AE_V20_3', 'AE_V22_1', 'AE_V22_2', 'AE_V22_3', 'AE_V23_1', 'AE_V23_2', 'AE_V24_1', 'AE_V25_1', 'AE_V26_1', 'AE_V27_1', 'AE_V28_1', 'AE_V29_1', 'AE_V29_2', 'AE_V29_3', 'AE_V38_1', 'AE_V38_2', 'AE_V39_1', 'AE_V39_2', 'AE_V40_1', 'AE_V40_2', 'AE_V41_1', 'AE_V41_2', 'AE_V42_1', 'AE_V42_2', 'AE_V43_1', 'AE_V43_2', 'AE_V43_3', 'AE_V44_1', 'AE_V44_2', 'AE_V44_3', 'AE_V45_1', 'AE_V45_2', 'AE_V45_3', 'AE_V46_1', 'AE_V46_2', 'AE_V46_3', 'AE_V47_1', 'AE_V47_2', 'AE_V49_1', 'AE_V49_2', 'AE_V49_3', 'AE_V51_1', 'AE_V51_2'] %}
+{% for desig in ['AE_V03_1', 'AE_V05_1', 'AE_V07_1', 'AE_V12_1', 'AE_V12_2', 'AE_V12_3', 'AE_V12_4', 'AE_V14_1', 'AE_V14_2', 'AE_V14_3', 'AE_V16_1', 'AE_V16_2', 'AE_V16_3', 'AE_V17_1', 'AE_V17_2', 'AE_V17_3', 'AE_V19_1', 'AE_V19_2', 'AE_V19_3', 'AE_V20_1', 'AE_V20_2', 'AE_V20_3', 'AE_V22_1', 'AE_V22_2', 'AE_V22_3', 'AE_V23_1', 'AE_V23_2', 'AE_V24_1', 'AE_V25_1', 'AE_V26_1', 'AE_V27_1', 'AE_V28_1', 'AE_V29_1', 'AE_V29_2', 'AE_V29_3', 'AE_V38_1', 'AE_V38_2', 'AE_V39_1', 'AE_V39_2', 'AE_V40_1', 'AE_V40_2', 'AE_V41_1', 'AE_V41_2', 'AE_V42_1', 'AE_V42_2', 'AE_V43_1', 'AE_V43_2', 'AE_V43_3', 'AE_V44_1', 'AE_V44_2', 'AE_V44_3', 'AE_V45_1', 'AE_V45_2', 'AE_V45_3', 'AE_V46_1', 'AE_V46_2', 'AE_V46_3', 'AE_V47_1', 'AE_V47_2', 'AE_V49_1', 'AE_V49_2', 'AE_V49_3', 'AE_V51_1', 'AE_V51_2'] %}
 {{- data.eddl['GuidanceLineByDesig'][desig | string] | join_segments | simplify(default) | to_line(desig) }}
 {% endfor %}
-{% for desig in ['V02'] %}
+{% for desig in ['AE_LSH1', 'V02'] %}
 {{- data.eddl_layout['layout']['Apron Marking'][desig | string] | to_line(desig) }}
 {% endfor %}
 
@@ -79,4 +78,61 @@ STYLE:Dot
 
 // Taxi-Out Stands
 {{ data.eddl_layout['layout']['Apron Marking']['Poly'][''] | to_poly('','layout-eddl-taxiline-grey') }}
+
+// Labels
+ZOOM:500
+FONTSIZE:=:9
+COLOR:layout-label-stand
+{% for desig, geom in data.eddl_layout['layout']['Labels']['Stands'].items() if not desig in ['A05', 'A11', 'A12A', 'B05', 'B07', 'C02A', 'C03A', 'V04', 'V06', 'V38A', 'V38B', 'V39A', 'V41A', 'V61A', 'V72A', 'V82A', 'V91A', 'V103A', 'V104A', 'V106A', 'V107A', 'V01', 'V02A', 'V03A', 'V04A', 'V05A', 'V07A', 'V08A', 'V08B', 'V08C', 'V11A', 'V11B', 'V11C', 'GAT', 'Polizei'] %}
+{{- geom | to_text(desig) }}
+{% endfor %}
+ZOOM:1600
+{% for desig in ['A05', 'A11', 'A12A', 'B05', 'B07', 'C02A', 'C03A', 'V04', 'V06', 'V38A', 'V38B', 'V39A', 'V41A', 'V61A', 'V72A', 'V82A', 'V91A', 'V103A', 'V104A', 'V106A', 'V107A'] %}
+{{- data.eddl_layout['layout']['Labels']['Stands'][desig | string] | to_text(desig) }}
+{% endfor %}
+
+// -------------------------Additional Stands -----------------------
+
+MAP:Additional Stands
+AIRPORT:EDDL
+FOLDER:Stands
+
+// V02A, V03A, V04A, V05A, V07A
+
+COLOR:layout-eddl-taxiline-yellow
+STYLE:Solid
+{% for desig in ['DEICI_O_1', 'DEICI_O_2', 'DEICI_O_3', 'DEICI_O_4_1', 'DEICI_O_4_2', 'DEICI_O_5', 'DEICI_O_6', 'DEICI_O_7', 'DEICI_O_8', 'DEICI_O_9', 'DEICI_O_W'] %}
+{{- data.eddl['GuidanceLineByDesig'][desig | string] | join_segments | simplify(default) | to_line(desig) }}
+{% endfor %}
+COLOR:layout-taxiline-grey
+STYLE:Dot
+{% for desig in ['AE_V02A_1', 'AE_V02A_2', 'AE_V03A_1', 'AE_V03A_2', 'AE_V04A_1', 'AE_V04A_2', 'AE_V05A_1', 'AE_V05A_2', 'AE_V07A_1', 'AE_V07A_2'] %}
+{{- data.eddl['GuidanceLineByDesig'][desig | string] | join_segments | simplify(default) | to_line(desig) }}
+{% endfor %}
+
+// V08A/B/C, V11A/B/C
+
+COLOR:layout-taxiline-grey
+STYLE:Solid
+{% for desig in ['AE_V08A_1', 'AE_V08A_2', 'AE_V08C_1', 'AE_V08C_2', 'AE_V11A_1', 'AE_V11A_2', 'AE_V11C_1', 'AE_V11C_2'] %}
+{{- data.eddl['GuidanceLineByDesig'][desig | string] | join_segments | simplify(default) | to_line(desig) }}
+{% endfor %}
+COLOR:layout-taxiline-grey
+STYLE:Dot
+{% for desig in ['AE_V08B_1', 'AE_V08B_2', 'AE_V11B_O', 'AE_V11B_W'] %}
+{{- data.eddl['GuidanceLineByDesig'][desig | string] | join_segments | simplify(default) | to_line(desig) }}
+{% endfor %}
+
+{{ data.eddl_layout['layout']['Apron Marking']['Parking V01'] | to_line('Parking Area V01') }}
+
+// Taxi-Out Stands
+{{ data.eddl_layout['layout']['Apron Marking']['Poly 2'][''] | to_poly('','layout-eddl-taxiline-grey') }}
+
+// Labels
+ZOOM:500
+FONTSIZE:=:9
+COLOR:layout-label-stand
+{% for desig in ['V01', 'V02A', 'V03A', 'V04A', 'V05A', 'V07A', 'V08A', 'V08B', 'V08C', 'V11A', 'V11B', 'V11C'] %}
+{{- data.eddl_layout['layout']['Labels']['Stands'][desig | string] | to_text(desig) }}
+{% endfor %}
 

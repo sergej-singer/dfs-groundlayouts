@@ -1,23 +1,24 @@
 // ----------------------------- Labels -----------------------------
 MAP:Taxiways
-AIRPORT:EDLV
+AIRPORT:EDDL
 FOLDER:Labels
 ACTIVE:1
-ZOOM:400
-{{ data.edlv_layout['layout']['Labels']['Labels Buffer'][''] | to_poly('', 'layout-taxiway') }}
+ZOOM:600
+{{ data.eddl_layout['layout']['Labels']['Buffer T'][''] | to_poly('', 'layout-taxiway') }}
+{{ data.eddl_layout['layout']['Labels']['Buffer A'][''] | to_poly('', 'layout-apron') }}
 FONTSIZE:=:10
 COLOR:layout-label-taxiway
-{% for taxiway, geom in data.edlv_layout['layout']['Labels']['Taxiways'].items() %}
-{{- geom | to_text(taxiway) -}}
+{% for desig, geom in data.eddl_layout['layout']['Labels']['Taxiways'].items() %}
+{{- geom | to_text(desig) }}
 {% endfor %}
 
-MAP:Stands
-AIRPORT:EDLV
+MAP:Areas
+AIRPORT:EDDL
 FOLDER:Labels
 ACTIVE:1
-ZOOM:500
+ZOOM:600
 FONTSIZE:=:9
 COLOR:layout-label-stand
-{% for stand, geom in data.edlv_layout['layout']['Labels']['Stands'].items() %}
-{{- geom | to_text(stand) -}}
+{% for desig in ['GAT', 'Polizei'] %}
+{{- data.eddl_layout['layout']['Labels']['Stands'][desig | string] | to_text(desig) }}
 {% endfor %}
