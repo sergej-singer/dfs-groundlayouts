@@ -3,20 +3,48 @@
 <Document id="root_doc">
 <Folder><name>TORA</name>
   <Placemark>
-	<name>09 A E</name>
-      <Point><coordinates>6.12500134090454,51.6024162968404</coordinates></Point>
+	<name>05R L9</name>
+      <Point><coordinates>6.75324606255358,51.2795988508814</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>09 B F</name>
-      <Point><coordinates>6.12997731242511,51.6023054876863</coordinates></Point>
+	<name>05R L8</name>
+      <Point><coordinates>6.75563751335275,51.2807394441023</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>27 C G</name>
-      <Point><coordinates>6.15428340237803,51.6017611743167</coordinates></Point>
+	<name>05R L6</name>
+      <Point><coordinates>6.76159391072721,51.2835798707854</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>27 D H</name>
-      <Point><coordinates>6.15902562063418,51.6016543872265</coordinates></Point>
+	<name>23L L3</name>
+      <Point><coordinates>6.78049925434444,51.2925909695393</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>23L L2</name>
+      <Point><coordinates>6.78409320065359,51.294303260737</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>23R K1</name>
+      <Point><coordinates>6.77839654108835,51.2972675601121</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>23R K2</name>
+      <Point><coordinates>6.7739177666508,51.2951334563966</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>05L K3</name>
+      <Point><coordinates>6.75848164944384,51.2877754520332</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>05L K5</name>
+      <Point><coordinates>6.74992241234616,51.2836936063435</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>23R K</name>
+      <Point><coordinates>6.78149554262906,51.298743997697</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>23L L1</name>
+      <Point><coordinates>6.78616525399953,51.2952903577642</coordinates></Point>
   </Placemark>
 </Folder>
 </Document></kml>

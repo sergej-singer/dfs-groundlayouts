@@ -12,6 +12,20 @@ COLOR:layout-label-taxiway
 {{- geom | to_text(desig) }}
 {% endfor %}
 
+MAP:Checkpoints
+AIRPORT:EDDL
+FOLDER:Labels
+ACTIVE:1
+ZOOM:1000
+FONTSIZE:=:9
+COLOR:layout-holdingpoint
+TEXTALIGN:CC
+{{ data.eddl_layout['layout']['Labels']['CP 1'] | to_text('Check:0:-9') }}
+{{ data.eddl_layout['layout']['Labels']['CP 1'] | to_text(' point 1') }}
+TEXTALIGN:LC
+{{ data.eddl_layout['layout']['Labels']['CP 2'] | to_text('Check:0:-9') }}
+{{ data.eddl_layout['layout']['Labels']['CP 2'] | to_text('point 2') }}
+
 MAP:Areas
 AIRPORT:EDDL
 FOLDER:Labels

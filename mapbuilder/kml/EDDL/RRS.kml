@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Folder><name>RRS</name>
+  <Placemark>
+	<name>05R 600</name>
+      <Point><coordinates>6.76197179325008,51.2847644776207</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>05R 1500</name>
+      <Point><coordinates>6.77224286598671,51.2896607473178</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>05R 2400</name>
+      <Point><coordinates>6.78251613650564,51.2945561383465</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>05L 600</name>
+      <Point><coordinates>6.75863745135863,51.2888179758609</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>05L 1500</name>
+      <Point><coordinates>6.76890905157143,51.2937145417801</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>05L 2400</name>
+      <Point><coordinates>6.77918285014644,51.2986102290045</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>23R 600</name>
+      <Point><coordinates>6.76898489735736,51.2937506909968</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>23R 1500</name>
+      <Point><coordinates>6.75871328091503,51.2888541315635</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>23R 2400</name>
+      <Point><coordinates>6.74844386243316,51.2839566939072</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>23L 600</name>
+      <Point><coordinates>6.77563092524589,51.2912754601811</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>23L 1500</name>
+      <Point><coordinates>6.76535912768051,51.2863794802315</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>23L 2400</name>
+      <Point><coordinates>6.75508952762641,51.281482621932</coordinates></Point>
+  </Placemark>
+</Folder>
+</Document></kml>

@@ -84,7 +84,7 @@
   </Placemark>
   <Placemark>
 	<name>L7#2</name>
-      <Point><coordinates>6.75818046564108,51.2790826598705</coordinates></Point>
+      <Point><coordinates>6.75817400215661,51.2791723348556</coordinates></Point>
   </Placemark>
   <Placemark>
 	<name>L7#3</name>
@@ -96,11 +96,11 @@
   </Placemark>
   <Placemark>
 	<name>P4#1</name>
-      <Point><coordinates>6.76036306793296,51.2809211075156</coordinates></Point>
+      <Point><coordinates>6.76034049827021,51.2809397570205</coordinates></Point>
   </Placemark>
   <Placemark>
 	<name>P4#2</name>
-      <Point><coordinates>6.76046326705699,51.2789949301445</coordinates></Point>
+      <Point><coordinates>6.76047728252185,51.2790590803999</coordinates></Point>
   </Placemark>
   <Placemark>
 	<name>P4#3</name>
@@ -108,7 +108,7 @@
   </Placemark>
   <Placemark>
 	<name>Y#1</name>
-      <Point><coordinates>6.76017345410136,51.2747632385449</coordinates></Point>
+      <Point><coordinates>6.76004107087905,51.2747263428469</coordinates></Point>
   </Placemark>
   <Placemark>
 	<name>Y#2</name>
@@ -116,15 +116,15 @@
   </Placemark>
   <Placemark>
 	<name>P3</name>
-      <Point><coordinates>6.76245403733783,51.2819059094707</coordinates></Point>
+      <Point><coordinates>6.76243146801432,51.2819245593804</coordinates></Point>
   </Placemark>
   <Placemark>
 	<name>P2</name>
-      <Point><coordinates>6.76492302512341,51.2830809874527</coordinates></Point>
+      <Point><coordinates>6.76490045619439,51.2830996378404</coordinates></Point>
   </Placemark>
   <Placemark>
 	<name>P1</name>
-      <Point><coordinates>6.76688729686725,51.2840053239945</coordinates></Point>
+      <Point><coordinates>6.76686472825744,51.2840239747625</coordinates></Point>
   </Placemark>
   <Placemark>
 	<name>L5#1</name>
@@ -144,7 +144,7 @@
   </Placemark>
   <Placemark>
 	<name>L4#2</name>
-      <Point><coordinates>6.77840402024836,51.2878115439511</coordinates></Point>
+      <Point><coordinates>6.77823552755912,51.2879508196608</coordinates></Point>
   </Placemark>
   <Placemark>
 	<name>L3#1</name>
