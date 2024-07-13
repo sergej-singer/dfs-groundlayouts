@@ -46,6 +46,6 @@ FOLDER:Runway Info
 {{ geom | to_poly(marking, 'layout-runway-marking') }}
 {% endfor %}
 {% for marking in ['8a00', '8a02', '8a03', '8a04', '8a05', '8a06', '8a07', '8a08', '8a09', '8a0a', '8a0b', '8a0c', '8a0d', '8a0f', '8a10', '8a11', '8a12', '8a13', '8a14', '8a15', '8a16', '8a17' ] %}
-{{- data.edlv['RunwayMarking']['60ad4527-' + marking + '-e1fa-e053-0100007f5781' | string] | to_poly(marking, 'layout-taxiline-yellow') }}
+{{- data.edlv['RunwayMarking']['60ad4527-' + marking + '-e1fa-e053-0100007f5781' | string] | to_poly(marking, 'layout-runway') }}
 {% endfor %}
 

@@ -43,7 +43,7 @@ FOLDER:Airport Layout
 ACTIVE:1
 {{ data.edln['RunwayElement']['4682806b-f43d-c6ff-e053-1514a8c027b7'] | simplify(default) | to_poly('Runway 31/13','layout-runway') }}
 {% for blastpad, geom in data.edln['RunwayBlastPad'].items() %}
-{{ geom | simplify(0.00001) | to_poly('BlastPad','layout-taxiway') }}
+{{ geom | simplify(0.00001) | to_poly('BlastPad','layout-apron') }}
 {% endfor %}
 
 MAP:Leadin Lines

@@ -154,5 +154,5 @@ FOLDER:Runway Info
 {{ geom | to_poly(marking, 'layout-runway-marking') }}
 {% endfor %}
 {% for marking in ['48f2', '48f4', '48f5', '48f6', '48f7', '48f8', '48f9', '48fa', '48fb', '48fc', '48fd', '48fe', '48ff', '4900', '4901', '4902', '4903', '4904', '4905', '4906', '4907', '4908', '4909', '490a', '490b', '490c', '490d', '490e', '490f', '4910', '4911', '4912', '4913', '4914', '4915'] %}
-{{- data.eddl['RunwayMarking']['de162807-' + marking + '-d2fc-e053-86c812acd642' | string] | to_poly(marking, 'layout-taxiline-yellow') }}
+{{- data.eddl['RunwayMarking']['de162807-' + marking + '-d2fc-e053-86c812acd642' | string] | to_poly(marking, 'layout-taxiway') }}
 {% endfor %}

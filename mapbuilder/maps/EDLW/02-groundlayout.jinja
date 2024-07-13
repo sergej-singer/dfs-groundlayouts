@@ -23,7 +23,7 @@ ACTIVE:1
 {{ geom | simplify(0.00001) | to_poly('Runway 24/06','layout-runway') }}
 {% endfor %}
 {% for blastpad, geom in data.edlw['RunwayBlastPad'].items() %}
-{{ geom | simplify(0.00001) | to_poly('BlastPad','layout-taxiway') }}
+{{ geom | simplify(0.00001) | to_poly('BlastPad','layout-apron') }}
 {% endfor %}
 
 MAP:Leadin Lines

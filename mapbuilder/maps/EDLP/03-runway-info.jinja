@@ -22,7 +22,7 @@ MAP:Runway Markings
 AIRPORT:EDLP
 FOLDER:Runway Info
 {% for marking, geom in data.edlp_layout['layout']['Markings'].items() %}
-{{ geom[''] | to_poly(marking, 'layout-taxiline-yellow') }}
+{{ geom[''] | to_poly(marking, 'layout-runway') }}
 {% endfor %}
 {% for marking, geom in data.edlp['RunwayMarking'].items() %}
 {{ geom | to_poly(marking, 'layout-runway-marking') }}

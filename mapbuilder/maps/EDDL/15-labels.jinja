@@ -33,6 +33,6 @@ ACTIVE:1
 ZOOM:600
 FONTSIZE:=:9
 COLOR:layout-label-stand
-{% for desig in ['GAT', 'Polizei'] %}
+{% for desig in ['GAT', 'Police'] %}
 {{- data.eddl_layout['layout']['Labels']['Stands'][desig | string] | to_text(desig) }}
 {% endfor %}

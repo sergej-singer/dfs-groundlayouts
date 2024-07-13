@@ -123,14 +123,13 @@ STYLE:Dot
 {{- data.eddl['GuidanceLineByDesig'][desig | string] | join_segments | simplify(default) | to_line(desig) }}
 {% endfor %}
 
-// V01
+// Taxi-Out Stands
+{{ data.eddl_layout['layout']['Apron Marking']['Poly 2'][''] | to_poly('','layout-eddl-taxiline-grey') }}
 
+// V01
 COLOR:layout-taxiway
 STYLE:Solid
 {{ data.eddl_layout['layout']['Apron Marking']['Parking V01'] | to_line('Parking Area V01') }}
-
-// Taxi-Out Stands
-{{ data.eddl_layout['layout']['Apron Marking']['Poly 2'][''] | to_poly('','layout-eddl-taxiline-grey') }}
 
 // Labels
 ZOOM:800
@@ -154,3 +153,4 @@ COLOR:layout-label-stand
 {% for desig, geom in data.eddl_layout['layout']['Labels']['Heli'].items() %}
 {{- geom | to_symbol('CIRCLE') }}
 {% endfor %}
+

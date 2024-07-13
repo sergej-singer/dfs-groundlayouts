@@ -16,14 +16,14 @@ ACTIVE:1
 {% for taxiway, geom in data.edlv['TaxiwayElement'].items() %}
 {{ geom | simplify(default) | to_poly(taxiway, 'layout-taxiway') }}
 {% endfor %}
-{{ data.edlv['RunwayProtectArea']['60ad4527-8a1a-e1fa-e053-0100007f5781'] | to_poly('Blastpad', 'layout-taxiway') }}
-{{ data.edlv['RunwayProtectArea']['60ad4527-8a19-e1fa-e053-0100007f5781'] | to_poly('Blastpad', 'layout-taxiway') }}
 
 MAP:Runway
 AIRPORT:EDLV
 FOLDER:Airport Layout
 ACTIVE:1
 {{ data.edlv['RunwayElement']['60ad4527-93c0-e1fa-e053-0100007f5781'] | to_poly('Runway 27/09', 'layout-runway') }}
+{{ data.edlv['RunwayProtectArea']['60ad4527-8a1a-e1fa-e053-0100007f5781'] | to_poly('Blastpad', 'layout-apron') }}
+{{ data.edlv['RunwayProtectArea']['60ad4527-8a19-e1fa-e053-0100007f5781'] | to_poly('Blastpad', 'layout-apron') }}
 
 MAP:Leadin Lines
 AIRPORT:EDLV

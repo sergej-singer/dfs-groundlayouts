@@ -41,7 +41,7 @@ FOLDER:Runway Info
 {{ geom | to_poly(marking, 'layout-runway-marking') }}
 {% endfor %}
 {% for marking in ['ed29', 'ed2a', 'ed2b', 'ed2c', 'ed2d', 'ed2e', 'ed2f', 'ed30', 'ed31', 'ed32', 'ed33', 'ed34'] %}
-{{- data.edln['RunwayMarking']['4682806b-' + marking + '-c6ff-e053-1514a8c027b7' | string] | to_poly(marking, 'layout-taxiline-yellow') }}
+{{- data.edln['RunwayMarking']['4682806b-' + marking + '-c6ff-e053-1514a8c027b7' | string] | to_poly(marking, 'layout-runway') }}
 {% endfor %}
 {% for marking in ['f1cd', 'f1ce', 'f1cf', 'f1d1', 'f1d2', 'f1d3', 'f1d4', 'f1d5', 'f1d6', 'f1d7', 'f1d8', 'f1d9', 'f1da', 'f1db', 'f1dc', 'f1dd', 'f1de', 'f1df', 'f1e0', 'f1e1', 'f1e2', 'f1e3', 'f1d0'] %}
 {{- data.edln['TaxiwayMarking']['4682806b-' + marking + '-c6ff-e053-1514a8c027b7' | string] | to_poly(marking, 'layout-runway-marking') }}
