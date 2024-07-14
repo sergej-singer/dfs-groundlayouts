@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Folder><name>Restrictions_A380_Labels</name>
+  <Placemark>
+	<name>L7</name>
+      <Point><coordinates>6.75949924710582,51.2824088137492</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>1</name>
+      <Point><coordinates>6.75820193921454,51.2796183920215</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2</name>
+      <Point><coordinates>6.75435671662521,51.2776299719352</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>3</name>
+      <Point><coordinates>6.75811884396216,51.2777519010099</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>4</name>
+      <Point><coordinates>6.76043277827683,51.2777669940271</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>5</name>
+      <Point><coordinates>6.76681247999879,51.2858104721785</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>6</name>
+      <Point><coordinates>6.77571561122144,51.2900342561205</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>7</name>
+      <Point><coordinates>6.78470616421539,51.2941464718114</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>8</name>
+      <Point><coordinates>6.78290093664682,51.2912066514802</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>Stop L6</name>
+      <Point><coordinates>6.76077793255388,51.2820159938596</coordinates></Point>
+  </Placemark>
+</Folder>
+</Document></kml>
