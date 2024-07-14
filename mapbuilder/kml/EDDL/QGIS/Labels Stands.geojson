@@ -128,6 +128,6 @@
 { "type": "Feature", "properties": { "name": "V84" }, "geometry": { "type": "Point", "coordinates": [ 343547.098240136576351, 5682937.741071097552776 ] } },
 { "type": "Feature", "properties": { "name": "V83" }, "geometry": { "type": "Point", "coordinates": [ 343541.058227894362062, 5683000.510429021902382 ] } },
 { "type": "Feature", "properties": { "name": "GAT" }, "geometry": { "type": "Point", "coordinates": [ 343218.993461914418731, 5682876.075120590627193 ] } },
-{ "type": "Feature", "properties": { "name": "Polizei" }, "geometry": { "type": "Point", "coordinates": [ 345548.396731074608397, 5684330.837683442980051 ] } }
+{ "type": "Feature", "properties": { "name": "Police" }, "geometry": { "type": "Point", "coordinates": [ 345548.396731074608397, 5684330.837683442980051 ] } }
 ]
 }

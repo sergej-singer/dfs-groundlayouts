@@ -42,5 +42,25 @@
 	<name>Stop L6</name>
       <Point><coordinates>6.76077793255388,51.2820159938596</coordinates></Point>
   </Placemark>
+  <Placemark>
+	<name>9</name>
+      <Point><coordinates>6.75141219192462,51.2809921366901</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>10</name>
+      <Point><coordinates>6.75821104307889,51.2842346221516</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>11</name>
+      <Point><coordinates>6.77963912270248,51.2944485085838</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>12</name>
+      <Point><coordinates>6.78495003901814,51.2969787084493</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>13</name>
+      <Point><coordinates>6.76397623405707,51.2821901051471</coordinates></Point>
+  </Placemark>
 </Folder>
 </Document></kml>

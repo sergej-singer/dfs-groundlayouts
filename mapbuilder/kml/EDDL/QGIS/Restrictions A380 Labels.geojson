@@ -12,6 +12,11 @@
 { "type": "Feature", "properties": { "name": "6" }, "geometry": { "type": "Point", "coordinates": [ 344906.385154433082789, 5684428.246006330475211 ] } },
 { "type": "Feature", "properties": { "name": "7" }, "geometry": { "type": "Point", "coordinates": [ 345547.007755473954603, 5684866.529274017550051 ] } },
 { "type": "Feature", "properties": { "name": "8" }, "geometry": { "type": "Point", "coordinates": [ 345411.283187627326697, 5684543.447468204423785 ] } },
-{ "type": "Feature", "properties": { "name": "Stop L6" }, "geometry": { "type": "Point", "coordinates": [ 343837.732544058468193, 5683568.359512799419463 ] } }
+{ "type": "Feature", "properties": { "name": "Stop L6" }, "geometry": { "type": "Point", "coordinates": [ 343837.732544058468193, 5683568.359512799419463 ] } },
+{ "type": "Feature", "properties": { "name": "9" }, "geometry": { "type": "Point", "coordinates": [ 343181.155214413069189, 5683474.482753213495016 ] } },
+{ "type": "Feature", "properties": { "name": "10" }, "geometry": { "type": "Point", "coordinates": [ 343666.273651663796045, 5683820.514371613040566 ] } },
+{ "type": "Feature", "properties": { "name": "11" }, "geometry": { "type": "Point", "coordinates": [ 345194.781964544730727, 5684910.788755412213504 ] } },
+{ "type": "Feature", "properties": { "name": "12" }, "geometry": { "type": "Point", "coordinates": [ 345573.514900818991009, 5685180.936333440244198 ] } },
+{ "type": "Feature", "properties": { "name": "13" }, "geometry": { "type": "Point", "coordinates": [ 344061.345748083665967, 5683580.919833186082542 ] } }
 ]
 }

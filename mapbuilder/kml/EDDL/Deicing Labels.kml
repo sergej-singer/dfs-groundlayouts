@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Folder><name>Deicing_Labels</name>
+  <Placemark>
+	<name>V11B_</name>
+      <Point><coordinates>6.77638316974769,51.2880124527777</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>PAD4E_</name>
+      <Point><coordinates>6.77879214790182,51.2890222159696</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>PAD3E_</name>
+      <Point><coordinates>6.77996561472885,51.2895813945563</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>PAD2E_</name>
+      <Point><coordinates>6.78127072339115,51.2899026105391</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>PAD1E_</name>
+      <Point><coordinates>6.78258569801006,51.2898853940671</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>PAD1W_</name>
+      <Point><coordinates>6.75836910323144,51.2796388717142</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>PAD2W_</name>
+      <Point><coordinates>6.75828956954971,51.2789187265235</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>PAD3W_</name>
+      <Point><coordinates>6.75829195161307,51.2783192869673</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>PAD4W_</name>
+      <Point><coordinates>6.75821958542988,51.2771572289494</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>23L/05R</name>
+      <Point><coordinates>6.76741392595894,51.2881194991988</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>23R/05L</name>
+      <Point><coordinates>6.76310904097817,51.2916699919899</coordinates></Point>
+  </Placemark>
+</Folder>
+</Document></kml>

@@ -5,12 +5,15 @@ AIRPORT:EDDL
 FOLDER:A380
 {{ data.eddl_layout['layout']['A380']['23 ARR='][''] | to_poly('', 'restrictions-C') }}
 {{ data.eddl_layout['layout']['A380']['23 DEP='][''] | to_poly('', 'restrictions-D') }}
-STYLE:SOLID:2
+STYLE:SOLID:3
 COLOR:restrictions-C
 {{ data.eddl_layout['layout']['A380']['23 ARR'][''] | to_line('') }}
 COLOR:restrictions-D
 {{ data.eddl_layout['layout']['A380']['23 DEP'][''] | to_line('') }}
 
+STYLE:SOLID:2
+COLOR:restrictions-AB
+{{ data.eddl_layout['layout']['Restrictions']['A380'][''] | to_line('') }}
 COLOR:restrictions-AB
 {% for desig, geom in data.eddl_layout['layout']['A380']['Stop'].items() %}
 {{- geom | to_symbol('VERBOT_1') }}
@@ -55,12 +58,15 @@ AIRPORT:EDDL
 FOLDER:A380
 {{ data.eddl_layout['layout']['A380']['05 ARR='][''] | to_poly('', 'restrictions-C') }}
 {{ data.eddl_layout['layout']['A380']['05 DEP='][''] | to_poly('', 'restrictions-D') }}
-STYLE:SOLID:2
+STYLE:SOLID:3
 COLOR:restrictions-C
 {{ data.eddl_layout['layout']['A380']['05 ARR'][''] | to_line('') }}
 COLOR:restrictions-D
 {{ data.eddl_layout['layout']['A380']['05 DEP'][''] | to_line('') }}
 
+STYLE:SOLID:2
+COLOR:restrictions-AB
+{{ data.eddl_layout['layout']['Restrictions']['A380'][''] | to_line('') }}
 COLOR:restrictions-AB
 {% for desig, geom in data.eddl_layout['layout']['A380']['Stop'].items() %}
 {{- geom | to_symbol('VERBOT_1') }}

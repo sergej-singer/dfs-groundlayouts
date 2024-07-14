@@ -8,8 +8,8 @@ ACTIVE:1
 
 // L2
 RESTRICTION:MAXCODE:E
-{{ data.eddl_layout['layout']['Restrictions']['L2#1'] | to_poly('') }}
+{{ data.eddl_layout['layout']['Restrictions']['L2#1'] | to_poly('', 'closure') }}
 
 // GAT
 RESTRICTION:MAXCODE:B
-{{ data.eddl_layout['layout']['Restrictions']['GAT'] | to_poly('') }}
+{{ data.eddl_layout['layout']['Restrictions']['GAT'] | to_poly('', 'closure') }}
