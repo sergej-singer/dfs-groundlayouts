@@ -56,26 +56,26 @@ ZOOM:600
 COLOR:layout-label-stand
 TEXTALIGN:LC
 FONTSIZE:=:11
-{{ data.eddl_layout['layout']['Deicing']['PAD1E_'] | to_text(' DP1') }}
-{{ data.eddl_layout['layout']['Deicing']['PAD2E_'] | to_text(' DP2') }}
+{{ data.eddl_layout['layout']['Deicing']['PAD1E_'] | to_text('DP1:10:0') }}
+{{ data.eddl_layout['layout']['Deicing']['PAD2E_'] | to_text('DP2:10:0') }}
 TEXTALIGN:CC
-{{ data.eddl_layout['layout']['Deicing']['PAD3E_'] | to_text(' DP3') }}
-{{ data.eddl_layout['layout']['Deicing']['PAD4E_'] | to_text(' DP4') }}
-{{ data.eddl_layout['layout']['Deicing']['V11B_'] | to_text(' V11B') }}
+{{ data.eddl_layout['layout']['Deicing']['PAD3E_'] | to_text('DP3:3:0') }}
+{{ data.eddl_layout['layout']['Deicing']['PAD4E_'] | to_text('DP4:3:0') }}
+{{ data.eddl_layout['layout']['Deicing']['V11B_'] | to_text('V11B:3:0') }}
 
 FONTSIZE:=:60
 TEXTALIGN:LC
 COLOR:restrictions-E
-{{ data.eddl_layout['layout']['Deicing']['PAD1E_'] | to_text('·:-17:1') }}
+{{ data.eddl_layout['layout']['Deicing']['PAD1E_'] | to_text('.:-14:-17') }}
 COLOR:restrictions-E
-{{ data.eddl_layout['layout']['Deicing']['PAD2E_'] | to_text('·:-17:1') }}
+{{ data.eddl_layout['layout']['Deicing']['PAD2E_'] | to_text('.:-14:-17') }}
 TEXTALIGN:CC
 COLOR:restrictions-D
-{{ data.eddl_layout['layout']['Deicing']['PAD3E_'] | to_text('·:-13:1') }}
+{{ data.eddl_layout['layout']['Deicing']['PAD3E_'] | to_text('.:-14:-17') }}
 COLOR:restrictions-C
-{{ data.eddl_layout['layout']['Deicing']['PAD4E_'] | to_text('·:-13:1') }}
+{{ data.eddl_layout['layout']['Deicing']['PAD4E_'] | to_text('.:-14:-17') }}
 COLOR:restrictions-F
-{{ data.eddl_layout['layout']['Deicing']['V11B_'] | to_text('·:-17:1') }}
+{{ data.eddl_layout['layout']['Deicing']['V11B_'] | to_text('.:-16:-17') }}
 
 // Reference
 COLOR:layout-label-stand
@@ -89,13 +89,13 @@ FONTSIZE:=:12
 
 FONTSIZE:=:70
 COLOR:restrictions-C
-{{ data.eddl_layout['layout']['Restrictions']['Ref 2'] | to_text('·:-95:-50') }}
+{{ data.eddl_layout['layout']['Restrictions']['Ref 2'] | to_text('.:-95:-69') }}
 COLOR:restrictions-D
-{{ data.eddl_layout['layout']['Restrictions']['Ref 2'] | to_text('·:-95:-35') }}
+{{ data.eddl_layout['layout']['Restrictions']['Ref 2'] | to_text('.:-95:-54') }}
 COLOR:restrictions-E
-{{ data.eddl_layout['layout']['Restrictions']['Ref 2'] | to_text('·:-95:-20') }}
+{{ data.eddl_layout['layout']['Restrictions']['Ref 2'] | to_text('.:-95:-39') }}
 COLOR:restrictions-F
-{{ data.eddl_layout['layout']['Restrictions']['Ref 2'] | to_text('·:-95:-5') }}
+{{ data.eddl_layout['layout']['Restrictions']['Ref 2'] | to_text('.:-95:-24') }}
 
 
 MAP:De-Icing 05L/R
@@ -132,19 +132,19 @@ ZOOM:600
 COLOR:layout-label-stand
 TEXTALIGN:RC
 FONTSIZE:=:11
-{{ data.eddl_layout['layout']['Deicing']['PAD1W_'] | to_text('DP1 ') }}
-{{ data.eddl_layout['layout']['Deicing']['PAD2W_'] | to_text('DP2 ') }}
-{{ data.eddl_layout['layout']['Deicing']['PAD3W_'] | to_text('DP3 ') }}
-{{ data.eddl_layout['layout']['Deicing']['PAD4W_'] | to_text('DP4 ') }}
+{{ data.eddl_layout['layout']['Deicing']['PAD1W_'] | to_text('DP1') }}
+{{ data.eddl_layout['layout']['Deicing']['PAD2W_'] | to_text('DP2') }}
+{{ data.eddl_layout['layout']['Deicing']['PAD3W_'] | to_text('DP3') }}
+{{ data.eddl_layout['layout']['Deicing']['PAD4W_'] | to_text('DP4') }}
 FONTSIZE:=:60
 COLOR:restrictions-E
-{{ data.eddl_layout['layout']['Deicing']['PAD1W_'] | to_text('·:17:-27') }}
+{{ data.eddl_layout['layout']['Deicing']['PAD1W_'] | to_text('.:-9:-45') }}
 COLOR:restrictions-C
-{{ data.eddl_layout['layout']['Deicing']['PAD2W_'] | to_text('·:17:-27') }}
+{{ data.eddl_layout['layout']['Deicing']['PAD2W_'] | to_text('.:-9:-45') }}
 COLOR:restrictions-F
-{{ data.eddl_layout['layout']['Deicing']['PAD3W_'] | to_text('·:17:-27') }}
+{{ data.eddl_layout['layout']['Deicing']['PAD3W_'] | to_text('.:-9:-45') }}
 COLOR:restrictions-E
-{{ data.eddl_layout['layout']['Deicing']['PAD4W_'] | to_text('·:17:-27') }}
+{{ data.eddl_layout['layout']['Deicing']['PAD4W_'] | to_text('.:-9:-45') }}
 
 
 
@@ -160,10 +160,10 @@ FONTSIZE:=:12
 
 FONTSIZE:=:70
 COLOR:restrictions-C
-{{ data.eddl_layout['layout']['Restrictions']['Ref'] | to_text('·:-95:-50') }}
+{{ data.eddl_layout['layout']['Restrictions']['Ref'] | to_text('.:-95:-69') }}
 COLOR:restrictions-D
-{{ data.eddl_layout['layout']['Restrictions']['Ref'] | to_text('·:-95:-35') }}
+{{ data.eddl_layout['layout']['Restrictions']['Ref'] | to_text('.:-95:-54') }}
 COLOR:restrictions-E
-{{ data.eddl_layout['layout']['Restrictions']['Ref'] | to_text('·:-95:-20') }}
+{{ data.eddl_layout['layout']['Restrictions']['Ref'] | to_text('.:-95:-39') }}
 COLOR:restrictions-F
-{{ data.eddl_layout['layout']['Restrictions']['Ref'] | to_text('·:-95:-5') }}
+{{ data.eddl_layout['layout']['Restrictions']['Ref'] | to_text('.:-95:-24') }}
