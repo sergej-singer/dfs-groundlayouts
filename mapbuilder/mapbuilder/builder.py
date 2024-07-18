@@ -1,12 +1,12 @@
 import logging
-import os
 from datetime import UTC, datetime
 from pathlib import Path
 
 from .cache import Cache
 from .data.aixm2 import parse_aixm
 from .data.kml import KMLParser
-from .data.raw import RAWParser
+from .data.rwy import parse_runway
+from .data.sectors import parse_sectors, sectors_to_lines
 from .data.sidstar import parse_sidstar
 from .dfs import aixm
 from .handlers.jinja import JinjaHandler
@@ -36,29 +36,41 @@ class Builder:
                 data_root = None
                 if "root" in config["data"][data_source]:
                     data_root = config["data"][data_source]["root"]
-                parser = KMLParser(source_dir / config["data"][data_source]["source"], data_root)
+                parser = KMLParser(
+                    source_dir / config["data"][data_source]["source"], data_root
+                )
                 self.data[data_source] = parser.parse()
             elif data_source_type == "raw":
                 logging.debug(f"Loading raw source {data_source}...")
-                if os.path.isfile(source_dir / config["data"][data_source]["source"]):
-                    with (source_dir / config["data"][data_source]["source"]).open(
+                with (source_dir / config["data"][data_source]["source"]).open(
                         encoding="iso-8859-1",
-                    ) as f:
-                        self.data[data_source] = f.read()
-                else:
-                    parser = RAWParser(source_dir / config["data"][data_source]["source"])
-                    self.data[data_source] = parser.parse()
-                    #logging.debug(self.data[data_source])
+                ) as f:
+                    self.data[data_source] = f.read()
             elif data_source_type == "ese":
                 logging.debug(f"Loading ESE source {data_source}...")
                 self.data[data_source] = {
-                    "SIDSTAR": parse_sidstar(source_dir / config["data"][data_source]["source"]),
+                    "SIDSTAR": parse_sidstar(
+                        source_dir / config["data"][data_source]["source"]
+                    ),
+                }
+            elif data_source_type == "sct":
+                logging.debug(f"Loading SCT source {data_source}...")
+                self.data[data_source] = {
+                    "RUNWAY": parse_runway(
+                        source_dir / config["data"][data_source]["source"]
+                    ),
+                }
+            elif data_source_type == "sectors":
+                logging.debug(f"Loading sectors source {data_source}...")
+                fixes = parse_sectors(source_dir / config["data"][data_source]["source"])
+                self.data[data_source] = {
+                    "fixes": fixes,
+                    "lines": sectors_to_lines(fixes),
                 }
             else:
                 logging.error(f"Unknown data source type for data source {data_source}")
 
         self.jinja_handler = JinjaHandler(self.data, self.config)
-
 
     def __load_aixm(self, name: str, src: str):
         if src.startswith("aixm:dfs"):
@@ -133,12 +145,12 @@ class Builder:
         profile_content = "\n\n".join(profile_contents)
 
         with (self.target_dir / Path(target_file)).open(
-            mode="w",
-            encoding="iso-8859-1",
+                mode="w",
+                encoding="iso-8859-1",
         ) as tgt_file:
             tgt_file.write(profile_content)
 
-        logging.info("complete.")
+        logging.info(f"Built {map_id}.")
 
     def build_visitor(self, profile_id, rootdir, profile_contents):
         # Possibly inefficient, but we do not have a large number of files (hopefully)

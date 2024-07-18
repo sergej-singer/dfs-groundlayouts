@@ -1,8 +1,6 @@
-
 from pathlib import Path
 
 import xmltodict
-import logging
 from shapely import LinearRing, LineString, Point
 
 
@@ -29,17 +27,16 @@ class KMLParser:
 
     def parse(self):
         result = {}
-        if "Document" in self.xml_root["kml"]:
-            self.parse_recursively(self.xml_root["kml"]["Document"], result)
-        else:
-            self.parse_recursively(self.xml_root["kml"], result)
+        self.parse_recursively(self.xml_root["kml"], result)
         self.result = result
-        #logging.debug(result)
         if self.root is not None and self.root in self.result:
             self.result = self.result[self.root]
         return self.result
 
     def parse_recursively(self, root, result):
+        if "Document" in root:
+            self.parse_recursively(root["Document"], result)
+
         if "Folder" in root:
             for folder in ensure_list(root["Folder"]):
                 name = folder["name"]
@@ -48,73 +45,52 @@ class KMLParser:
 
         if "Placemark" in root:
             for placemark in ensure_list(root["Placemark"]):
-                if "MultiGeometry" in placemark:                
-                    name = placemark["name"]
-                    result[name] = {}
-                    self.parse_recursively(placemark["MultiGeometry"], result[name])
-                elif "LineString" in placemark:
+                if "LineString" in placemark:
                     geom = LineString(self.parse_pos_list(placemark["LineString"]["coordinates"]))
-                    name = placemark["name"]
-                    if name not in result:
-                        result[name] = [geom]
-                    else:
-                        result[name].append(geom)
                 elif "Polygon" in placemark:
                     geom = LinearRing(
                         self.parse_pos_list(
                             placemark["Polygon"]["outerBoundaryIs"]["LinearRing"]["coordinates"],
                         ),
                     )
-                    name = placemark["name"]
-                    if name not in result:
-                        result[name] = [geom]
-                    else:
-                        result[name].append(geom)
                 elif "Point" in placemark:
                     geom = Point(self.parse_pos_list(placemark["Point"]["coordinates"]))
-                    name = placemark["name"]
-                    if name not in result:
-                        result[name] = [geom]
-                    else:
-                        result[name].append(geom)
+                elif "MultiGeometry" in placemark:
+                    if len(placemark["MultiGeometry"]) != 1:
+                        raise ValueError(f"Placemark '{placemark["name"]}': in MultiGeometry only one type of Geometry is allowed")
+                    
+                    geom = self.parse_multigeometry(placemark["MultiGeometry"])
                 else:
                     msg = f"Placemark {placemark} unknown"
-                    raise ValueError(msg)             
-                
-        
+                    raise ValueError(msg)
+
+                name = placemark["name"]
+                if name not in result:
+                    result[name] = [geom]
+                else:
+                    result[name].append(geom)
+    
+    def parse_multigeometry(self, root) -> list:
+        geom = []
+
         if "LineString" in root:
             for linestring in ensure_list(root["LineString"]):
-                geom = LineString(self.parse_pos_list(linestring["coordinates"]))
-
-                name = ""
-                if name not in result:
-                    result[name] = [geom]
-                else:
-                    result[name].append(geom)
-        
-        if "Polygon" in root:
+                geom.append(LineString(KMLParser.parse_pos_list(linestring["coordinates"])))
+        elif "Polygon" in root:
             for polygon in ensure_list(root["Polygon"]):
-                geom = LinearRing(
-                        self.parse_pos_list(
-                           polygon["outerBoundaryIs"]["LinearRing"]["coordinates"],
-                        ),
+                geom.append(LinearRing(
+                    KMLParser.parse_pos_list(
+                        polygon["outerBoundaryIs"]["LinearRing"]["coordinates"],
                     )
-
-                name = ""
-                if name not in result:
-                    result[name] = [geom]
-                else:
-                    result[name].append(geom) 
-
-        if "Point" in root:
+                ))
+        elif "Point" in root:
             for point in ensure_list(root["Point"]):
-                geom = Point(self.parse_pos_list(point["coordinates"]))
-
-                name = ""
-                if name not in result:
-                    result[name] = [geom]
-                else:
-                    result[name].append(geom)
+                geom.append(Point(KMLParser.parse_pos_list(point["coordinates"])))
+        else:
+            msg = f"Geometry {root} unknown"
+            raise ValueError(msg)
+        
+        return geom
 
 
 def ensure_list(thing):

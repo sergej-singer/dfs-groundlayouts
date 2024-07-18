@@ -1,14 +1,15 @@
+from itertools import chain
 from pathlib import Path
 
-import re
-import logging
 import numpy as np
 import shapely
 import shapely.ops
 from jinja2 import Environment, FileSystemLoader
+from more_itertools import unique_everseen
 from shapely import Geometry, Polygon
 
 from mapbuilder.data.aixm2 import AIXMFeature
+from mapbuilder.utils.ad import render_cl, render_runways
 from mapbuilder.utils.ecl import draw_ecl_dashes, draw_loc_tick, draw_marker_ticks
 from mapbuilder.utils.geo import brg, fix
 from mapbuilder.utils.sidstar import render_sid
@@ -34,6 +35,9 @@ class JinjaHandler:
             render_sid=render_sid,
             fix=fix,
             brg=brg,
+            render_runways=render_runways,
+            render_cl=render_cl,
+            render_sectorlines=render_sectorlines,
         )
         jinja_env.filters.update(
             geoms=geoms,
@@ -47,6 +51,11 @@ class JinjaHandler:
             to_text=to_text,
             to_text_buffer=to_text_buffer,
             to_symbol=to_symbol,
+            to_multipoly=to_multipoly,
+            to_multiline=to_multiline,
+            to_multicoordline=to_multicoordline,
+            to_multisymbol=to_multisymbol,
+            to_multitext=to_multitext,
         )
 
         return jinja_env.get_template(item.name).render()
@@ -83,6 +92,7 @@ def concat(base: dict, keys: list[str]) -> list:
 
     return result
 
+
 def to_text_buffer(geometry, label: str, color: str, adapt_to_length=True):
     point = geometry[0] if isinstance(geometry, list) else geometry
 
@@ -98,9 +108,6 @@ def to_text_buffer(geometry, label: str, color: str, adapt_to_length=True):
 
     _render_polygon(lines, [buffer], color)
 
-    for i in range(len(lines)):
-        lines[i] = lines[i].replace("COLOR", "\nCOLOR")
-
     return "\n".join(lines)
 
 
@@ -111,7 +118,21 @@ def to_text(geometry, label: str):
         return ""
 
     labeltext, _, _ = label.partition("#")
-    return f"TEXT:{coord2es(point.coords[0])}:{labeltext}\n"
+    return f"TEXT:{coord2es(point.coords[0])}:{labeltext}"
+
+def to_multitext(geometries, label: str):
+    lines = []
+    labeltext, _, _ = label.partition("#")
+
+    for geometry in geometries:
+        for point in geometry:
+            if point is None:
+                lines.append("")
+                continue
+
+            lines.append(f"TEXT:{coord2es(point.coords[0])}:{labeltext}")
+
+    return "\n".join(lines)
 
 
 def to_symbol(geometry, symbol):
@@ -121,6 +142,19 @@ def to_symbol(geometry, symbol):
         return ""
 
     return f"SYMBOL:{symbol}:{coord2es(point.coords[0])}"
+
+def to_multisymbol(geometries, symbol):
+    lines = []
+
+    for geometry in geometries:
+        for point in geometry:
+            if point is None:
+                lines.append("")
+                continue
+
+            lines.append(f"SYMBOL:{symbol}:{coord2es(point.coords[0])}")
+
+    return "\n".join(lines)
 
 
 def _get_geoms(thing):
@@ -155,12 +189,34 @@ def to_line(geometries, designator: str):
     return "\n".join(lines)
 
 
+def to_multiline(geometries, designator: str):
+    lines = [f"// {designator}"] if designator else []
+
+    for geometry in geometries:
+        for linestring in geometry:
+            _render_linestring(lines, _get_geoms(linestring))
+
+    return "\n".join(lines)
+
+
 def to_coordline(geometries, designator: str):
     lines = [f"// {designator}"] if designator else []
 
     _render_coords(lines, _get_geoms(geometries))
 
     lines.extend(("COORDLINE", ""))
+    return "\n".join(lines)
+
+
+def to_multicoordline(geometries, designator: str):
+    lines = [f"// {designator}"] if designator else []
+
+    for geometry in geometries:
+        for linestring in geometry:
+            _render_coords(lines, _get_geoms(linestring))
+
+            lines.extend(("COORDLINE", ""))
+    
     return "\n".join(lines)
 
 
@@ -174,24 +230,38 @@ def envelope(geometries):
     return shapely.envelope(geometries)
 
 
-def to_poly(geometries, designator: str, color = False, coordpoly=False):
+def to_poly(geometries, designator: str, color: str | None = None, coordpoly=False):
     lines = [f"// {designator}"] if designator else []
 
-    _render_polygon(lines, _get_geoms(geometries), color, coordpoly)
+    _render_polygon(lines, _get_geoms(geometries), color)
+
+    if coordpoly:
+        lines.extend((f"COORDPOLY:{coordpoly}", ""))
+
+    return "\n".join(lines)
+
+def to_multipoly(geometries, designator: str, color: str | None = None, coordpoly=False):
+    lines = [f"// {designator}"] if designator else []
+
+    for geometry in geometries:
+        for polygon in geometry:
+            _render_polygon(lines, _get_geoms(polygon), color)
+
+            if coordpoly:
+                lines.append(f"COORDPOLY:{coordpoly}")
 
     return "\n".join(lines)
 
 
-def _render_polygon(lines, polygons, color=False, coordpoly=False):
+def _render_polygon(lines, polygons, color=None):
     for polygon in polygons:
-        if color:
+        if color is not None:
             lines.append(f"COLOR:{color}")
+        else:
+            lines.append("")
 
         for point in polygon.coords:
             lines.append(f"COORD:{coord2es((point[0], point[1]))}")
-        
-        if coordpoly:
-            lines.extend((f"COORDPOLY:{coordpoly}", ""))
 
 
 def _render_coords(lines, linestring):
@@ -231,3 +301,8 @@ def join_segments(lines):
 
 def coord2es(coord):
     return f"{coord[0]}:{coord[1]}"
+
+
+def render_sectorlines(*lines):
+    unique_lines = list(unique_everseen(chain(*lines)))
+    return "\n".join(map(str, unique_lines))
