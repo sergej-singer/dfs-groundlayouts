@@ -3,3 +3,7 @@ mapbuilder/aixm/EDDL_AerodromeMapping_2024-06-13_2024-06-13_snapshot.gfs
 mapbuilder/aixm/EDDL_AerodromeMapping_2024-06-13_2024-06-13_snapshot.xml
 *.pyc
 *.pyc
+/mapbuilder/mapbuilder/__pycache__
+/mapbuilder/mapbuilder/__pycache__
+*.pyc
+*.pyc
