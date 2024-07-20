@@ -18,6 +18,13 @@ TEXTALIGN:LC
 {{ data.edlw_layout['layout']['TORA']['06 A'] | to_text('2000') }}
 {{ data.edlw_layout['layout']['TORA']['06 B'] | to_text('1700') }}
 
+MAP:Runway Designators
+AIRPORT:EDLW
+FOLDER:Runway Info
+ACTIVE:1
+{{ data.edlw_layout['layout']['Markings']['24'] | to_multipoly('24', 'layout-runway-marking') }}
+{{ data.edlw_layout['layout']['Markings']['06'] | to_multipoly('06', 'layout-runway-marking') }}
+
 MAP:Runway Markings
 AIRPORT:EDLW
 FOLDER:Runway Info

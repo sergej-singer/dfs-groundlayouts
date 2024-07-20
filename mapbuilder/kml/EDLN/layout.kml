@@ -2,11 +2,14 @@
 <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
 <Folder>
 	<name>layout</name>
+	<visibility>0</visibility>
 	<open>1</open>
 	<Folder>
 		<name>Base</name>
+		<visibility>0</visibility>
 		<Placemark>
 			<name>Base</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -28,8 +31,10 @@
 	</Folder>
 	<Folder>
 		<name>Roads</name>
+		<visibility>0</visibility>
 		<Placemark id="roads.1">
 			<name>Roads</name>
+			<visibility>0</visibility>
 			<MultiGeometry>
 				<LineString>
 					<coordinates>
@@ -336,8 +341,10 @@
 	</Folder>
 	<Folder>
 		<name>Buildings</name>
+		<visibility>0</visibility>
 		<Placemark id="buildings.1">
 			<name>OFFICE PART H6</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -350,6 +357,7 @@
 		</Placemark>
 		<Placemark id="buildings.2">
 			<name>OFFICE PART H6</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -362,6 +370,7 @@
 		</Placemark>
 		<Placemark id="buildings.3">
 			<name>OFFICE PART H6</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -374,6 +383,7 @@
 		</Placemark>
 		<Placemark id="buildings.4">
 			<name>GARAGES</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -386,6 +396,7 @@
 		</Placemark>
 		<Placemark id="buildings.5">
 			<name>CENTRAL TERMINAL DEP.</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -398,6 +409,7 @@
 		</Placemark>
 		<Placemark id="buildings.6">
 			<name>CONTROL TOWER</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -410,6 +422,7 @@
 		</Placemark>
 		<Placemark id="buildings.7">
 			<name>SUN PROTECTION TERMINAL</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -422,6 +435,7 @@
 		</Placemark>
 		<Placemark id="buildings.8">
 			<name>TERMINAL ARR BUILD. INCL. COVERED WALKWAY</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -434,6 +448,7 @@
 		</Placemark>
 		<Placemark id="buildings.9">
 			<name>H2</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -446,6 +461,7 @@
 		</Placemark>
 		<Placemark id="buildings.10">
 			<name>SUN PROTECTION FIRE STATION</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -458,6 +474,7 @@
 		</Placemark>
 		<Placemark id="buildings.11">
 			<name>H5</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -470,6 +487,7 @@
 		</Placemark>
 		<Placemark id="buildings.12">
 			<name>OFFICE H5</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -482,6 +500,7 @@
 		</Placemark>
 		<Placemark id="buildings.13">
 			<name>INTERMEDIATE HANGAR 5/6</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -494,6 +513,7 @@
 		</Placemark>
 		<Placemark id="buildings.14">
 			<name>HANGAR 6</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -506,6 +526,7 @@
 		</Placemark>
 		<Placemark id="buildings.15">
 			<name>OFFICE H6</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -518,6 +539,7 @@
 		</Placemark>
 		<Placemark id="buildings.16">
 			<name>OFFICE PART H6</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -530,6 +552,7 @@
 		</Placemark>
 		<Placemark id="buildings.17">
 			<name>RAS HANGAR 3</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -542,6 +565,7 @@
 		</Placemark>
 		<Placemark id="buildings.18">
 			<name>RAS HANGAR 3</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -554,6 +578,7 @@
 		</Placemark>
 		<Placemark id="buildings.19">
 			<name>H3</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -566,6 +591,7 @@
 		</Placemark>
 		<Placemark id="buildings.20">
 			<name>GARAGE FIRE TRUCK 2</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -578,6 +604,7 @@
 		</Placemark>
 		<Placemark id="buildings.21">
 			<name>FIRE STATION , MECHANICAL WORKSHOP</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -590,6 +617,7 @@
 		</Placemark>
 		<Placemark id="buildings.22">
 			<name>HANGAR C NORTH</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -602,6 +630,7 @@
 		</Placemark>
 		<Placemark id="buildings.23">
 			<name>RWL-FLIGHT-TRAINING-CENTER</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -614,6 +643,7 @@
 		</Placemark>
 		<Placemark id="buildings.24">
 			<name>&quot;&quot;&quot;&quot;&quot;ELITE JET&quot;&quot; MAINTENANCE HANGAR&quot;</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -626,6 +656,7 @@
 		</Placemark>
 		<Placemark id="buildings.25">
 			<name>&quot;&quot;&quot;ELITE JET&quot;&quot; CULTIVATION&quot;</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -638,6 +669,7 @@
 		</Placemark>
 		<Placemark id="buildings.26">
 			<name>&quot;&quot;&quot;ELITE JET&quot;&quot; CULTIVATION&quot;</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -650,6 +682,7 @@
 		</Placemark>
 		<Placemark id="buildings.27">
 			<name>&quot;&quot;&quot;ELITE JET&quot;&quot; OFFICE TRACT&quot;</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -662,6 +695,7 @@
 		</Placemark>
 		<Placemark id="buildings.28">
 			<name>&quot;&quot;&quot;ELITE JET&quot;&quot; CULTIVATION&quot;</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -674,6 +708,7 @@
 		</Placemark>
 		<Placemark id="buildings.29">
 			<name>HANGAR A</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -686,6 +721,7 @@
 		</Placemark>
 		<Placemark id="buildings.30">
 			<name>HANGAR B</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -698,6 +734,7 @@
 		</Placemark>
 		<Placemark id="buildings.31">
 			<name>OFFICE PART HANG. A AND HANG. B</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -710,6 +747,7 @@
 		</Placemark>
 		<Placemark id="buildings.32">
 			<name>HANGAR 7</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -722,6 +760,7 @@
 		</Placemark>
 		<Placemark id="buildings.33">
 			<name>POWER STATION</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -734,6 +773,7 @@
 		</Placemark>
 		<Placemark id="buildings.34">
 			<name>ELITEJET-HANGAR</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -746,6 +786,7 @@
 		</Placemark>
 		<Placemark id="buildings.35">
 			<name>GARAGE</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -758,6 +799,7 @@
 		</Placemark>
 		<Placemark id="buildings.36">
 			<name>ELITEJET-HANGAR</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -770,6 +812,7 @@
 		</Placemark>
 		<Placemark id="buildings.37">
 			<name>POWER STATION</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -782,6 +825,7 @@
 		</Placemark>
 		<Placemark id="buildings.38">
 			<name>RAS OFFICE INTERMEDIATE H1 AND H2</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -794,6 +838,7 @@
 		</Placemark>
 		<Placemark id="buildings.39">
 			<name>RAS OFFICE BUILDING NORTHWEST</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -806,6 +851,7 @@
 		</Placemark>
 		<Placemark id="buildings.40">
 			<name>ELITEJET-HANGAR</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -818,6 +864,7 @@
 		</Placemark>
 		<Placemark id="buildings.41">
 			<name>RAS OFFICE BUILDING NORTHWEST</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -830,6 +877,7 @@
 		</Placemark>
 		<Placemark id="buildings.42">
 			<name>PUMPING STATION</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -842,6 +890,7 @@
 		</Placemark>
 		<Placemark id="buildings.43">
 			<name>RAS INTERMEDIATE LIGHTWEIGHT HALL</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -854,6 +903,7 @@
 		</Placemark>
 		<Placemark id="buildings.44">
 			<name>RAS LIGHTWEIGHT LARGE 1</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -866,6 +916,7 @@
 		</Placemark>
 		<Placemark id="buildings.45">
 			<name>RAS HANGAR 1</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -878,6 +929,7 @@
 		</Placemark>
 		<Placemark id="buildings.46">
 			<name>RAS LIGHTWEIGHT LARGE 2</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -890,6 +942,7 @@
 		</Placemark>
 		<Placemark id="buildings.47">
 			<name>RAS LIGHTWEIGHT CULTIVATION</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -902,6 +955,7 @@
 		</Placemark>
 		<Placemark id="buildings.48">
 			<name>RAS LIGHTWEIGHT SMALL</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -914,6 +968,7 @@
 		</Placemark>
 		<Placemark id="buildings.49">
 			<name>RAS HANGAR 2</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -926,6 +981,7 @@
 		</Placemark>
 		<Placemark id="buildings.50">
 			<name>RAS HANGAR 1</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -938,6 +994,7 @@
 		</Placemark>
 		<Placemark id="buildings.51">
 			<name>OFFICE H4</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -950,6 +1007,7 @@
 		</Placemark>
 		<Placemark id="buildings.52">
 			<name>OFFICE BUILDING H 4</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -962,6 +1020,7 @@
 		</Placemark>
 		<Placemark id="buildings.53">
 			<name>RWL-FLIGT-TRAINING-CENTER</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -974,6 +1033,7 @@
 		</Placemark>
 		<Placemark id="buildings.54">
 			<name>OFFICE BUILDING H 4</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -986,6 +1046,7 @@
 		</Placemark>
 		<Placemark id="buildings.55">
 			<name>OFFICE BUILDING H 4</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -998,6 +1059,7 @@
 		</Placemark>
 		<Placemark id="buildings.56">
 			<name>OFFICE BUILDING H 4</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -1010,6 +1072,7 @@
 		</Placemark>
 		<Placemark id="buildings.57">
 			<name>GARAGES H4</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -1022,6 +1085,7 @@
 		</Placemark>
 		<Placemark id="buildings.58">
 			<name>GARAGES H4</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -1034,6 +1098,7 @@
 		</Placemark>
 		<Placemark id="buildings.59">
 			<name>SHELTER LLZ R13</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -1046,6 +1111,7 @@
 		</Placemark>
 		<Placemark id="buildings.60">
 			<name>RWL-FLIGHT-TRAINING-CENTER</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -1058,6 +1124,7 @@
 		</Placemark>
 		<Placemark id="buildings.61">
 			<name>RWL-FLIGHT-TRAINING-CENTER</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -1070,6 +1137,7 @@
 		</Placemark>
 		<Placemark id="buildings.62">
 			<name>RWL-FLIGHT-TRAINING-CENTER</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -1082,6 +1150,7 @@
 		</Placemark>
 		<Placemark id="buildings.63">
 			<name>HANGAR 4</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -1094,6 +1163,7 @@
 		</Placemark>
 		<Placemark id="buildings.64">
 			<name>OFFICE BUILDING H 4</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -1106,6 +1176,7 @@
 		</Placemark>
 		<Placemark id="buildings.65">
 			<name>OFFICE BUILDING H 4</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -1118,6 +1189,7 @@
 		</Placemark>
 		<Placemark id="buildings.66">
 			<name>OFFICE BUILDING H 4</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -1130,6 +1202,7 @@
 		</Placemark>
 		<Placemark id="buildings.67">
 			<name>OFFICE BUILDING H 4</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -1142,6 +1215,7 @@
 		</Placemark>
 		<Placemark id="buildings.68">
 			<name>SUN PROTECTION TERMINAL</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -1154,6 +1228,7 @@
 		</Placemark>
 		<Placemark id="buildings.69">
 			<name>AIRSIDE ROOF CENTRAL TERMINAL</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -1166,6 +1241,7 @@
 		</Placemark>
 		<Placemark id="buildings.70">
 			<name>TERMINAL GATES/RESTAURANT</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -1178,6 +1254,7 @@
 		</Placemark>
 		<Placemark id="buildings.71">
 			<name>SHELTER DVOR MHV</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -1190,6 +1267,7 @@
 		</Placemark>
 		<Placemark id="buildings.72">
 			<name>JU-HANGAR</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -1202,6 +1280,7 @@
 		</Placemark>
 		<Placemark id="buildings.73">
 			<name>RWL-HANGAR/MAINTENACE HALL</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -1214,6 +1293,7 @@
 		</Placemark>
 		<Placemark id="buildings.74">
 			<name>RWL-FLIGHT-SIMULATOR-BUILDING</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -1226,6 +1306,7 @@
 		</Placemark>
 		<Placemark id="buildings.75">
 			<name>RWL-FLIGHT-TRAINING-CENTER</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -1238,6 +1319,7 @@
 		</Placemark>
 		<Placemark id="buildings.76">
 			<name>RWL-FLIGHT-TRAINING-CENTER</name>
+			<visibility>0</visibility>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
@@ -1251,8 +1333,10 @@
 	</Folder>
 	<Folder>
 		<name>Fence</name>
+		<visibility>0</visibility>
 		<Placemark id="fence.1">
 			<name>AIRPORT FENCE</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.496484639986,51.2304323174819,0 6.496209422231,51.2302145543793,0 
@@ -1261,6 +1345,7 @@
 		</Placemark>
 		<Placemark id="fence.2">
 			<name>AIRPORT FENCE</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.4959815525373,51.2308970208056,0 6.496006004150001,51.2309152364546,0 6.496102740775399,51.2308556630563,0 6.496198231233699,51.23080021431,0 6.4963282940021,51.23072638482589,0 6.4965382230673,51.2306208086469,0 6.4966528375753,51.2305660704309,0 
@@ -1269,6 +1354,7 @@
 		</Placemark>
 		<Placemark id="fence.3">
 			<name>AIRPORT FENCE</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.4957670107119,51.2322779413929,0 6.4957698891945,51.23226929650409,0 6.4963414889082,51.2319907722125,0 
@@ -1277,6 +1363,7 @@
 		</Placemark>
 		<Placemark id="fence.4">
 			<name>APRON GATE OLD TERMINAL</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.4957670107119,51.2322779413929,0 6.4957474232739,51.2322860776876,0 
@@ -1285,6 +1372,7 @@
 		</Placemark>
 		<Placemark id="fence.5">
 			<name>FENCE TERRACE OLD TERMINAL</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.4953705744673,51.2326369227035,0 6.495390668483,51.23264171264371,0 6.4956551672421,51.2325134299062,0 6.495627962514899,51.2324891432049,0 
@@ -1293,6 +1381,7 @@
 		</Placemark>
 		<Placemark id="fence.6">
 			<name>AIRPORT FENCE</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.5032864874186,51.228220138842,0 6.5033936004761,51.2283034283891,0 6.5037235688775,51.228138634647,0 6.5036992581927,51.2281182122788,0 
@@ -1301,6 +1390,7 @@
 		</Placemark>
 		<Placemark id="fence.7">
 			<name>AIRPORT FENCE</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.5037235688775,51.228138634647,0 6.5037428150393,51.2281285561119,0 
@@ -1309,6 +1399,7 @@
 		</Placemark>
 		<Placemark id="fence.8">
 			<name>FENCE RESTAURANT JU-HANGAR</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.5041672354895,51.2278837613151,0 6.504192303556,51.227902626049,0 6.5044636474036,51.2277677344732,0 6.504098581168399,51.2274837944243,0 6.5038640257497,51.2275988892259,0 6.5038824079236,51.22761320122479,0 
@@ -1317,6 +1408,7 @@
 		</Placemark>
 		<Placemark id="fence.9">
 			<name>AIRPORT FENCE</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.5044636474036,51.2277677344732,0 6.505003556978401,51.22749659125291,0 6.5049792306762,51.2274767025753,0 
@@ -1325,6 +1417,7 @@
 		</Placemark>
 		<Placemark id="fence.10">
 			<name>GATE TO FORMER NDB MGB</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.50495863068,51.2274612593448,0 6.504998138421599,51.2274416933153,0 
@@ -1333,6 +1426,7 @@
 		</Placemark>
 		<Placemark id="fence.11">
 			<name>FENCE FORMER NDB MGB</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.505032117688599,51.2274259590749,0 6.505046461015999,51.22741937758679,0 6.504963249542899,51.2273459249228,0 6.504870315506599,51.22738801620489,0 6.50495863068,51.2274612593448,0 
@@ -1341,6 +1435,7 @@
 		</Placemark>
 		<Placemark id="fence.12">
 			<name>INNER FENCE SE JU-HANGAR</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.504870315506599,51.22738801620489,0 6.504654677795499,51.22720354321661,0 
@@ -1349,6 +1444,7 @@
 		</Placemark>
 		<Placemark id="fence.13">
 			<name>AIRPORT FENCE</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.504654677795499,51.22720354321661,0 6.504767437722201,51.2272006220312,0 
@@ -1357,6 +1453,7 @@
 		</Placemark>
 		<Placemark id="fence.14">
 			<name>AIRPORT FENCE</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.5048239250109,51.2271999821563,0 6.5059320668808,51.2272030926338,0 6.507111246003599,51.2272078495966,0 6.5073321048561,51.2271012410765,0 
@@ -1365,6 +1462,7 @@
 		</Placemark>
 		<Placemark id="fence.15">
 			<name>AIRPORT FENCE</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.5074205342261,51.22705751164201,0 6.507511099362,51.22701308916851,0 
@@ -1373,6 +1471,7 @@
 		</Placemark>
 		<Placemark id="fence.16">
 			<name>GATE 17</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.5074205342261,51.22705751164201,0 6.5073321048561,51.2271012410765,0 
@@ -1381,6 +1480,7 @@
 		</Placemark>
 		<Placemark id="fence.17">
 			<name>GATE 15</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.5048239250109,51.2271999821563,0 6.504767437722201,51.2272006220312,0 
@@ -1389,6 +1489,7 @@
 		</Placemark>
 		<Placemark id="fence.18">
 			<name>AIRPORT FENCE</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.5013386114714,51.2287022277236,0 6.5015190054847,51.22861025548799,0 6.501588125667299,51.2286141856913,0 
@@ -1397,6 +1498,7 @@
 		</Placemark>
 		<Placemark id="fence.19">
 			<name>AIRPORT FENCE</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.501638978237899,51.2286185312844,0 6.5019231001744,51.2286366826425,0 6.501954859847801,51.2286215643276,0 
@@ -1405,6 +1507,7 @@
 		</Placemark>
 		<Placemark id="fence.20">
 			<name>CATERING GATE</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.501638978237899,51.2286185312844,0 6.501588125667299,51.2286141856913,0 
@@ -1413,6 +1516,7 @@
 		</Placemark>
 		<Placemark id="fence.21">
 			<name>AIRPORT FENCE</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.4978491312293,51.2305114866185,0 6.4977928033496,51.23053821264911,0 6.4974817148323,51.2302925737643,0 6.4974633998056,51.2302695567836,0 6.4974643373102,51.2302464598795,0 6.4974860126636,51.2302303297945,0 6.497519830596299,51.230212965037,0 
@@ -1421,6 +1525,7 @@
 		</Placemark>
 		<Placemark id="fence.22">
 			<name>AIRPORT FENCE</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.4975496300528,51.2301979121924,0 6.497604510014501,51.230170787934,0 
@@ -1429,6 +1534,7 @@
 		</Placemark>
 		<Placemark id="fence.23">
 			<name>AIRPORT FENCE</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.4975376139355,51.23011732804731,0 6.4975931549823,51.2300862909858,0 6.4976075493102,51.2300703190199,0 6.4976115605934,51.2300516009405,0 6.4975974451613,51.2300279088578,0 6.497427470215,51.2298937724621,0 6.4981591916152,51.229524858293,0 6.4987639966198,51.2292179705473,0 6.498295087054601,51.2288463589552,0 6.4979107447675,51.228545079512,0 6.497745132377499,51.2284257153329,0 6.497677548838199,51.2283852227274,0 6.4976013768883,51.228345814863,0 6.4975216039303,51.2283118127011,0 6.497432702065101,51.22828180479459,0 6.497349429625599,51.2282592595285,0 6.4972286785415,51.2282361199255,0 6.4971036607672,51.2282197223222,0 6.4966974031414,51.228193824565,0 6.495743166132399,51.2281474683827,0 6.495151851240499,51.2281250538738,0 6.494978904106599,51.2281293953811,0 6.4948772916948,51.2281404684572,0 6.4947029029792,51.2281748465685,0 6.4945731518934,51.2282168787305,0 6.4944932135453,51.22825100637839,0 6.4941369334452,51.2284207702714,0 6.4941238225249,51.2284341641118,0 6.4941182636759,51.228446615448,0 6.4941180840224,51.2284602242413,0 
@@ -1437,6 +1543,7 @@
 		</Placemark>
 		<Placemark id="fence.24">
 			<name>AIRPORT FENCE</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.497519830596299,51.230212965037,0 6.4975496300528,51.2301979121924,0 
@@ -1445,6 +1552,7 @@
 		</Placemark>
 		<Placemark id="fence.25">
 			<name>AIRPORT FENCE</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.497604510014501,51.230170787934,0 6.4975376139355,51.23011732804731,0 
@@ -1453,6 +1561,7 @@
 		</Placemark>
 		<Placemark id="fence.26">
 			<name>AIRPORT FENCE</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.494000660059,51.2285185374297,0 6.4939728558673,51.22851489630669,0 6.4939353227177,51.2285239993056,0 6.4935800081648,51.2286985297792,0 6.492896473857999,51.2290489933598,0 6.4928085415477,51.2291045906197,0 6.492723640170299,51.2291752097284,0 6.4926424062992,51.2292585305348,0 6.492585516253,51.22934614330789,0 6.4925702974827,51.2293762254396,0 6.4925871103674,51.2293956595101,0 
@@ -1461,6 +1570,7 @@
 		</Placemark>
 		<Placemark id="fence.27">
 			<name>AIRPORT FENCE</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.4925485148375,51.2294817505388,0 6.4925325804365,51.22949499410589,0 6.4924295527944,51.230158239987,0 6.492385577102999,51.2303993749471,0 6.4923736275159,51.2304556279855,0 6.492355811662,51.2304958686925,0 6.4923369818257,51.2305291810949,0 6.492300168642799,51.230575585763,0 6.4922328268283,51.2306440001311,0 6.492181001154001,51.2306820770328,0 6.4921328078223,51.2307120711159,0 
@@ -1469,6 +1579,7 @@
 		</Placemark>
 		<Placemark id="fence.28">
 			<name>RAS GATE NW</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.4925485148375,51.2294817505388,0 6.4925871103674,51.2293956595101,0 
@@ -1477,6 +1588,7 @@
 		</Placemark>
 		<Placemark id="fence.29">
 			<name>&quot;GATE NW &quot;&quot;NITROMANIACS&quot;&quot;&quot;</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.492140699033501,51.2307221344809,0 6.4920927910551,51.2307505446922,0 
@@ -1485,6 +1597,7 @@
 		</Placemark>
 		<Placemark id="fence.30">
 			<name>AIRPORT FENCE</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.4921328078223,51.2307120711159,0 6.492140699033501,51.2307221344809,0 
@@ -1493,6 +1606,7 @@
 		</Placemark>
 		<Placemark id="fence.31">
 			<name>AIRPORT FENCE</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.4920927910551,51.2307505446922,0 6.4920969219178,51.2307524155504,0 6.4920832695831,51.2307704369733,0 6.492081904143199,51.2307825577977,0 6.4920935741,51.23080082497109,0 6.492126920290601,51.2308229351444,0 6.4921835900791,51.23083972446841,0 6.4922872280065,51.2308640197319,0 
@@ -1501,6 +1615,7 @@
 		</Placemark>
 		<Placemark id="fence.32">
 			<name>AIRPORT / INNER AIRPORT FENCE</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.4923535294513,51.2308834846127,0 6.4927836036733,51.2310193960725,0 6.492934363751,51.2308224614894,0 
@@ -1509,6 +1624,7 @@
 		</Placemark>
 		<Placemark id="fence.33">
 			<name>AIRPORT FENCE</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.4927836036733,51.2310193960725,0 6.4948958546204,51.2316377068701,0 6.4952662411295,51.2314229041327,0 
@@ -1517,6 +1633,7 @@
 		</Placemark>
 		<Placemark id="fence.34">
 			<name>AIRPORT FENCE RWL SIMULATOR</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.4962631402552,51.2308475279808,0 6.4964039337847,51.2309482734036,0 6.496426242286999,51.230937816556,0 6.4965186679739,51.2310158973282,0 6.4964897147999,51.2310303401645,0 
@@ -1525,6 +1642,7 @@
 		</Placemark>
 		<Placemark id="fence.35">
 			<name>FENCE RWL TERRACE</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.4965292639777,51.2310615681278,0 6.4965824803473,51.2310372765118,0 6.4966584970296,51.2310971963106,0 6.4966532447049,51.2311115234132,0 
@@ -1533,6 +1651,7 @@
 		</Placemark>
 		<Placemark id="fence.36">
 			<name>GATE 1</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.4962631402552,51.2308475279808,0 6.496201173768301,51.2308007470432,0 
@@ -1541,6 +1660,7 @@
 		</Placemark>
 		<Placemark id="fence.37">
 			<name>GATE PUMPING STATION</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.4952662411295,51.2314229041327,0 6.495301021702001,51.2313945005249,0 
@@ -1549,6 +1669,7 @@
 		</Placemark>
 		<Placemark id="fence.38">
 			<name>INNER AIRPORT FENCE</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.4929543651508,51.2307923180382,0 6.492999420859201,51.2307287007838,0 6.4925100430406,51.2305801454334,0 6.4923739861924,51.2305407916229,0 6.4923369818257,51.2305291810949,0 
@@ -1557,6 +1678,7 @@
 		</Placemark>
 		<Placemark id="fence.39">
 			<name>INNER AIRPORT FENCE</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.4925100430406,51.2305801454334,0 6.4925860184226,51.2304415441644,0 6.492385577102999,51.2303993749471,0 
@@ -1565,6 +1687,7 @@
 		</Placemark>
 		<Placemark id="fence.40">
 			<name>&quot;INNER GATE &quot;&quot;NITROMANIACS&quot;&quot;&quot;</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.4929543651508,51.2307923180382,0 6.492934363751,51.2308224614894,0 
@@ -1573,6 +1696,7 @@
 		</Placemark>
 		<Placemark id="fence.41">
 			<name>MOBILE FENCE SW ROUTE H17</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.492373166050499,51.2344222840886,0 6.4926078208016,51.23434746280079,0 6.492681261649099,51.2343660056139,0 6.4938859673764,51.2340084519288,0 
@@ -1581,6 +1705,7 @@
 		</Placemark>
 		<Placemark id="fence.42">
 			<name>FENCE JET A-1 STOCK</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.4939953057655,51.2337951180834,0 6.4940463082314,51.2336979546598,0 
@@ -1589,6 +1714,7 @@
 		</Placemark>
 		<Placemark id="fence.43">
 			<name>AIRPORT FENCE</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.4893705233986,51.23512942954059,0 6.489435598092,51.235107377047,0 6.4902665883733,51.234866002685,0 6.4907878516295,51.2347138070748,0 6.4913030344153,51.2345627092009,0 6.4921877413939,51.2343011808159,0 6.4923153039802,51.2342646769735,0 
@@ -1597,6 +1723,7 @@
 		</Placemark>
 		<Placemark id="fence.44">
 			<name>AIRPORT FENCE</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.487844431585501,51.23481563036981,0 6.4884873106425,51.23495044217929,0 6.489060112530499,51.2350639471747,0 6.489308967025001,51.2351163571448,0 6.4893705233986,51.23512942954059,0 
@@ -1605,6 +1732,7 @@
 		</Placemark>
 		<Placemark id="fence.45">
 			<name>AIRPORT FENCE</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.4874640423357,51.234755975154,0 6.487291442708899,51.2354852159579,0 6.4871355016646,51.23618371400521,0 6.4870302448673,51.2367344539294,0 6.486934908541701,51.2374634713703,0 6.486961711936699,51.2375660714773,0 6.4870472361479,51.2376793922608,0 6.4871760637481,51.2377734362623,0 6.487449389507099,51.2378686243162,0 6.4875198677033,51.23787491403281,0 
@@ -1613,6 +1741,7 @@
 		</Placemark>
 		<Placemark id="fence.46">
 			<name>AIRPORT FENCE</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.4943455427736,51.2325418572479,0 6.494315122099599,51.2325369693619,0 
@@ -1621,6 +1750,7 @@
 		</Placemark>
 		<Placemark id="fence.47">
 			<name>AIRPORT FENCE</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.4944227508616,51.2325580524187,0 6.4940164494107,51.23333011164889,0 6.493867572460701,51.23360200889221,0 6.4937297420187,51.2338787843773,0 
@@ -1629,6 +1759,7 @@
 		</Placemark>
 		<Placemark id="fence.48">
 			<name>AIRPORT FENCE</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.5017495873943,51.2348089193599,0 6.5017716921358,51.2347980297547,0 
@@ -1637,6 +1768,7 @@
 		</Placemark>
 		<Placemark id="fence.49">
 			<name>AIRPORT FENCE</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.501815601240601,51.2347758870955,0 6.5019274404439,51.2347291084287,0 
@@ -1645,6 +1777,7 @@
 		</Placemark>
 		<Placemark id="fence.50">
 			<name>AIRPORT FENCE</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.502498935662101,51.234448461773,0 6.502785609632,51.2341675462062,0 
@@ -1653,6 +1786,7 @@
 		</Placemark>
 		<Placemark id="fence.51">
 			<name>AIRPORT FENCE</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.5028034874502,51.2341236558044,0 6.502808034139201,51.234069590869,0 6.5028201645352,51.2340522631574,0 6.5028809098799,51.2340226370342,0 6.5031496093036,51.2336153311418,0 6.5033570545303,51.2332989298325,0 6.5037635886627,51.2334043558198,0 6.5037734571417,51.2333883449176,0 
@@ -1661,6 +1795,7 @@
 		</Placemark>
 		<Placemark id="fence.52">
 			<name>AIRPORT FENCE</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.5040052970043,51.2330540901976,0 6.5040711320042,51.23303070099261,0 6.5043327077376,51.2326101587489,0 6.5046009252134,51.2321794976417,0 6.504620858387499,51.2321539088606,0 6.504647206794301,51.2321277182681,0 6.504798866464201,51.23199385519661,0 6.5050237423054,51.2318314229564,0 6.5051763793577,51.2317407927429,0 6.505495801488,51.2315890476672,0 6.506178637833501,51.2312627833716,0 6.5069192916256,51.23090522171369,0 6.507811895929801,51.23047865357059,0 6.508885115497799,51.22996461387899,0 6.5097238679086,51.2295609408647,0 6.5107975259506,51.2290476457614,0 6.5110996293671,51.2288992500268,0 6.5112268627967,51.22882132886261,0 6.511445939706799,51.22868178386891,0 
@@ -1669,6 +1804,7 @@
 		</Placemark>
 		<Placemark id="fence.53">
 			<name>AIRPORT FENCE</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.511445939706799,51.22868178386891,0 6.5122806813395,51.2285635526965,0 6.5130164822245,51.2284596134202,0 6.513850078874,51.2283403769804,0 6.5150239695271,51.2281744328232,0 6.5152195876396,51.2281644039058,0 6.5160275998567,51.2281206092369,0 6.5157666091298,51.2278634203486,0 6.515211575164601,51.2273125888191,0 6.5147260136003,51.2268310362956,0 6.5154983498059,51.2264421445282,0 6.5148249816597,51.2259191610299,0 6.5151978546975,51.2257338075576,0 6.514979530793599,51.2255614717199,0 6.514539898612099,51.22521600358461,0 6.514544999383299,51.2251647794107,0 
@@ -1677,6 +1813,7 @@
 		</Placemark>
 		<Placemark id="fence.54">
 			<name>AIRPORT FENCE WITH GATE 13</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.514515056811601,51.2251395209422,0 6.514437433476601,51.2251330980927,0 6.513861544185301,51.2246802765383,0 6.513461602672301,51.2248499280585,0 6.513152265370801,51.22460003784731,0 
@@ -1685,6 +1822,7 @@
 		</Placemark>
 		<Placemark id="fence.55">
 			<name>GATE 12</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.514515056811601,51.2251395209422,0 6.514544999383299,51.2251647794107,0 
@@ -1693,6 +1831,7 @@
 		</Placemark>
 		<Placemark id="fence.56">
 			<name>GATE 10</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.5028034874502,51.2341236558044,0 6.502785609632,51.2341675462062,0 
@@ -1701,6 +1840,7 @@
 		</Placemark>
 		<Placemark id="fence.57">
 			<name>FENCE PUMPING STATION</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.4945896852106,51.2312138436201,0 6.4947866701692,51.2312721612531,0 6.4949973264574,51.2313355168846,0 6.4948515511589,51.2315366010999,0 6.494444857522,51.23141500284181,0 6.4944906695826,51.23134575779851,0 
@@ -1709,6 +1849,7 @@
 		</Placemark>
 		<Placemark id="fence.58">
 			<name>FENCE PUMPING STATION</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.4945896852106,51.2312138436201,0 6.494549934529899,51.23126135409071,0 6.4945418736486,51.2312817710935,0 
@@ -1717,6 +1858,7 @@
 		</Placemark>
 		<Placemark id="fence.59">
 			<name>&quot;GATE NORTH &quot;&quot;NITROMANIACS&quot;&quot;&quot;</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.4922872280065,51.2308640197319,0 6.4923535294513,51.2308834846127,0 
@@ -1725,6 +1867,7 @@
 		</Placemark>
 		<Placemark id="fence.60">
 			<name>RAS INNER FENCE</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.4955997562104,51.22854918005789,0 6.4960387172333,51.2283330000504,0 6.496348891866501,51.2281768950384,0 
@@ -1733,6 +1876,7 @@
 		</Placemark>
 		<Placemark id="fence.61">
 			<name>RAS APRON GATE 1</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.4955997562104,51.22854918005789,0 6.495506752252699,51.22859580129041,0 
@@ -1741,6 +1885,7 @@
 		</Placemark>
 		<Placemark id="fence.62">
 			<name>RAS INNER FENCE</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.495506752252699,51.22859580129041,0 6.495274779454001,51.2287155365646,0 
@@ -1749,6 +1894,7 @@
 		</Placemark>
 		<Placemark id="fence.63">
 			<name>MAIN GATE RAS</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.494000660059,51.2285185374297,0 6.4941180840224,51.2284602242413,0 
@@ -1757,6 +1903,7 @@
 		</Placemark>
 		<Placemark id="fence.64">
 			<name>TREE RAS PARKING LOT</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.494000660059,51.2285185374297,0 6.493842823589,51.2285968888974,0 6.4939134712265,51.2286512813045,0 
@@ -1765,6 +1912,7 @@
 		</Placemark>
 		<Placemark id="fence.65">
 			<name>RAS INNER FENCE</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.4939808007223,51.2285415260672,0 6.4940407047031,51.2285909264433,0 
@@ -1773,6 +1921,7 @@
 		</Placemark>
 		<Placemark id="fence.66">
 			<name>AIRPORT FENCE</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.492935296768999,51.2290839319046,0 6.4927148597258,51.2291959578437,0 
@@ -1781,6 +1930,7 @@
 		</Placemark>
 		<Placemark id="fence.67">
 			<name>RAS INNER FENCE</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.493865796459199,51.22861457598609,0 6.4937277092485,51.2286869078019,0 
@@ -1789,6 +1939,7 @@
 		</Placemark>
 		<Placemark id="fence.68">
 			<name>FENCE PLAYGROUND</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.503833307271401,51.2275041371208,0 6.5035254775072,51.2272851243748,0 6.503727623112399,51.2271690768724,0 6.5040461015385,51.22738862663689,0 6.5039891332925,51.227421331122,0 6.503974941873401,51.2274091949745,0 
@@ -1797,6 +1948,7 @@
 		</Placemark>
 		<Placemark id="fence.69">
 			<name>GATE PLAYGROUND</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.503974941873401,51.2274091949745,0 6.503947160399,51.2274223969289,0 
@@ -1805,6 +1957,7 @@
 		</Placemark>
 		<Placemark id="fence.70">
 			<name>FENCE PLAYGROUND</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.503947160399,51.2274223969289,0 6.5039464830792,51.2274433250098,0 6.503833307271401,51.2275041371208,0 
@@ -1813,6 +1966,7 @@
 		</Placemark>
 		<Placemark id="fence.71">
 			<name>FENCE PROTECTION AREA GP ILS R13</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.494033636796,51.235964317504,0 6.4936949534389,51.23571066584211,0 
@@ -1821,6 +1975,7 @@
 		</Placemark>
 		<Placemark id="fence.72">
 			<name>FENCE PROTECTION AREA GP ILS R13</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.4936634555298,51.2356886864097,0 6.493625907997801,51.23566229599431,0 
@@ -1829,6 +1984,7 @@
 		</Placemark>
 		<Placemark id="fence.73">
 			<name>FENCE PROTECTION AREA GP ILS R13</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.4935902481773,51.2356344393602,0 6.4931867015002,51.2353376192015,0 6.4932041133532,51.2353289194831,0 
@@ -1837,6 +1993,7 @@
 		</Placemark>
 		<Placemark id="fence.74">
 			<name>PROTECTION AREA ILS R13</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.4932664816312,51.2352988744366,0 6.4936452820121,51.2351064442184,0 6.494630105387599,51.2346132337884,0 6.4948079334076,51.2345229361511,0 
@@ -1845,6 +2002,7 @@
 		</Placemark>
 		<Placemark id="fence.75">
 			<name>ILS PROTECTION AREA</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.494943396625299,51.2344562138009,0 6.4958525015099,51.2339995433736,0 6.4964694420353,51.2336923826477,0 
@@ -1853,6 +2011,7 @@
 		</Placemark>
 		<Placemark id="fence.76">
 			<name>FENCE DIESEL STATION</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.494138582298,51.233565096253,0 6.4941494894626,51.2335432035957,0 6.494251057177699,51.2335152026612,0 6.4942422239504,51.23353471506331,0 6.494176770501801,51.23355320637311,0 6.494166955850601,51.2335383883422,0 
@@ -1861,6 +2020,7 @@
 		</Placemark>
 		<Placemark id="fence.77">
 			<name>FENCE N H4</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.4946720612122,51.2331240390631,0 6.4946878604162,51.2330975483414,0 
@@ -1869,6 +2029,7 @@
 		</Placemark>
 		<Placemark id="fence.78">
 			<name>FENCE FUEL STOCK</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.494092536929199,51.2338097521183,0 6.494005227913499,51.2337922982516,0 6.4940446267535,51.2337187636618,0 
@@ -1877,6 +2038,7 @@
 		</Placemark>
 		<Placemark id="fence.79">
 			<name>FENCE JET-A1 STOCK</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.494108202691,51.2337790588101,0 6.4940461659548,51.2337661338487,0 
@@ -1885,6 +2047,7 @@
 		</Placemark>
 		<Placemark id="fence.80">
 			<name>NORTHERN GATE NW DVOR</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.4875198677033,51.23787491403281,0 6.487579607081101,51.237883308132,0 
@@ -1893,6 +2056,7 @@
 		</Placemark>
 		<Placemark id="fence.81">
 			<name>SHELTER ILS GP R31</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.5094120932593,51.2296644046657,0 6.509381661947401,51.22967887692471,0 6.509353756405999,51.22965574578479,0 6.5093841877116,51.229641273533,0 6.5094120932593,51.2296644046657,0 
@@ -1901,6 +2065,7 @@
 		</Placemark>
 		<Placemark id="fence.82">
 			<name>FENCE SW TWY A</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.513152265370801,51.22460003784731,0 6.5125582473884,51.2246633718377,0 6.512370363006999,51.22470760576109,0 6.5122936696322,51.2247313161411,0 6.5121955030586,51.22477749310559,0 6.511890092834,51.22492012607971,0 6.5107594682034,51.22548631090689,0 6.5101298254192,51.2257958294984,0 6.509631193447899,51.22605023505751,0 6.5087850783716,51.22647849527141,0 6.508294989572399,51.22672737934819,0 6.508164026075899,51.2267797876896,0 6.507889083269601,51.2268675561874,0 6.507709775999,51.22691982616831,0 6.5076390086272,51.2269456243499,0 6.507511099362,51.22701308916851,0 
@@ -1909,6 +2074,7 @@
 		</Placemark>
 		<Placemark id="fence.83">
 			<name>FENCE</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.4963128717087,51.23127467249369,0 6.4962652347624,51.2312982078027,0 6.4962127474615,51.23125721679781,0 6.4962601655138,51.2312346394589,0 
@@ -1917,6 +2083,7 @@
 		</Placemark>
 		<Placemark id="fence.84">
 			<name>&quot;FENCE &quot;&quot;NITROMANIACS&quot;&quot; AREA&quot;</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.492724621327599,51.2310007566948,0 6.492903543354601,51.23076773567909,0 6.4928759092719,51.23074723008709,0 6.4924160926938,51.23060924565179,0 
@@ -1925,6 +2092,7 @@
 		</Placemark>
 		<Placemark id="fence.85">
 			<name>&quot;FENCE &quot;&quot;NITROMANIACS&quot;&quot; AREA&quot;</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.4923698007658,51.2305994807419,0 6.4923369915934,51.2305885185825,0 6.492300168642799,51.230575585763,0 
@@ -1933,6 +2101,7 @@
 		</Placemark>
 		<Placemark id="fence.86">
 			<name>PROTECTION AREA ILS R 13</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.4964870588564,51.2350605306945,0 6.4960473399382,51.23528382998539,0 
@@ -1941,6 +2110,7 @@
 		</Placemark>
 		<Placemark id="fence.87">
 			<name>PROTECTION AREA ILS R 13</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.495888024326399,51.23536386806939,0 6.4949716517981,51.2358208215499,0 
@@ -1949,6 +2119,7 @@
 		</Placemark>
 		<Placemark id="fence.88">
 			<name>AIRPORT FENCE</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.487579607081101,51.237883308132,0 6.4877052227269,51.2378829056322,0 6.487880434735,51.2378667096469,0 6.4884446087524,51.2377998595111,0 6.4903786646774,51.2375735511046,0 6.4916757694718,51.2374236290187,0 6.4917357755165,51.2374128777046,0 6.4917785701153,51.2373977056985,0 6.491816003024901,51.2373776729447,0 6.492056815750001,51.23723474906959,0 6.493895049534599,51.23615571775871,0 6.494125825777,51.2360192384045,0 6.4947735152184,51.2359430372968,0 6.4959029046445,51.23581247336361,0 6.4972712522932,51.23565494358779,0 6.497260863135901,51.2356097175843,0 6.499248570518899,51.23538583599291,0 6.500330689790601,51.23525892310979,0 6.5010191383092,51.2351753292077,0 
@@ -1957,6 +2128,7 @@
 		</Placemark>
 		<Placemark id="fence.89">
 			<name>AIRPORT FENCE</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.5014479875367,51.235068006342,0 6.5014952383221,51.2351096855836,0 
@@ -1965,6 +2137,7 @@
 		</Placemark>
 		<Placemark id="fence.90">
 			<name>GATRE INNER FENCE SE JU-HANGAR</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.5049792306762,51.2274767025753,0 6.50495863068,51.2274612593448,0 
@@ -1973,6 +2146,7 @@
 		</Placemark>
 		<Placemark id="fence.91">
 			<name>AIRPORT FENCE</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.4920927910551,51.2307505446922,0 6.4920670988804,51.2307510413598,0 6.4919643876414,51.2307893911763,0 6.4919465384221,51.2308108332124,0 
@@ -1981,6 +2155,7 @@
 		</Placemark>
 		<Placemark id="fence.92">
 			<name>AIRPORT FENCE</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.492199421064599,51.2309869467423,0 6.4919125232848,51.2308897770932,0 6.4919077014556,51.23087557714669,0 6.4919078035993,51.230860916246,0 6.4919172893263,51.2308502989071,0 
@@ -1989,6 +2164,7 @@
 		</Placemark>
 		<Placemark id="fence.93">
 			<name>AIRPORT FENCE</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.496114790705499,51.2311188842714,0 6.4960613122903,51.23107744422461,0 6.496105658479,51.2310556362954,0 6.4961572230372,51.23109761406801,0 6.496114790705499,51.2311188842714,0 
@@ -1997,6 +2173,7 @@
 		</Placemark>
 		<Placemark id="fence.94">
 			<name>SHELTER GP ILS RWY 13</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.5023241707427,51.23424441855001,0 6.5022964855747,51.234222201333,0 6.502265455393399,51.2342374410459,0 6.5022931405554,51.2342596582701,0 6.5023241707427,51.23424441855001,0 
@@ -2005,6 +2182,7 @@
 		</Placemark>
 		<Placemark id="fence.95">
 			<name>FENCE TRASH AREA</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.4970547155613,51.2300622117527,0 6.4969905491042,51.2300155534434,0 6.497067960243,51.22997809780031,0 6.497130173577501,51.2300277077419,0 6.4970910774006,51.2300496435366,0 6.4970547155613,51.2300622117527,0 
@@ -2013,6 +2191,7 @@
 		</Placemark>
 		<Placemark id="fence.96">
 			<name>AIRPORT FENCE</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.5014479875367,51.235068006342,0 6.5014952383221,51.2351096855836,0 6.501536173808,51.2351451902695,0 6.5022308556223,51.2350826905693,0 6.5025408749143,51.2350429069412,0 6.5033380977227,51.23496129990901,0 6.503949523506499,51.2348135170399,0 6.503878870633,51.2345376507944,0 
@@ -2021,6 +2200,7 @@
 		</Placemark>
 		<Placemark id="fence.97">
 			<name>AIRPORT FENCE INCL. GATE 10</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.5038727588755,51.2344978523985,0 6.5038326954423,51.23428288118969,0 6.5043111826176,51.23431055967911,0 6.504291480704701,51.2342407522085,0 6.503984433421999,51.2335428196958,0 6.5039487204823,51.2334202748878,0 6.504081902283799,51.2330417639868,0 6.5040711320042,51.23303070099261,0 
@@ -2029,6 +2209,7 @@
 		</Placemark>
 		<Placemark id="fence.98">
 			<name>AIRPORT FENCE</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.4958670060707,51.2309572100911,0 6.4959815525373,51.2308970208056,0 
@@ -2037,6 +2218,7 @@
 		</Placemark>
 		<Placemark id="fence.99">
 			<name>AIRPORT FENCE</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.495301021702001,51.2313945005249,0 6.4954716750151,51.2312613321247,0 6.495642327338,51.2311281634591,0 6.4957393226043,51.23105986952061,0 6.495836317582199,51.2309915754968,0 6.495877419332201,51.23096544793331,0 
@@ -2045,6 +2227,7 @@
 		</Placemark>
 		<Placemark id="fence.100">
 			<name>AIRPORT FENCE</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.495877419332201,51.23096544793331,0 6.4954228352192,51.23060582677519,0 6.4954589877622,51.2305916684646,0 
@@ -2053,6 +2236,7 @@
 		</Placemark>
 		<Placemark id="fence.101">
 			<name>AIRPORT FENCE</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.4966528375753,51.2305660704309,0 6.4965462372582,51.2304820112826,0 
@@ -2061,9 +2245,110 @@
 		</Placemark>
 	</Folder>
 	<Folder>
-		<name>Apron Marking</name>
+		<name>Markings</name>
+		<Placemark>
+			<name>13</name>
+			<Style>
+				<LineStyle>
+					<color>ff0000ff</color>
+				</LineStyle>
+				<PolyStyle>
+					<fill>0</fill>
+				</PolyStyle>
+			</Style>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								6.49836748977913,51.2335104320577,0 6.498537898857791,51.2334239489991,0 6.49853652374719,51.2334645843509,0 6.49856078145281,51.2334643036289,0 6.49855923386158,51.2334108795289,0 6.49854457311165,51.23339937003621,0 6.49835014492257,51.2334969664404,0 6.49836748977913,51.2335104320577,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								6.49834303485325,51.2333387088115,0 6.498350853494649,51.2333657316811,0 6.498317646628271,51.2333532771811,0 6.49828813318802,51.233353014612,0 6.49825657164036,51.233366142822,0 6.49824036581634,51.2333858077064,0 6.49824147689821,51.233405103905,0 6.49825613737765,51.2334256012626,0 6.49828765827359,51.2334493407575,0 6.49832126792041,51.2334639411804,0 6.498341929388309,51.2334535681449,0 6.498294392397361,51.2334320812492,0 6.4982671821227,51.2334044229344,0 6.49826856722707,51.23338868626141,0 6.49828510703492,51.2333749243731,0 6.49830635599809,51.2333687910416,0 6.49832919132418,51.23337163065669,0 6.49838046621218,51.2334036979468,0 6.49839934541082,51.23339421966649,0 6.49837034723729,51.2333686307194,0 6.49836553417013,51.2333481142205,0 6.49838006443186,51.2333329028059,0 6.49840581293133,51.233326178621,0 6.498427546150589,51.2333307549241,0 6.498446274342591,51.2333429426121,0 6.49846516858337,51.23337896677789,0 6.49848925603788,51.2333783687353,0 6.4984771420823,51.23334603914159,0 6.49844222689739,51.2333180621569,0 6.49840297904431,51.2333084229422,0 6.498365202036381,51.2333169183725,0 6.49834303485325,51.2333387088115,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark>
+			<name>31</name>
+			<Style>
+				<LineStyle>
+					<color>ff0000ff</color>
+				</LineStyle>
+				<PolyStyle>
+					<fill>0</fill>
+				</PolyStyle>
+			</Style>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								6.51056046805805,51.2272936267402,0 6.51055264313763,51.2272666045772,0 6.51058584910361,51.22727905560039,0 6.51061535883507,51.22727931501421,0 6.51064691275269,51.2272661833513,0 6.51066311110294,51.227246516627,0 6.51066199487674,51.22722722045871,0 6.51064733070265,51.2272067245877,0 6.510615807482509,51.227182988372,0 6.51058219832851,51.2271683914772,0 6.51056154240508,51.2271787667616,0 6.51060907894083,51.2272002486823,0 6.5106362931876,51.22722790420379,0 6.51063491255787,51.2272436410987,0 6.51061837863877,51.2272574048274,0 6.51059713408045,51.2272635404627,0 6.51057430092747,51.2272607032713,0 6.510523024054901,51.2272286412737,0 6.51050414984931,51.2272381215889,0 6.510533151124879,51.2272637075915,0 6.510537969083181,51.2272842236746,0 6.51052344475588,51.2272994366952,0 6.51049770132717,51.2273061636245,0 6.51047596965073,51.2273015895826,0 6.51045724060997,51.2272894037994,0 6.510438339261391,51.2272533814425,0 6.51041425507884,51.2272539819925,0 6.510426375996199,51.22728631047341,0 6.510461294137679,51.2273142839438,0 6.51050053959385,51.2273239190857,0 6.51053830955336,51.22731541962979,0 6.51056046805805,51.2272936267402,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								6.510764114360021,51.227300973701,0 6.510593750625821,51.2273874752808,0 6.51059511474658,51.2273468396005,0 6.510570860247209,51.2273471228639,0 6.510572421803779,51.2274005470435,0 6.5105870837535,51.2274120550543,0 6.510781460638521,51.2273144375081,0 6.510764114360021,51.227300973701,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark>
+			<name>Parking</name>
+			<Style>
+				<LineStyle>
+					<color>ff0000ff</color>
+				</LineStyle>
+				<PolyStyle>
+					<fill>0</fill>
+				</PolyStyle>
+			</Style>
+			<MultiGeometry>
+				<LineString>
+					<coordinates>
+						6.49820735402215,51.23154259709901,0 6.4981017891907,51.2314815140678,0 6.49799499852049,51.231403617118,0 6.49781281208539,51.2312605819997,0 6.497655246345959,51.2311368757325,0 6.4975564598147,51.23106129851979,0 6.497511529262039,51.2310260228311,0 6.49747536724051,51.2310045663636,0 6.497426430454931,51.2309839779495,0 6.4972674610622,51.2309235638647,0 6.49717174272399,51.2308820972322,0 6.49714281254781,51.2308673090834,0 
+					</coordinates>
+				</LineString>
+				<LineString>
+					<coordinates>
+						6.49878876526252,51.2312451402486,0 6.498735051993681,51.23123962616049,0 6.49867580154265,51.231221839354,0 6.49861024779147,51.23118028072041,0 6.49803075936532,51.2307273057024,0 6.497942586842469,51.2306709595337,0 6.49781239755952,51.2306143182674,0 6.497700669349411,51.2305840592238,0 
+					</coordinates>
+				</LineString>
+				<LineString>
+					<coordinates>
+						6.50182271026803,51.2296306564375,0 6.50150402962684,51.2293794853898,0 
+					</coordinates>
+				</LineString>
+				<LineString>
+					<coordinates>
+						6.50159010635876,51.2291865221149,0 6.502094967604791,51.2289290461404,0 
+					</coordinates>
+				</LineString>
+				<LineString>
+					<coordinates>
+						6.50495132574899,51.22849770321131,0 6.502708438772089,51.2296216477539,0 6.5023309718785,51.2293223521727,0 6.504568928144831,51.2281985110577,0 
+					</coordinates>
+				</LineString>
+			</MultiGeometry>
+		</Placemark>
 		<Placemark id="apron_marking.1">
 			<name>Solid</name>
+			<visibility>0</visibility>
 			<LineString>
 				<coordinates>
 					6.500402497360171,51.2303047797495,0 6.5003578691822,51.23028493381739,0 6.50030431636867,51.2302574209532,0 6.50019618543536,51.2302002691798,0 6.500090725743,51.2301306844715,0 6.49997665145264,51.23004641095449,0 6.499873658646279,51.22996291153559,0 6.49981128825378,51.2299139455789,0 6.49976368705294,51.2298871417253,0 6.499710337022511,51.2298716752106,0 6.49967237545861,51.229864327265,0 
@@ -2073,10 +2358,13 @@
 	</Folder>
 	<Folder>
 		<name>Holding Points</name>
+		<visibility>0</visibility>
 		<Folder>
 			<name>P</name>
+			<visibility>0</visibility>
 			<Placemark id="stopbars_p.1">
 				<name>B</name>
+				<visibility>0</visibility>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -2089,6 +2377,7 @@
 			</Placemark>
 			<Placemark id="stopbars_p.2">
 				<name>C</name>
+				<visibility>0</visibility>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -2101,6 +2390,7 @@
 			</Placemark>
 			<Placemark id="stopbars_p.3">
 				<name>D</name>
+				<visibility>0</visibility>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -2113,6 +2403,7 @@
 			</Placemark>
 			<Placemark id="stopbars_p.4">
 				<name>F</name>
+				<visibility>0</visibility>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -2125,6 +2416,7 @@
 			</Placemark>
 			<Placemark id="stopbars_p.5">
 				<name>A</name>
+				<visibility>0</visibility>
 				<Polygon>
 					<outerBoundaryIs>
 						<LinearRing>
@@ -2138,8 +2430,10 @@
 		</Folder>
 		<Folder>
 			<name>L</name>
+			<visibility>0</visibility>
 			<Placemark id="stopbars_l.1">
 				<name>B</name>
+				<visibility>0</visibility>
 				<LineString>
 					<coordinates>
 						6.49715964153878,51.2330059753487,0 6.49698704715679,51.2330912372548,0 
@@ -2148,6 +2442,7 @@
 			</Placemark>
 			<Placemark id="stopbars_l.2">
 				<name>C</name>
+				<visibility>0</visibility>
 				<LineString>
 					<coordinates>
 						6.50181917090322,51.2310236381616,0 6.50165570186367,51.2311042580591,0 6.50181917090322,51.2310236381616,0 
@@ -2156,6 +2451,7 @@
 			</Placemark>
 			<Placemark id="stopbars_l.3">
 				<name>D</name>
+				<visibility>0</visibility>
 				<LineString>
 					<coordinates>
 						6.50629609672332,51.2287839142877,0 6.50613314930286,51.2288642911282,0 6.50629609672332,51.2287839142877,0 
@@ -2164,6 +2460,7 @@
 			</Placemark>
 			<Placemark id="stopbars_l.4">
 				<name>A</name>
+				<visibility>0</visibility>
 				<LineString>
 					<coordinates>
 						6.49843454495762,51.2340670898716,0 6.49830601222537,51.2341306972414,0 
@@ -2172,6 +2469,7 @@
 			</Placemark>
 			<Placemark id="stopbars_l.5">
 				<name>F</name>
+				<visibility>0</visibility>
 				<LineString>
 					<coordinates>
 						6.500867167735321,51.23449689581779,0 6.50081222975861,51.2343347909923,0 6.500867167735321,51.23449689581779,0 
@@ -2180,6 +2478,7 @@
 			</Placemark>
 			<Placemark id="stopbars_l.6">
 				<name>F North</name>
+				<visibility>0</visibility>
 				<LineString>
 					<coordinates>
 						6.51038168166294,51.2263735980203,0 6.51043618460773,51.2262443406286,0 
@@ -2190,9 +2489,11 @@
 	</Folder>
 	<Folder>
 		<name>Labels</name>
+		<visibility>0</visibility>
 		<open>1</open>
 		<Placemark id="labels_buffer.1">
-			<name>Labels Buffer</name>
+			<name>Buffer</name>
+			<visibility>0</visibility>
 			<snippet></snippet>
 			<MultiGeometry>
 				<Polygon>
@@ -2262,44 +2563,52 @@
 		</Placemark>
 		<Folder>
 			<name>Taxiways</name>
+			<visibility>0</visibility>
 			<Placemark id="labels_taxiways.1">
 				<name>B</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>6.49735643330232,51.2332750253069,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="labels_taxiways.2">
 				<name>F</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>6.49867950059187,51.23434739619331,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="labels_taxiways.3">
 				<name>C</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>6.501486602398519,51.2308686074017,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="labels_taxiways.4">
 				<name>D</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>6.505968138530451,51.2286292266584,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="labels_taxiways.5">
 				<name>A#1</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>6.50799484705212,51.2272563863987,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="labels_taxiways.6">
 				<name>A#2</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>6.498323078931531,51.23210997588799,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="labels_taxiways.8">
 				<name>E#2</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>6.49754001046092,51.2319707327082,0</coordinates>
 				</Point>
@@ -2307,51 +2616,60 @@
 		</Folder>
 		<Folder>
 			<name>Stands</name>
+			<visibility>0</visibility>
 			<open>1</open>
 			<Placemark id="labels_stands.1">
 				<name>A1</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>6.5025624873604,51.2292845636386,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="labels_stands.2">
 				<name>A2</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>6.5029374617646,51.2290967468502,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="labels_stands.3">
 				<name>A3</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>6.5033123732478,51.2289092578747,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="labels_stands.4">
 				<name>A4</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>6.503686600296,51.2287213317323,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="labels_stands.5">
 				<name>A5</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>6.504061712354,51.228532782339,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="labels_stands.6">
 				<name>A6</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>6.504437596006101,51.228344562617,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="labels_stands.7">
 				<name>Commercial Area</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>6.495062108864009,51.2296259526415,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark id="labels_stands.8">
 				<name>Maintenance</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>6.50142523880687,51.2346136100234,0</coordinates>
 				</Point>
@@ -2360,26 +2678,31 @@
 	</Folder>
 	<Folder>
 		<name>TORA</name>
+		<visibility>0</visibility>
 		<Placemark id="tora.1">
 			<name>13 B F</name>
+			<visibility>0</visibility>
 			<Point>
 				<coordinates>6.498068926887481,51.2332449168376,0</coordinates>
 			</Point>
 		</Placemark>
 		<Placemark id="tora.2">
 			<name>13 C</name>
+			<visibility>0</visibility>
 			<Point>
 				<coordinates>6.50255147749809,51.2309942710033,0</coordinates>
 			</Point>
 		</Placemark>
 		<Placemark id="tora.3">
 			<name>31 D</name>
+			<visibility>0</visibility>
 			<Point>
 				<coordinates>6.50600545360203,51.2292597915844,0</coordinates>
 			</Point>
 		</Placemark>
 		<Placemark id="tora.4">
 			<name>31 A</name>
+			<visibility>0</visibility>
 			<Point>
 				<coordinates>6.5105364810674,51.2269840927101,0</coordinates>
 			</Point>
@@ -2387,20 +2710,24 @@
 	</Folder>
 	<Folder>
 		<name>AoR</name>
+		<visibility>0</visibility>
 		<Placemark id="aor_labels.1">
 			<name>LNG_</name>
+			<visibility>0</visibility>
 			<Point>
 				<coordinates>6.503864236906601,51.22980581614199,0</coordinates>
 			</Point>
 		</Placemark>
 		<Placemark id="aor_labels.2">
 			<name>LNT_</name>
+			<visibility>0</visibility>
 			<Point>
 				<coordinates>6.50521845259573,51.23086884001859,0</coordinates>
 			</Point>
 		</Placemark>
 		<Placemark id="aor_l.1">
 			<name>LNG</name>
+			<visibility>0</visibility>
 			<snippet></snippet>
 			<MultiGeometry>
 				<LineString>
@@ -2417,6 +2744,7 @@
 		</Placemark>
 		<Placemark id="aor_l.2">
 			<name>LNT</name>
+			<visibility>0</visibility>
 			<snippet></snippet>
 			<MultiGeometry>
 				<LineString>
@@ -2433,6 +2761,7 @@
 		</Placemark>
 		<Placemark id="aor_l.3">
 			<name>Area</name>
+			<visibility>0</visibility>
 			<snippet></snippet>
 			<MultiGeometry>
 				<LineString>
@@ -2450,83 +2779,65 @@
 	</Folder>
 	<Folder>
 		<name>Closures</name>
-		<open>1</open>
-		<Folder>
+		<visibility>0</visibility>
+		<Placemark>
 			<name>E 1</name>
-			<open>1</open>
-			<Placemark>
-				<name>E#1</name>
+			<visibility>0</visibility>
+			<snippet></snippet>
+			<MultiGeometry>
 				<Point>
 					<coordinates>6.49910475502461,51.23120691034899,0</coordinates>
 				</Point>
-			</Placemark>
-			<Placemark>
-				<name>E#2</name>
 				<Point>
 					<coordinates>6.500197663596069,51.2306581666262,0</coordinates>
 				</Point>
-			</Placemark>
-		</Folder>
-		<Folder>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark>
 			<name>E 2</name>
-			<open>1</open>
-			<Placemark>
-				<name>E#3</name>
+			<visibility>0</visibility>
+			<snippet></snippet>
+			<MultiGeometry>
 				<Point>
 					<coordinates>6.50109721643723,51.2302033189958,0</coordinates>
 				</Point>
-			</Placemark>
-			<Placemark>
-				<name>E#4</name>
 				<Point>
 					<coordinates>6.50208725614445,51.2297125254301,0</coordinates>
 				</Point>
-			</Placemark>
-		</Folder>
-		<Folder>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark>
 			<name>Apron</name>
-			<open>1</open>
-			<Placemark>
-				<name>Apron#1</name>
+			<visibility>0</visibility>
+			<snippet></snippet>
+			<MultiGeometry>
 				<Point>
 					<coordinates>6.49783134964964,51.23203005155229,0</coordinates>
 				</Point>
-			</Placemark>
-			<Placemark>
-				<name>Apron#2</name>
 				<Point>
 					<coordinates>6.498499433479199,51.2316946311614,0</coordinates>
 				</Point>
-			</Placemark>
-			<Placemark>
-				<name>Apron#3</name>
 				<Point>
 					<coordinates>6.50439038421393,51.2292341857928,0</coordinates>
 				</Point>
-			</Placemark>
-			<Placemark>
-				<name>Apron#4</name>
 				<Point>
 					<coordinates>6.50558044974066,51.2286904212392,0</coordinates>
 				</Point>
-			</Placemark>
-		</Folder>
-		<Folder>
+			</MultiGeometry>
+		</Placemark>
+		<Placemark>
 			<name>Runway 28</name>
-			<open>1</open>
-			<Placemark>
-				<name>Runway 28#1</name>
+			<visibility>0</visibility>
+			<snippet></snippet>
+			<MultiGeometry>
 				<Point>
 					<coordinates>6.49817713367681,51.2347465647548,0</coordinates>
 				</Point>
-			</Placemark>
-			<Placemark>
-				<name>Runway 28#2</name>
 				<Point>
 					<coordinates>6.49639894545939,51.2349674266253,0</coordinates>
 				</Point>
-			</Placemark>
-		</Folder>
+			</MultiGeometry>
+		</Placemark>
 	</Folder>
 </Folder>
 </kml>

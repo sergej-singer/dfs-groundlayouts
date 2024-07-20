@@ -10,29 +10,36 @@ FOLDER:Airport Layout
 ACTIVE:1
 {{ data.edln_layout['layout']['Base']['Base'] | to_poly('Base', 'layout-base') }}
 
-MAP:Roads
-AIRPORT:EDLN
-FOLDER:Airport Layout
-COLOR:layout-building
-{{ data.edln_layout['layout']['Roads']['Roads'][''] | simplify(default) | to_line('Roads') }}
-
 MAP:Apron Area
 AIRPORT:EDLN
 FOLDER:Airport Layout
 ACTIVE:1
 {% for apron, geom in data.edln['ApronElement'].items() %}
-{{ geom | simplify(default) | to_poly(apron, 'layout-apron') }}
+{{- geom | simplify(default) | to_poly(apron, 'layout-apron') }}
 {% endfor %}
 {{ data.edln['TaxiwayElement']['4682806b-ee15-c6ff-e053-1514a8c027b7'] | simplify(default) | to_poly('','layout-apron') }}
 {{ data.edln['TaxiwayElement']['4682806b-ee16-c6ff-e053-1514a8c027b7'] | simplify(default) | to_poly('','layout-apron') }}
 {{ data.edln['TaxiwayElement']['4682806b-ee18-c6ff-e053-1514a8c027b7'] | simplify(default) | to_poly('','layout-apron') }}
+
+MAP:Parking Area
+AIRPORT:EDLN
+FOLDER:Airport Layout
+ACTIVE:1
+COLOR:layout-taxiway
+{{ data.edln_layout['layout']['Markings']['Parking'] | to_multiline('Parking Area') }}
+
+MAP:Roads
+AIRPORT:EDLN
+FOLDER:Airport Layout
+COLOR:layout-taxiway
+{{ data.edln_layout['layout']['Roads']['Roads'] | simplify(default) | to_multiline('Roads') }}
 
 MAP:Taxiway Movement Area
 AIRPORT:EDLN
 FOLDER:Airport Layout
 ACTIVE:1
 {% for taxiway, geom in data.edln['TaxiwayElement'].items() if not taxiway in ['4682806b-ee15-c6ff-e053-1514a8c027b7', '4682806b-ee16-c6ff-e053-1514a8c027b7', '4682806b-ee18-c6ff-e053-1514a8c027b7'] %}
-{{ geom | simplify(default) | to_poly(taxiway, 'layout-taxiway') }}
+{{- geom | simplify(default) | to_poly(taxiway, 'layout-taxiway') }}
 {% endfor %}
 {{ data.edln['RunwayElement']['4682806b-f43c-c6ff-e053-1514a8c027b7'] | simplify(default) | to_poly('Runway 28','layout-taxiway') }}
 {{ data.edln['RunwayElement']['4682806b-edc5-c6ff-e053-1514a8c027b7'] | simplify(default) | to_poly('Runway 28','layout-taxiway') }}
@@ -43,7 +50,7 @@ FOLDER:Airport Layout
 ACTIVE:1
 {{ data.edln['RunwayElement']['4682806b-f43d-c6ff-e053-1514a8c027b7'] | simplify(default) | to_poly('Runway 31/13','layout-runway') }}
 {% for blastpad, geom in data.edln['RunwayBlastPad'].items() %}
-{{ geom | simplify(0.00001) | to_poly('BlastPad','layout-apron') }}
+{{- geom | simplify(0.00001) | to_poly('BlastPad','layout-apron') }}
 {% endfor %}
 
 MAP:Leadin Lines
@@ -54,7 +61,7 @@ COLOR:layout-taxiline-grey
 {% for taxilane in ['f17a', 'f17b', 'f17c', 'f17d', 'f17e', 'f17f', 'f180', 'f181', 'f182', 'f183', 'f184', 'f185', 'f18d', 'f18e', 'f18f', 'f190', 'f191', 'f192', 'f193', 'f194', 'f195', 'f196', 'f197', 'f198', 'f199', 'f19a', 'f19b', 'f19c', 'f19d', 'f19e', 'f19f', 'f1a0', 'f1a1', 'f1a2', 'f1a3', 'f1a4', 'f1a5', 'f1a6', 'f1a7', 'f1a8', 'f1a9', 'f1ab', 'f1ac', 'f1b3', 'f1b4', 'f1b5', 'f1b6', 'f1b7', 'f1b8', 'f573', 'f578', 'f579', 'f57a', 'f57f', 'f581', 'f582', 'f583', 'f584', 'f586', 'f59c', 'f59d', 'f59e', 'f59f', 'f5a0', 'f5a1', 'f5a2', 'f5a3', 'f5a4', 'f5a5', 'f5a6', 'f5a9', 'f5aa','f186', 'f187', 'f188', 'f189', 'f18a', 'f18c', 'f18b', 'f1aa', 'f577'] %}
 {{- data.edln['GuidanceLine']['4682806b-' + taxilane + '-c6ff-e053-1514a8c027b7' | string] | join_segments | simplify(default) | to_line(taxilane) }}
 {% endfor %}
-{{ data.edln_layout['layout']['Apron Marking']['Solid'] | to_line('') }}
+{{ data.edln_layout['layout']['Markings']['Solid'] | to_line('') }}
 
 MAP:Taxi Lanes
 AIRPORT:EDLN
@@ -70,10 +77,10 @@ AIRPORT:EDLN
 FOLDER:Airport Layout
 ACTIVE:1
 {% for building, geom in data.edln_layout['layout']['Buildings'].items() %}
-{{ geom | simplify(default) | to_poly(building, 'layout-building') }}
+{{- geom | simplify(default) | to_poly(building, 'layout-building') }}
 {% endfor %}
 COLOR:layout-building
 {% for fence, geom in data.edln_layout['layout']['Fence'].items() %}
-{{ geom | to_line(fence) }}
+{{- geom | to_line(fence) }}
 {% endfor %}
 

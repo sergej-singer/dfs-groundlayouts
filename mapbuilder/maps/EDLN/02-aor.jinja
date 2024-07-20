@@ -6,14 +6,14 @@ FOLDER:AoR
 ACTIVE:1
 COLOR:layout-taxiline-grey
 STYLE:Dot
-{{ data.edln_layout['layout']['AoR']['Area'][''] | to_line('Non-movement Area') }}
+{{ data.edln_layout['layout']['AoR']['Area'] | to_multiline('Non-movement Area') }}
 
 MAP:EDLN_GND
 AIRPORT:EDLN
 FOLDER:AoR
 COLOR:aor-gnd-a
 STYLE:Dot
-{{ data.edln_layout['layout']['AoR']['LNG'][''] | to_line('LWG') }}
+{{ data.edln_layout['layout']['AoR']['LNG'] | to_multiline('LWG') }}
 ZOOM:600
 FONTSIZE:=:13
 {{ data.edln_layout['layout']['AoR']['LNG_'] | to_text('LNG  121.930') }}
@@ -23,7 +23,7 @@ AIRPORT:EDLN
 FOLDER:AoR
 COLOR:aor-twr-a
 STYLE:Dot
-{{ data.edln_layout['layout']['AoR']['LNT'][''] | to_line('LNT') }}
+{{ data.edln_layout['layout']['AoR']['LNT'] | to_multiline('LNT') }}
 ZOOM:600
 FONTSIZE:=:13
 {{ data.edln_layout['layout']['AoR']['LNT_'] | to_text('LNT  120.455') }}

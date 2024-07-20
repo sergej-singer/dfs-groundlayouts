@@ -1,12 +1,5 @@
 // -------------------------- Ground Layout -------------------------
 {% set default = 0.000005 %}
-MAP:Apron Area
-AIRPORT:EDLW
-FOLDER:Airport Layout
-ACTIVE:1
-{{ data.edlw_layout['layout']['Apron']['Apron'] | to_poly('Apron', 'layout-apron') }}
-{{ data.edlw_layout['layout']['Apron']['L'] | to_poly('L', 'layout-apron') }}
-
 MAP:Taxiway Movement Area
 AIRPORT:EDLW
 FOLDER:Airport Layout
@@ -31,14 +24,14 @@ AIRPORT:EDLW
 FOLDER:Airport Layout
 ACTIVE:1
 COLOR:layout-taxiline-grey
-{{ data.edlw_layout['layout']['Apron Marking']['Solid'][''] | join_segments | simplify(default) | to_line('') }}
+{{ data.edlw_layout['layout']['Markings']['Solid'] | join_segments | simplify(default) | to_multiline('') }}
 {% for taxilane in ['GAT_SEGMENT_62', 'GAT_SEGMENT_63', 'GAT_SEGMENT_64', 'GAT_SEGMENT_65'] %}
 {{- data.edlw['GuidanceLineByDesig'][ taxilane | string ] | join_segments | simplify(default) | to_line(taxilane) }}
 {% endfor %}
-{{ data.edlw_layout['layout']['Apron Marking']['Poly'][''] | to_poly('', 'layout-taxiline-grey') }}
+{{ data.edlw_layout['layout']['Markings']['Poly'] | to_multipoly('', 'layout-taxiline-grey') }}
 COLOR:layout-taxiline-grey
 STYLE:Dot:1
-{{ data.edlw_layout['layout']['Apron Marking']['Dash'][''] | join_segments | simplify(default) | to_line('') }}
+{{ data.edlw_layout['layout']['Markings']['Dash'] | join_segments | simplify(default) | to_multiline('') }}
 
 MAP:Taxi Lanes
 AIRPORT:EDLW
