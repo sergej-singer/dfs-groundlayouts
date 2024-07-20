@@ -12,17 +12,17 @@
 #type = "kml"
 #source = "kml/EDDL/layout.kml"
 #
-[data.eddg_layout]
-type = "kml"
-source = "kml/EDDG/layout.kml"
-#
-#[data.edlp]
-#type = "aixm"
-#source = "aixm/EDLP_AerodromeMapping_2024-05-16_2024-05-16_snapshot.xml"
-#
-#[data.edlp_layout]
+#[data.eddg_layout]
 #type = "kml"
-#source = "kml/EDLP/layout.kml"
+#source = "kml/EDDG/layout.kml"
+#
+[data.edlp]
+type = "aixm"
+source = "aixm/EDLP_AerodromeMapping_2024-05-16_2024-05-16_snapshot.xml"
+
+[data.edlp_layout]
+type = "kml"
+source = "kml/EDLP/layout.kml"
 #
 #[data.edlw]
 #type = "aixm"
@@ -55,8 +55,8 @@ source = "kml/EDDG/layout.kml"
 [profiles.Default]
 maps = [
 #    { map = "EDDL", target = "grp/eddl.txt" },
-    { map = "EDDG", target = "grp/eddg.txt" },
-#    { map = "EDLP", target = "grp/edlp.txt" },
+#    { map = "EDDG", target = "grp/eddg.txt" },
+    { map = "EDLP", target = "grp/edlp.txt" },
 #    { map = "EDLW", target = "grp/edlw.txt" },
 #    { map = "EDLN", target = "grp/edln.txt" },
 #    { map = "EDLV", target = "grp/edlv.txt" }

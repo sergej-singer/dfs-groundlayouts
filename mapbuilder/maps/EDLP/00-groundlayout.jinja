@@ -10,26 +10,33 @@ FOLDER:Airport Layout
 ACTIVE:1
 {{ data.edlp_layout['layout']['Base']['Base'] | to_poly('Base', 'layout-base') }}
 
-MAP:Roads
-AIRPORT:EDLP
-FOLDER:Airport Layout
-COLOR:layout-building
-{{ data.edlp_layout['layout']['Roads']['Roads'][''] | to_line('Roads') }}
-
 MAP:Apron Area
 AIRPORT:EDLP
 FOLDER:Airport Layout
 ACTIVE:1
 {% for apron, geom in data.edlp['ApronElement'].items() %}
-{{ geom | simplify(default) | to_poly(apron, 'layout-apron') }}
+{{- geom | simplify(default) | to_poly(apron, 'layout-apron') }}
 {% endfor %}
+
+MAP:Parking Area
+AIRPORT:EDLP
+FOLDER:Airport Layout
+ACTIVE:1
+COLOR:layout-taxiway
+{{ data.edlp_layout['layout']['Markings']['Parking'] | to_multiline('Parking Area') }}
+
+MAP:Roads
+AIRPORT:EDLP
+FOLDER:Airport Layout
+COLOR:layout-taxiway
+{{ data.edlp_layout['layout']['Roads']['Roads'] | to_multiline('Roads') }}
 
 MAP:Taxiway Movement Area
 AIRPORT:EDLP
 FOLDER:Airport Layout
 ACTIVE:1
 {% for taxiway, geom in data.edlp['TaxiwayElement'].items() %}
-{{ geom | simplify(default) | to_poly(taxiway, 'layout-taxiway') }}
+{{- geom | simplify(default) | to_poly(taxiway, 'layout-taxiway') }}
 {% endfor %}
 
 MAP:Runway
@@ -67,7 +74,7 @@ AIRPORT:EDLP
 FOLDER:Airport Layout
 ACTIVE:1
 {% for building, geom in data.edlp['VerticalStructureByName'].items() if building not in ['ANFLUGBEFEUERUNG'] %}
-{{ geom | simplify(default) | to_poly(building, 'layout-building') }}
+{{- geom | simplify(default) | to_poly(building, 'layout-building') }}
 {% endfor %}
 COLOR:layout-building
-{{ data.edlp_layout['layout']['Fence']['Fence'][''] | to_line('Fence') }}
+{{ data.edlp_layout['layout']['Fence']['Fence'] | to_multiline('Fence') }}

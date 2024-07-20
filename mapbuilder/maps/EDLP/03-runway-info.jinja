@@ -18,12 +18,18 @@ TEXTALIGN:LC
 {{ data.edlp_layout['layout']['TORA']['06 C'] | to_text('1610') }}
 {{ data.edlp_layout['layout']['TORA']['06 D'] | to_text('2180') }}
 
+MAP:Runway Designators
+AIRPORT:EDLP
+FOLDER:Runway Info
+ACTIVE:1
+{{ data.edlp_layout['layout']['Markings']['24'] | to_multipoly('24', 'layout-runway-marking') }}
+{{ data.edlp_layout['layout']['Markings']['06'] | to_multipoly('06', 'layout-runway-marking') }}
+
 MAP:Runway Markings
 AIRPORT:EDLP
 FOLDER:Runway Info
-{% for marking, geom in data.edlp_layout['layout']['Markings'].items() %}
-{{ geom[''] | to_poly(marking, 'layout-runway') }}
-{% endfor %}
+{{ data.edlp_layout['layout']['Markings']['Runway'] | to_multipoly('', 'layout-runway') }}
 {% for marking, geom in data.edlp['RunwayMarking'].items() %}
-{{ geom | to_poly(marking, 'layout-runway-marking') }}
+{{- geom | to_poly(marking, 'layout-runway-marking') }}
 {% endfor %}
+
