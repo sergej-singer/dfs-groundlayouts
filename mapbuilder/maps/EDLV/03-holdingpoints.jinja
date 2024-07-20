@@ -36,5 +36,5 @@ AIRPORT:EDLV
 FOLDER:Holding Points
 ACTIVE:1
 COLOR:layout-holdingpoint
-{{ data.edlv_layout['layout']['Holding Points']['L']['GAT 1'][''] | to_line(holdingpoint) }}
-{{ data.edlv_layout['layout']['Holding Points']['L']['GAT 2'] | to_line(holdingpoint) }}
+{{ data.edlv_layout['layout']['Holding Points']['L']['GAT 1'] | to_multiline('') }}
+{{ data.edlv_layout['layout']['Holding Points']['L']['GAT 2'] | to_line('') }}

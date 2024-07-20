@@ -29,5 +29,5 @@ MAP:Runway Markings
 AIRPORT:EDLW
 FOLDER:Runway Info
 {% for marking, geom in data.edlw['RunwayMarking'].items() %}
-{{ geom | to_poly(marking, 'layout-runway-marking') }}
+{{- geom | to_poly(marking, 'layout-runway-marking') }}
 {% endfor %}
