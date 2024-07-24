@@ -26,7 +26,7 @@ TEXTALIGN:LC
 COLOR:restrictions-C
 STYLE:SOLID:2
 {{ data.eddl_layout['layout']['Restrictions']['L3'] | to_line('') }}
-{{ data.eddl_layout['layout']['Restrictions']['L3='][''] | to_poly('', 'restrictions-C') }}
+{{ data.eddl_layout['layout']['Restrictions']['L3='] | to_multipoly('', 'restrictions-C') }}
 TEXTALIGN:RC
 {{ data.eddl_layout['layout']['Restrictions']['L3_'] | to_text('Max code C') }}
 

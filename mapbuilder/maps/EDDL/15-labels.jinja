@@ -3,9 +3,9 @@ MAP:Taxiways
 AIRPORT:EDDL
 FOLDER:Labels
 ACTIVE:1
-ZOOM:600
-{{ data.eddl_layout['layout']['Labels']['Buffer T'][''] | to_poly('', 'layout-taxiway') }}
-{{ data.eddl_layout['layout']['Labels']['Buffer A'][''] | to_poly('', 'layout-apron') }}
+ZOOM:400
+{{ data.eddl_layout['layout']['Labels']['Buffer T'] | to_multipoly('', 'layout-taxiway') }}
+{{ data.eddl_layout['layout']['Labels']['Buffer A'] | to_multipoly('', 'layout-apron') }}
 FONTSIZE:=:10
 COLOR:layout-label-taxiway
 {% for desig, geom in data.eddl_layout['layout']['Labels']['Taxiways'].items() %}
@@ -16,7 +16,7 @@ MAP:Checkpoints
 AIRPORT:EDDL
 FOLDER:Labels
 ACTIVE:1
-ZOOM:1000
+ZOOM:800
 FONTSIZE:=:9
 COLOR:layout-holdingpoint
 TEXTALIGN:CC
@@ -30,7 +30,7 @@ MAP:Areas
 AIRPORT:EDDL
 FOLDER:Labels
 ACTIVE:1
-ZOOM:600
+ZOOM:400
 FONTSIZE:=:9
 COLOR:layout-label-stand
 {% for desig in ['GAT', 'Police'] %}

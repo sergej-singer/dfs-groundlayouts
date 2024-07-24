@@ -5,7 +5,7 @@ MAP:Taxiway Movement Area
 AIRPORT:EDDL
 FOLDER:Airport Layout
 ACTIVE:1
-{{ data.eddl_layout['layout']['Taxiways']['Taxiways'][''] | to_poly('Taxi Area','layout-taxiway') }}
+{{ data.eddl_layout['layout']['Taxiways']['Taxiways'] | to_multipoly('Taxi Area','layout-taxiway') }}
 
 MAP:Runways
 AIRPORT:EDDL

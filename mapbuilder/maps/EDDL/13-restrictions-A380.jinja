@@ -3,17 +3,17 @@
 MAP:23L
 AIRPORT:EDDL
 FOLDER:A380
-{{ data.eddl_layout['layout']['A380']['23 ARR='][''] | to_poly('', 'restrictions-C') }}
-{{ data.eddl_layout['layout']['A380']['23 DEP='][''] | to_poly('', 'restrictions-D') }}
+{{ data.eddl_layout['layout']['A380']['23 ARR='] | to_multipoly('', 'restrictions-C') }}
+{{ data.eddl_layout['layout']['A380']['23 DEP='] | to_multipoly('', 'restrictions-D') }}
 STYLE:SOLID:3
 COLOR:restrictions-C
-{{ data.eddl_layout['layout']['A380']['23 ARR'][''] | to_line('') }}
+{{ data.eddl_layout['layout']['A380']['23 ARR'] | to_multiline('') }}
 COLOR:restrictions-D
-{{ data.eddl_layout['layout']['A380']['23 DEP'][''] | to_line('') }}
+{{ data.eddl_layout['layout']['A380']['23 DEP'] | to_multiline('') }}
 
 STYLE:SOLID:2
 COLOR:restrictions-AB
-{{ data.eddl_layout['layout']['Restrictions']['A380'][''] | to_line('') }}
+{{ data.eddl_layout['layout']['Restrictions']['A380'] | to_multiline('') }}
 COLOR:restrictions-AB
 {% for desig, geom in data.eddl_layout['layout']['A380']['Stop'].items() %}
 {{- geom | to_symbol('VERBOT_1') }}
@@ -56,17 +56,17 @@ COLOR:restrictions-F
 MAP:05R
 AIRPORT:EDDL
 FOLDER:A380
-{{ data.eddl_layout['layout']['A380']['05 ARR='][''] | to_poly('', 'restrictions-C') }}
-{{ data.eddl_layout['layout']['A380']['05 DEP='][''] | to_poly('', 'restrictions-D') }}
+{{ data.eddl_layout['layout']['A380']['05 ARR='] | to_multipoly('', 'restrictions-C') }}
+{{ data.eddl_layout['layout']['A380']['05 DEP='] | to_multipoly('', 'restrictions-D') }}
 STYLE:SOLID:3
 COLOR:restrictions-C
-{{ data.eddl_layout['layout']['A380']['05 ARR'][''] | to_line('') }}
+{{ data.eddl_layout['layout']['A380']['05 ARR'] | to_multiline('') }}
 COLOR:restrictions-D
-{{ data.eddl_layout['layout']['A380']['05 DEP'][''] | to_line('') }}
+{{ data.eddl_layout['layout']['A380']['05 DEP'] | to_multiline('') }}
 
 STYLE:SOLID:2
 COLOR:restrictions-AB
-{{ data.eddl_layout['layout']['Restrictions']['A380'][''] | to_line('') }}
+{{ data.eddl_layout['layout']['Restrictions']['A380'] | to_multiline('') }}
 COLOR:restrictions-AB
 {% for desig, geom in data.eddl_layout['layout']['A380']['Stop'].items() %}
 {{- geom | to_symbol('VERBOT_1') }}

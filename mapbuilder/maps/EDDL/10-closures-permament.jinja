@@ -7,6 +7,6 @@ COORDTYPE:TWYCLOSED:REGION
 STYLE:Solid:2
 ACTIVE:1
 {{ data.eddl_layout['layout']['Closures']['K4'] | to_poly('K4','closure') }}
-{{ data.eddl_layout['layout']['Closures']['K4/Runway 15'][''] | to_poly('K4','closure-symbol-eddl') }}
+{{ data.eddl_layout['layout']['Closures']['K4/Runway 15'] | to_multipoly('K4','closure-symbol-eddl') }}
 COORDTYPE:TWYCLOSED:NONE
-{{ data.eddl_layout['layout']['Closures']['Runway 15'][''] | to_poly('Runway 15') }}
+{{ data.eddl_layout['layout']['Closures']['Runway 15'] | to_multipoly('Runway 15') }}

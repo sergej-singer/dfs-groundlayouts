@@ -77,16 +77,16 @@ STYLE:Dot
 
 
 // Taxi-Out Stands
-{{ data.eddl_layout['layout']['Apron Marking']['Poly'][''] | to_poly('','layout-eddl-taxiline-grey') }}
+{{ data.eddl_layout['layout']['Apron Marking']['Poly'] | to_multipoly('','layout-eddl-taxiline-grey') }}
 
 // Labels
-ZOOM:800
+ZOOM:600
 FONTSIZE:=:9
 COLOR:layout-label-stand
 {% for desig, geom in data.eddl_layout['layout']['Labels']['Stands'].items() if not desig in ['A05', 'A11', 'A12A', 'B05', 'B07', 'C02A', 'C03A', 'V04', 'V06', 'V38A', 'V38B', 'V39A', 'V41A', 'V61A', 'V72A', 'V82A', 'V91A', 'V103A', 'V104A', 'V106A', 'V107A', 'V01', 'V02A', 'V03A', 'V04A', 'V05A', 'V07A', 'V08A', 'V08B', 'V08C', 'V11A', 'V11B', 'V11C', 'GAT', 'Polizei'] %}
 {{- geom | to_text(desig) }}
 {% endfor %}
-ZOOM:1600
+ZOOM:1200
 {% for desig in ['A05', 'A11', 'A12A', 'B05', 'B07', 'C02A', 'C03A', 'V04', 'V06', 'V38A', 'V38B', 'V39A', 'V41A', 'V61A', 'V72A', 'V82A', 'V91A', 'V103A', 'V104A', 'V106A', 'V107A'] %}
 {{- data.eddl_layout['layout']['Labels']['Stands'][desig | string] | to_text(desig) }}
 {% endfor %}
@@ -124,7 +124,7 @@ STYLE:Dot
 {% endfor %}
 
 // Taxi-Out Stands
-{{ data.eddl_layout['layout']['Apron Marking']['Poly 2'][''] | to_poly('','layout-eddl-taxiline-grey') }}
+{{ data.eddl_layout['layout']['Apron Marking']['Poly 2'] | to_multipoly('','layout-eddl-taxiline-grey') }}
 
 // V01
 COLOR:layout-taxiway
@@ -132,7 +132,7 @@ STYLE:Solid
 {{ data.eddl_layout['layout']['Apron Marking']['Parking V01'] | to_line('Parking Area V01') }}
 
 // Labels
-ZOOM:800
+ZOOM:600
 FONTSIZE:=:9
 COLOR:layout-label-stand
 {% for desig in ['V01', 'V02A', 'V03A', 'V04A', 'V05A', 'V07A', 'V08A', 'V08B', 'V08C', 'V11A', 'V11B', 'V11C'] %}
@@ -144,7 +144,7 @@ COLOR:layout-label-stand
 MAP:Heli Stands
 AIRPORT:EDDL
 FOLDER:Stands
-ZOOM:800
+ZOOM:600
 FONTSIZE:=:10
 COLOR:layout-label-stand
 {% for desig, geom in data.eddl_layout['layout']['Labels']['Heli'].items() %}

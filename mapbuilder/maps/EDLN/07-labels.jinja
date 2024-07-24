@@ -4,7 +4,7 @@ MAP:Taxiways
 AIRPORT:EDLN
 FOLDER:Labels
 ACTIVE:1
-ZOOM:600
+ZOOM:400
 {{ data.edln_layout['layout']['Labels']['Buffer'] | to_multipoly('', 'layout-taxiway') }}
 FONTSIZE:=:10
 COLOR:layout-label-taxiway
@@ -16,7 +16,7 @@ MAP:Stands
 AIRPORT:EDLN
 FOLDER:Labels
 ACTIVE:1
-ZOOM:800
+ZOOM:600
 FONTSIZE:=:9
 COLOR:layout-label-stand
 {% for stand, geom in data.edln_layout['layout']['Labels']['Stands'].items() %}

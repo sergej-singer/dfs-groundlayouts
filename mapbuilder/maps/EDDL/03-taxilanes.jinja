@@ -23,8 +23,8 @@ COLOR:layout-eddl-taxiline-yellow
 {% for desig in ['TWYK_23R', 'TWYK1_1', 'TWYL1_2', 'TWYK1_23R', 'TWYK1_TWYL1_1', 'TWYK1_TWYL2_1', 'TWYK1_TWYL2_2', 'TWYK3_05L', 'TWYK3_1', 'TWYK5_1', 'TWYK5_2', 'TWYL3_23R'] %}
 {{- data.eddl['GuidanceLineByDesig'][desig | string] | join_segments | simplify(default) | to_line(desig) }}
 {% endfor %}
-{{ data.eddl_layout['layout']['Apron Marking']['K5'][''] | join_segments | simplify(default) | to_line('K5') }}
-{{ data.eddl_layout['layout']['Apron Marking']['L2'][''] | join_segments | simplify(default) | to_line('L2') }}
+{{ data.eddl_layout['layout']['Apron Marking']['K5'] | join_segments | simplify(default) | to_multiline('K5') }}
+{{ data.eddl_layout['layout']['Apron Marking']['L2'] | join_segments | simplify(default) | to_multiline('L2') }}
 
 STYLE:Dot
-{{ data.eddl_layout['layout']['Apron Marking']['L1'][''] | join_segments | simplify(default) | to_line('L1') }}
+{{ data.eddl_layout['layout']['Apron Marking']['L1'] | join_segments | simplify(default) | to_multiline('L1') }}

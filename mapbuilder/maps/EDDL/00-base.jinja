@@ -16,8 +16,8 @@ MAP:Apron Area
 AIRPORT:EDDL
 FOLDER:Airport Layout
 ACTIVE:1
-{{ data.eddl_layout['layout']['Apron']['Apron'][''] | to_poly('Apron','layout-apron') }}
-{{ data.eddl_layout['layout']['Apron']['K5'][''] | to_poly('K5','layout-apron') }}
+{{ data.eddl_layout['layout']['Apron']['Apron'] | to_multipoly('Apron','layout-apron') }}
+{{ data.eddl_layout['layout']['Apron']['K5'] | to_multipoly('K5','layout-apron') }}
 
 // --------------------------- Parking Area -------------------------
 
@@ -26,7 +26,7 @@ AIRPORT:EDDL
 FOLDER:Airport Layout
 ACTIVE:1
 COLOR:layout-taxiway
-{{ data.eddl_layout['layout']['Apron Marking']['Parking'][''] | simplify(default) | to_line('Parking Area') }}
+{{ data.eddl_layout['layout']['Apron Marking']['Parking'] | simplify(default) | to_multiline('Parking Area') }}
 
 // ------------------------------- Roads ----------------------------
 
@@ -35,4 +35,4 @@ AIRPORT:EDDL
 FOLDER:Airport Layout
 ACTIVE:1
 COLOR:layout-taxiway
-{{ data.eddl_layout['layout']['Roads']['Roads'][''] | simplify(default) | to_line('Roads') }}
+{{ data.eddl_layout['layout']['Roads']['Roads'] | simplify(default) | to_multiline('Roads') }}

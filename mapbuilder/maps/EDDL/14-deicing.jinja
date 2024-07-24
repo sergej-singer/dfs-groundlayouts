@@ -34,7 +34,7 @@ STYLE:Solid:1
 
 // Arrows
 COORDTYPE:OTHER:REGION
-{{ data.eddl_layout['layout']['Deicing']['PADE='][''] | to_poly('', 'layout-eddl-taxiline-yellow') }}
+{{ data.eddl_layout['layout']['Deicing']['PADE='] | to_multipoly('', 'layout-eddl-taxiline-yellow') }}
 
 // Taxilines
 COLOR:layout-eddl-taxiline-yellow
@@ -111,7 +111,7 @@ STYLE:Solid:1
 
 // Arrows
 COORDTYPE:OTHER:REGION
-{{ data.eddl_layout['layout']['Deicing']['PADW='][''] | to_poly('', 'layout-eddl-taxiline-yellow') }}
+{{ data.eddl_layout['layout']['Deicing']['PADW='] | to_multipoly('', 'layout-eddl-taxiline-yellow') }}
 
 // Taxilines
 COLOR:layout-eddl-taxiline-yellow

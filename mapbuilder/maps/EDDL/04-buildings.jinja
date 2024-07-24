@@ -82,8 +82,8 @@ ACTIVE:1
     '4e9e87d1-28fc-dbb5-e053-1514a8c0ce95',
     '4e9e87d1-291d-dbb5-e053-1514a8c0ce95'
     ] %}
-{{ geom | simplify(default) | to_poly(building, 'layout-building') }}
+{{- geom | simplify(default) | to_poly(building, 'layout-building') }}
 {% endfor %}
-{{ data.eddl_layout['layout']['Buildings']['Buildings'][''] | to_poly('Buildings', 'layout-building') }}
+{{ data.eddl_layout['layout']['Buildings']['Buildings'] | to_multipoly('Buildings', 'layout-building') }}
 COLOR:layout-building
-{{ data.eddl_layout['layout']['Fence']['Fence'][''] | to_line('Fence') }}
+{{ data.eddl_layout['layout']['Fence']['Fence'] | to_multiline('Fence') }}

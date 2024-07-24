@@ -30,8 +30,8 @@ FOLDER:Holding Points
 ACTIVE:1
 COLOR:layout-holdingpoint
 STYLE:SOLID:2
-{{ data.eddl_layout['layout']['Holding Points']['L']['CP 1'][''] | to_line('CP 1') }}
-{{ data.eddl_layout['layout']['Holding Points']['L']['CP 2'][''] | to_line('CP 2') }}
+{{ data.eddl_layout['layout']['Holding Points']['L']['CP 1'] | to_multiline('CP 1') }}
+{{ data.eddl_layout['layout']['Holding Points']['L']['CP 2'] | to_multiline('CP 2') }}
 
 MAP:All Stopbars
 AIRPORT:EDDL

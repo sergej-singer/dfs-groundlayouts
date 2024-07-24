@@ -106,10 +106,10 @@ MAP:Runway Designators
 AIRPORT:EDDL
 FOLDER:Runway Info
 ACTIVE:1
-{{ data.eddl_layout['layout']['Runways']['Marking']['23L'][''] | to_poly('23L', 'layout-runway-marking') }}
-{{ data.eddl_layout['layout']['Runways']['Marking']['23R'][''] | to_poly('23R', 'layout-runway-marking') }}
-{{ data.eddl_layout['layout']['Runways']['Marking']['05L'][''] | to_poly('05L', 'layout-runway-marking') }}
-{{ data.eddl_layout['layout']['Runways']['Marking']['05R'][''] | to_poly('05R', 'layout-runway-marking') }}
+{{ data.eddl_layout['layout']['Runways']['Marking']['23L'] | to_multipoly('23L', 'layout-runway-marking') }}
+{{ data.eddl_layout['layout']['Runways']['Marking']['23R'] | to_multipoly('23R', 'layout-runway-marking') }}
+{{ data.eddl_layout['layout']['Runways']['Marking']['05L'] | to_multipoly('05L', 'layout-runway-marking') }}
+{{ data.eddl_layout['layout']['Runways']['Marking']['05R'] | to_multipoly('05R', 'layout-runway-marking') }}
 
 MAP:Runway Markings
 AIRPORT:EDDL
@@ -151,7 +151,7 @@ FOLDER:Runway Info
     'de162807-4914-d2fc-e053-86c812acd642',
     'de162807-4915-d2fc-e053-86c812acd642'
 ] %}
-{{ geom | to_poly(marking, 'layout-runway-marking') }}
+{{- geom | to_poly(marking, 'layout-runway-marking') }}
 {% endfor %}
 {% for marking in ['48f2', '48f4', '48f5', '48f6', '48f7', '48f8', '48f9', '48fa', '48fb', '48fc', '48fd', '48fe', '48ff', '4900', '4901', '4902', '4903', '4904', '4905', '4906', '4907', '4908', '4909', '490a', '490b', '490c', '490d', '490e', '490f', '4910', '4911', '4912', '4913', '4914', '4915'] %}
 {{- data.eddl['RunwayMarking']['de162807-' + marking + '-d2fc-e053-86c812acd642' | string] | to_poly(marking, 'layout-taxiway') }}
