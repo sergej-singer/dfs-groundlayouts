@@ -11,6 +11,10 @@ source = "aixm/EDDL_AerodromeMapping_2024-06-13_2024-06-13_snapshot.xml"
 [data.eddl_layout]
 type = "kml"
 source = "kml/EDDL/layout.kml"
+
+[data.eddl_notam]
+type = "kml"
+source = "kml/EDDL/notam.kml"
 #
 #[data.eddg_layout]
 #type = "kml"

@@ -13,6 +13,9 @@
 { "type": "Feature", "properties": { "name": "PAD3W_" }, "geometry": { "type": "Point", "coordinates": [ 343651.826797940186225, 5683162.611820521764457 ] } },
 { "type": "Feature", "properties": { "name": "PAD4W_" }, "geometry": { "type": "Point", "coordinates": [ 343642.833890062524006, 5683033.555980065837502 ] } },
 { "type": "Feature", "properties": { "name": "23L/05R" }, "geometry": { "type": "Point", "coordinates": [ 344321.116831293562427, 5684232.917227304540575 ] } },
-{ "type": "Feature", "properties": { "name": "23R/05L" }, "geometry": { "type": "Point", "coordinates": [ 344033.002042388019618, 5684636.839264224283397 ] } }
+{ "type": "Feature", "properties": { "name": "23R/05L" }, "geometry": { "type": "Point", "coordinates": [ 344033.002042388019618, 5684636.839264224283397 ] } },
+{ "type": "Feature", "properties": { "name": "PAD1W_ NOTAM" }, "geometry": { "type": "Point", "coordinates": [ 343696.980803810060024, 5683317.193485205993056 ] } },
+{ "type": "Feature", "properties": { "name": "PAD3W_ NOTAM" }, "geometry": { "type": "Point", "coordinates": [ 343671.724736753210891, 5682887.96833186969161 ] } },
+{ "type": "Feature", "properties": { "name": "PAD4W_ NOTAM" }, "geometry": { "type": "Point", "coordinates": [ 343694.44276077975519, 5682841.390852043405175 ] } }
 ]
 }

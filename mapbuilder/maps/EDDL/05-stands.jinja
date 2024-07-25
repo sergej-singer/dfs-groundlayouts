@@ -83,11 +83,15 @@ STYLE:Dot
 ZOOM:600
 FONTSIZE:=:9
 COLOR:layout-label-stand
-{% for desig, geom in data.eddl_layout['layout']['Labels']['Stands'].items() if not desig in ['A05', 'A11', 'A12A', 'B05', 'B07', 'C02A', 'C03A', 'V04', 'V06', 'V38A', 'V38B', 'V39A', 'V41A', 'V61A', 'V72A', 'V82A', 'V91A', 'V103A', 'V104A', 'V106A', 'V107A', 'V01', 'V02A', 'V03A', 'V04A', 'V05A', 'V07A', 'V08A', 'V08B', 'V08C', 'V11A', 'V11B', 'V11C', 'GAT', 'Polizei'] %}
+
+// Closed due to NOTAM A3920/24:
+// 'B05', 'B06', 'B07', 'B08', 'V61A'
+
+{% for desig, geom in data.eddl_layout['layout']['Labels']['Stands'].items() if not desig in ['A05', 'A11', 'A12A', 'B05', 'B07', 'C02A', 'C03A', 'V04', 'V06', 'V38A', 'V38B', 'V39A', 'V41A', 'V61A', 'V72A', 'V82A', 'V91A', 'V103A', 'V104A', 'V106A', 'V107A', 'V01', 'V02A', 'V03A', 'V04A', 'V05A', 'V07A', 'V08A', 'V08B', 'V08C', 'V11A', 'V11B', 'V11C', 'GAT', 'Polizei', 'B06', 'B08'] %}
 {{- geom | to_text(desig) }}
 {% endfor %}
 ZOOM:1200
-{% for desig in ['A05', 'A11', 'A12A', 'B05', 'B07', 'C02A', 'C03A', 'V04', 'V06', 'V38A', 'V38B', 'V39A', 'V41A', 'V61A', 'V72A', 'V82A', 'V91A', 'V103A', 'V104A', 'V106A', 'V107A'] %}
+{% for desig in ['A05', 'A11', 'A12A', 'C02A', 'C03A', 'V04', 'V06', 'V38A', 'V38B', 'V39A', 'V41A', 'V72A', 'V82A', 'V91A', 'V103A', 'V104A', 'V106A', 'V107A'] %}
 {{- data.eddl_layout['layout']['Labels']['Stands'][desig | string] | to_text(desig) }}
 {% endfor %}
 
@@ -148,7 +152,7 @@ ZOOM:600
 FONTSIZE:=:10
 COLOR:layout-label-stand
 {% for desig, geom in data.eddl_layout['layout']['Labels']['Heli'].items() %}
-{{- geom | to_text('H') }}
+{{- geom | to_text('H:-1:0') }}
 {% endfor %}
 {% for desig, geom in data.eddl_layout['layout']['Labels']['Heli'].items() %}
 {{- geom | to_symbol('CIRCLE') }}

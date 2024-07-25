@@ -7,7 +7,6 @@
 	<Folder>
 		<name>Border</name>
 		<visibility>0</visibility>
-		<open>1</open>
 		<Placemark>
 			<name>Border</name>
 			<visibility>0</visibility>
@@ -912,6 +911,7 @@
 	<Folder>
 		<name>Apron</name>
 		<visibility>0</visibility>
+		<open>1</open>
 		<Placemark>
 			<name>GAT 2</name>
 			<visibility>0</visibility>
@@ -999,8 +999,10 @@
 	</Folder>
 	<Folder>
 		<name>Markings</name>
+		<visibility>0</visibility>
 		<Placemark>
 			<name>Parking</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -1205,7 +1207,6 @@
 	<Folder>
 		<name>Labels</name>
 		<visibility>0</visibility>
-		<open>1</open>
 		<Placemark>
 			<name>Buffer</name>
 			<visibility>0</visibility>
