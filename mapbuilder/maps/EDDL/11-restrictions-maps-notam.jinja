@@ -189,10 +189,10 @@ COLOR:restrictions-E
 {% endfor %}
 
 COLOR:restrictions-F
-{% for desig in ['C02A', 'V38B'] %}
+{% for desig in ['C02A'] %}
 {{- data.eddl_layout['layout']['Restrictions']['Stands'][desig | string] | to_symbol('STAND') }}
 {% endfor %}
-{% for desig in ['V08B', 'V11B'] %}
+{% for desig in ['V08B', 'V11B', 'V38B'] %}
 {{- data.eddl_layout['layout']['Restrictions']['Stands'][desig | string] | to_symbol('STAND_S') }}
 {% endfor %}
 
