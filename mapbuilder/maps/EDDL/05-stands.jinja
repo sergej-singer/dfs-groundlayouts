@@ -91,9 +91,11 @@ COLOR:layout-label-stand
 {{- geom | to_text(desig) }}
 {% endfor %}
 ZOOM:1200
-{% for desig in ['A05', 'A11', 'A12A', 'C02A', 'C03A', 'V04', 'V06', 'V38A', 'V38B', 'V39A', 'V41A', 'V72A', 'V82A', 'V91A', 'V103A', 'V104A', 'V106A', 'V107A'] %}
+{% for desig in ['A05', 'A11', 'C03A', 'V04', 'V06', 'V38A', 'V38B', 'V39A', 'V41A', 'V72A', 'V82A', 'V91A', 'V103A', 'V104A', 'V106A', 'V107A'] %}
 {{- data.eddl_layout['layout']['Labels']['Stands'][desig | string] | to_text(desig) }}
 {% endfor %}
+{{ data.eddl_layout['layout']['Labels']['Stands']['A12'] | to_text('A12A:0:11') }}
+{{ data.eddl_layout['layout']['Labels']['Stands']['C02'] | to_text('C02A         ') }}
 
 // ------------------------ Additional Stands -----------------------
 
