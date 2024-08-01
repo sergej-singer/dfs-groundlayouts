@@ -47,6 +47,9 @@
 { "type": "Feature", "properties": { "name": "24A" }, "geometry": { "type": "Point", "coordinates": [ 410611.303858084429521, 5776642.832021351903677 ] } },
 { "type": "Feature", "properties": { "name": "24" }, "geometry": { "type": "Point", "coordinates": [ 410630.662598991766572, 5776648.846531390212476 ] } },
 { "type": "Feature", "properties": { "name": "24B" }, "geometry": { "type": "Point", "coordinates": [ 410650.156198256532662, 5776655.124011628329754 ] } },
-{ "type": "Feature", "properties": { "name": "25" }, "geometry": { "type": "Point", "coordinates": [ 410704.722766407299787, 5776672.476419646292925 ] } }
+{ "type": "Feature", "properties": { "name": "25" }, "geometry": { "type": "Point", "coordinates": [ 410704.722766407299787, 5776672.476419646292925 ] } },
+{ "type": "Feature", "properties": { "name": "Apron West" }, "geometry": { "type": "Point", "coordinates": [ 409943.237927181937266, 5776421.076007133349776 ] } },
+{ "type": "Feature", "properties": { "name": "Central Apron" }, "geometry": { "type": "Point", "coordinates": [ 410225.643587723432574, 5776446.466294387355447 ] } },
+{ "type": "Feature", "properties": { "name": "Apron East" }, "geometry": { "type": "Point", "coordinates": [ 410607.896901534229983, 5776573.476038173772395 ] } }
 ]
 }

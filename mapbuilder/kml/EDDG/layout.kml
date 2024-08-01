@@ -2,6 +2,7 @@
 <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
 <Folder>
 	<name>layout</name>
+	<visibility>0</visibility>
 	<open>1</open>
 	<Folder>
 		<name>Base</name>
@@ -537,8 +538,10 @@
 	</Folder>
 	<Folder>
 		<name>Runways</name>
+		<visibility>0</visibility>
 		<Placemark>
 			<name>25/07</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -559,6 +562,7 @@
 		</Placemark>
 		<Placemark>
 			<name>Glider</name>
+			<visibility>0</visibility>
 			<snippet></snippet>
 			<Style>
 				<LineStyle>
@@ -926,9 +930,10 @@
 	</Folder>
 	<Folder>
 		<name>Markings</name>
-		<open>1</open>
+		<visibility>0</visibility>
 		<Placemark>
 			<name>25</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -960,6 +965,7 @@
 		</Placemark>
 		<Placemark>
 			<name>07</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -2968,11 +2974,12 @@
 	<Folder>
 		<name>Holding Points</name>
 		<visibility>0</visibility>
-		<open>1</open>
 		<Folder>
 			<name>L</name>
+			<visibility>0</visibility>
 			<Placemark>
 				<name>C I</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -3006,6 +3013,7 @@
 			</Placemark>
 			<Placemark>
 				<name>A I</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -3382,6 +3390,133 @@
 	<Folder>
 		<name>Labels</name>
 		<visibility>0</visibility>
+		<open>1</open>
+		<Placemark>
+			<name>Apron West</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>7.6843145399977,52.1309658112184,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Central Apron</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>7.688432474604481,52.1312399793111,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Apron East</name>
+			<visibility>0</visibility>
+			<Point>
+				<coordinates>7.69398208268772,52.1324435630006,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Buffer</name>
+			<visibility>0</visibility>
+			<snippet></snippet>
+			<Style>
+				<LineStyle>
+					<color>ff0000ff</color>
+				</LineStyle>
+				<PolyStyle>
+					<fill>0</fill>
+				</PolyStyle>
+			</Style>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								7.68273914603959,52.1331556697921,0 7.682953433511901,52.1332020619603,0 7.68303991219851,52.1330532825878,0 7.682823327744381,52.1330095306767,0 7.68273914603959,52.1331556697921,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								7.671282795563881,52.130432810709,0 7.67149705774408,52.13047922354729,0 7.671583569010501,52.1303304527349,0 7.67136700931792,52.13028667992809,0 7.671282795563881,52.130432810709,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								7.67144531150958,52.1299485393457,0 7.671659571549679,52.1299949518776,0 7.67174608130971,52.129846180924,0 7.6715295237922,52.1298024084271,0 7.67144531150958,52.1299485393457,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								7.67759442429676,52.1314375310333,0 7.677808698043891,52.1314839324719,0 7.67789519037335,52.1313351569241,0 7.67767861943212,52.1312913956416,0 7.67759442429676,52.1314375310333,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								7.68855690304862,52.1331572246261,0 7.68877119676032,52.1332036062623,0 7.688857656142279,52.1330548224928,0 7.688641065790739,52.1330110812292,0 7.68855690304862,52.1331572246261,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								7.69228531347019,52.1339549576571,0 7.69249961498829,52.134001332563,0 7.692586063587571,52.13385254600639,0 7.692369465607009,52.13380881154671,0 7.69228531347019,52.1339549576571,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								7.695696221382159,52.1352697044783,0 7.69591053283821,52.135316073241,0 7.695996972738999,52.1351672841572,0 7.695780364952089,52.1351235559074,0 7.695696221382159,52.1352697044783,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								7.70003656108607,52.1364530110464,0 7.70025088284649,52.1364993719796,0 7.70033731070017,52.1363505796622,0 7.70012069280208,52.13630685932719,0 7.70003656108607,52.1364530110464,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								7.700294675491739,52.1360407418765,0 7.70050899555707,52.1360871023323,0 7.7005954217317,52.1359383098044,0 7.70037880556552,52.13589458995229,0 7.700294675491739,52.1360407418765,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								7.683212456766171,52.13231736794471,0 7.68342674073838,52.1323637592353,0 7.68351321618095,52.1322149794734,0 7.68329663529873,52.1321712284499,0 7.683212456766171,52.13231736794471,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
 		<Folder>
 			<name>Stands</name>
 			<visibility>0</visibility>
@@ -3703,9 +3838,10 @@
 		</Folder>
 		<Folder>
 			<name>Taxiways</name>
-			<open>1</open>
+			<visibility>0</visibility>
 			<Placemark>
 				<name>Glider Area</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.67908944095487,52.1355853594147,0</coordinates>
 				</Point>
@@ -3732,13 +3868,6 @@
 				</Point>
 			</Placemark>
 			<Placemark>
-				<name>C</name>
-				<visibility>0</visibility>
-				<Point>
-					<coordinates>7.68288811197602,52.1331046509647,0</coordinates>
-				</Point>
-			</Placemark>
-			<Placemark>
 				<name>B#1</name>
 				<visibility>0</visibility>
 				<Point>
@@ -3760,6 +3889,20 @@
 				</Point>
 			</Placemark>
 			<Placemark>
+				<name>C#1</name>
+				<visibility>0</visibility>
+				<Point>
+					<coordinates>7.68288811197602,52.1331046509647,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>C#2</name>
+				<visibility>0</visibility>
+				<Point>
+					<coordinates>7.68336152892821,52.1322661003687,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
 				<name>D</name>
 				<visibility>0</visibility>
 				<Point>
@@ -3774,102 +3917,6 @@
 				</Point>
 			</Placemark>
 		</Folder>
-		<Placemark>
-			<name>Buffer</name>
-			<visibility>0</visibility>
-			<snippet></snippet>
-			<Style>
-				<LineStyle>
-					<color>ff0000ff</color>
-				</LineStyle>
-				<PolyStyle>
-					<fill>0</fill>
-				</PolyStyle>
-			</Style>
-			<MultiGeometry>
-				<Polygon>
-					<outerBoundaryIs>
-						<LinearRing>
-							<coordinates>
-								7.68273914603959,52.1331556697921,0 7.682953433511901,52.1332020619603,0 7.68303991219851,52.1330532825878,0 7.682823327744381,52.1330095306767,0 7.68273914603959,52.1331556697921,0 
-							</coordinates>
-						</LinearRing>
-					</outerBoundaryIs>
-				</Polygon>
-				<Polygon>
-					<outerBoundaryIs>
-						<LinearRing>
-							<coordinates>
-								7.671282795563881,52.130432810709,0 7.67149705774408,52.13047922354729,0 7.671583569010501,52.1303304527349,0 7.67136700931792,52.13028667992809,0 7.671282795563881,52.130432810709,0 
-							</coordinates>
-						</LinearRing>
-					</outerBoundaryIs>
-				</Polygon>
-				<Polygon>
-					<outerBoundaryIs>
-						<LinearRing>
-							<coordinates>
-								7.67144531150958,52.1299485393457,0 7.671659571549679,52.1299949518776,0 7.67174608130971,52.129846180924,0 7.6715295237922,52.1298024084271,0 7.67144531150958,52.1299485393457,0 
-							</coordinates>
-						</LinearRing>
-					</outerBoundaryIs>
-				</Polygon>
-				<Polygon>
-					<outerBoundaryIs>
-						<LinearRing>
-							<coordinates>
-								7.67759442429676,52.1314375310333,0 7.677808698043891,52.1314839324719,0 7.67789519037335,52.1313351569241,0 7.67767861943212,52.1312913956416,0 7.67759442429676,52.1314375310333,0 
-							</coordinates>
-						</LinearRing>
-					</outerBoundaryIs>
-				</Polygon>
-				<Polygon>
-					<outerBoundaryIs>
-						<LinearRing>
-							<coordinates>
-								7.68855690304862,52.1331572246261,0 7.68877119676032,52.1332036062623,0 7.688857656142279,52.1330548224928,0 7.688641065790739,52.1330110812292,0 7.68855690304862,52.1331572246261,0 
-							</coordinates>
-						</LinearRing>
-					</outerBoundaryIs>
-				</Polygon>
-				<Polygon>
-					<outerBoundaryIs>
-						<LinearRing>
-							<coordinates>
-								7.69228531347019,52.1339549576571,0 7.69249961498829,52.134001332563,0 7.692586063587571,52.13385254600639,0 7.692369465607009,52.13380881154671,0 7.69228531347019,52.1339549576571,0 
-							</coordinates>
-						</LinearRing>
-					</outerBoundaryIs>
-				</Polygon>
-				<Polygon>
-					<outerBoundaryIs>
-						<LinearRing>
-							<coordinates>
-								7.695696221382159,52.1352697044783,0 7.69591053283821,52.135316073241,0 7.695996972738999,52.1351672841572,0 7.695780364952089,52.1351235559074,0 7.695696221382159,52.1352697044783,0 
-							</coordinates>
-						</LinearRing>
-					</outerBoundaryIs>
-				</Polygon>
-				<Polygon>
-					<outerBoundaryIs>
-						<LinearRing>
-							<coordinates>
-								7.70003656108607,52.1364530110464,0 7.70025088284649,52.1364993719796,0 7.70033731070017,52.1363505796622,0 7.70012069280208,52.13630685932719,0 7.70003656108607,52.1364530110464,0 
-							</coordinates>
-						</LinearRing>
-					</outerBoundaryIs>
-				</Polygon>
-				<Polygon>
-					<outerBoundaryIs>
-						<LinearRing>
-							<coordinates>
-								7.700294675491739,52.1360407418765,0 7.70050899555707,52.1360871023323,0 7.7005954217317,52.1359383098044,0 7.70037880556552,52.13589458995229,0 7.700294675491739,52.1360407418765,0 
-							</coordinates>
-						</LinearRing>
-					</outerBoundaryIs>
-				</Polygon>
-			</MultiGeometry>
-		</Placemark>
 	</Folder>
 	<Folder>
 		<name>Closures</name>
@@ -3884,7 +3931,7 @@
 	</Folder>
 	<Folder>
 		<name>Restrictions</name>
-		<open>1</open>
+		<visibility>0</visibility>
 		<Placemark>
 			<name>30x</name>
 			<visibility>0</visibility>
@@ -4013,6 +4060,7 @@
 		</Placemark>
 		<Placemark>
 			<name>Glider</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -4033,6 +4081,7 @@
 		</Placemark>
 		<Placemark>
 			<name>Glider_</name>
+			<visibility>0</visibility>
 			<Point>
 				<coordinates>7.68169625406391,52.13506741740821,0</coordinates>
 			</Point>
@@ -4053,6 +4102,7 @@
 		</Placemark>
 		<Placemark>
 			<name>30x_</name>
+			<visibility>0</visibility>
 			<Point>
 				<coordinates>7.68546174565047,52.1314550711297,0</coordinates>
 			</Point>
@@ -4080,6 +4130,7 @@
 		</Placemark>
 		<Placemark>
 			<name>Ref</name>
+			<visibility>0</visibility>
 			<Point>
 				<coordinates>7.69985455546573,52.1340901849635,0</coordinates>
 			</Point>

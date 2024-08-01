@@ -16,9 +16,9 @@
 #type = "kml"
 #source = "kml/EDDL/notam.kml"
 #
-#[data.eddg_layout]
-#type = "kml"
-#source = "kml/EDDG/layout.kml"
+[data.eddg_layout]
+type = "kml"
+source = "kml/EDDG/layout.kml"
 #
 #[data.edlp]
 #type = "aixm"
@@ -67,12 +67,12 @@ source = "kml/EDSB/layout.kml"
 [profiles.Default]
 maps = [
 #    { map = "EDDL", target = "grp/eddl.txt" },
-#    { map = "EDDG", target = "grp/eddg.txt" },
+    { map = "EDDG", target = "grp/eddg.txt" },
 #    { map = "EDLP", target = "grp/edlp.txt" },
 #    { map = "EDLW", target = "grp/edlw.txt" },
 #    { map = "EDLN", target = "grp/edln.txt" },
 #    { map = "EDLV", target = "grp/edlv.txt" },
-    { map = "EDSB", target = "grp/edsb.txt" },
+#    { map = "EDSB", target = "grp/edsb.txt" },
 ]
 dir = "grp"
 aliases = [ "Default" ]
