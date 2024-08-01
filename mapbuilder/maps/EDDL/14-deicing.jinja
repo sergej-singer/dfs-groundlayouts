@@ -30,7 +30,7 @@ STYLE:Solid:1
 {% for desig in ['PAD1E', 'PAD2E', 'PAD3E', 'PAD4E'] %}
 {{- data.eddl_layout['layout']['Deicing'][desig | string] | to_poly(desig, 'layout-runway') }}
 {% endfor %}
-{{ data.eddl_layout['layout']['Deicing']['V11B'] | to_poly('V11B', 'runway-marking') }}
+{{ data.eddl_layout['layout']['Deicing']['V11B'] | to_poly('V11B', 'layout-runway') }}
 
 // Arrows
 COORDTYPE:OTHER:REGION

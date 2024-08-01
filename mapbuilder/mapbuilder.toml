@@ -52,6 +52,14 @@
 #type = "kml"
 #source = "kml/EDLV/layout.kml"
 
+[data.edsb]
+type = "aixm"
+source = "aixm/EDSB_AerodromeMapping_2024-07-11_2024-07-11_snapshot.xml"
+
+[data.edsb_layout]
+type = "kml"
+source = "kml/EDSB/layout.kml"
+
 
 
 [profiles]
@@ -63,7 +71,8 @@ maps = [
 #    { map = "EDLP", target = "grp/edlp.txt" },
 #    { map = "EDLW", target = "grp/edlw.txt" },
 #    { map = "EDLN", target = "grp/edln.txt" },
-#    { map = "EDLV", target = "grp/edlv.txt" }
+#    { map = "EDLV", target = "grp/edlv.txt" },
+    { map = "EDSB", target = "grp/edsb.txt" },
 ]
 dir = "grp"
 aliases = [ "Default" ]
@@ -157,3 +166,14 @@ loc = [ 51.602973, 6.118241 ]
 thr = [ 51.602834, 6.124530 ] 
 bearing = 92
 
+#-----------EDSB--------------
+
+[runways.EDSB.21]
+thr = [ 48.788850, 8.089408 ]
+bearing = 212
+loc = [ 48.766042, 8.068028 ]
+
+[runways.EDSB.03]
+thr = [ 48.769861, 8.071612 ] 
+bearing = 32
+loc = [ 48.792711, 8.093026 ]
