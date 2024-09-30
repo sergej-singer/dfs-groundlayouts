@@ -12,6 +12,14 @@
 #type = "kml"
 #source = "kml/EDDL/layout.kml"
 #
+[data.eddk]
+type = "aixm"
+source = "aixm/EDDK_AerodromeMapping_2024-09-05_2024-09-05_snapshot.xml"
+
+[data.eddk_layout]
+type = "kml"
+source = "kml/EDDK/layout.kml"
+#
 #[data.eddl_notam]
 #type = "kml"
 #source = "kml/EDDL/notam.kml"
@@ -68,9 +76,9 @@
 #ype = "kml"
 #ource = "kml/EDFH/layout.kml"
 #
-[data.edfm_layout]
-type = "kml"
-source = "kml/EDFM/layout.kml"
+#[data.edfm_layout]
+#type = "kml"
+#source = "kml/EDFM/layout.kml"
 #
 #[data.edsb]
 #type = "aixm"
@@ -87,6 +95,7 @@ source = "kml/EDFM/layout.kml"
 [profiles.Default]
 maps = [
 #    { map = "EDDL", target = "grp/eddl.txt" },
+    { map = "EDDK", target = "grp/eddk.txt" },
 #    { map = "EDDG", target = "grp/eddg.txt" },
 #    { map = "EDDR", target = "grp/eddr.txt" },
 #    { map = "EDLP", target = "grp/edlp.txt" },
@@ -94,7 +103,7 @@ maps = [
 #    { map = "EDLN", target = "grp/edln.txt" },
 #    { map = "EDLV", target = "grp/edlv.txt" },
 #    { map = "EDFH", target = "grp/edfh.txt" },
-    { map = "EDFM", target = "grp/edfm.txt" },
+#    { map = "EDFM", target = "grp/edfm.txt" },
 #    { map = "EDSB", target = "grp/edsb.txt" },
 ]
 dir = "grp"
@@ -133,6 +142,35 @@ loc = [ 51.281945, 6.745040 ]
 thr = [ 51.285295, 6.752085 ] 
 bearing = 53
 loc = [ 51.300616, 6.784241 ]
+
+#-----------EDDK--------------
+
+[runways.EDDK.31L]
+thr = [ 50.858539, 7.138712 ]
+bearing = 317
+
+[runways.EDDK.13R]
+thr = [ 50.870811, 7.120923 ] 
+bearing = 137
+
+[runways.EDDK.31R]
+thr = [ 50.855240, 7.165640 ]
+bearing = 317
+loc = [ 50.884460, 7.123307 ]
+
+[runways.EDDK.13L]
+thr = [ 50.880434, 7.129133 ] 
+bearing = 137
+loc = [ 50.852869, 7.169062 ]
+
+[runways.EDDK.24]
+thr = [ 50.869653, 7.155208 ]
+bearing = 244
+loc = [ 50.858977, 7.120022 ]
+
+[runways.EDDK.06]
+thr = [ 50.860151, 7.123862 ] 
+bearing = 64
 
 #-----------EDDG--------------
 

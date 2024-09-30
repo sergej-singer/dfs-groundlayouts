@@ -1,0 +1,11 @@
+// ----------------------- Permament Closures -----------------------
+
+MAP:Permament
+AIRPORT:EDDK
+FOLDER:Closures
+ACTIVE:1
+STYLE:Solid:2
+COORDTYPE:TWYCLOSED:REGION
+{{ data.eddk_layout['layout']['Closures']['Permament'] | to_multipoly('','closure') }}
+STYLE:Solid:1
+{{ data.eddk_layout['layout']['Closures']['X'] | to_multipoly('Cross','closure-symbol-eddl') }}
