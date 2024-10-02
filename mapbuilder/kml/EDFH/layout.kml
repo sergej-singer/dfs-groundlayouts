@@ -2,11 +2,14 @@
 <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
 <Folder>
 	<name>layout</name>
+	<visibility>0</visibility>
 	<open>1</open>
 	<Folder>
 		<name>Base</name>
+		<visibility>0</visibility>
 		<Placemark>
 			<name>Base</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -28,8 +31,10 @@
 	</Folder>
 	<Folder>
 		<name>Roads</name>
+		<visibility>0</visibility>
 		<Placemark>
 			<name>Roads</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -369,8 +374,10 @@
 	</Folder>
 	<Folder>
 		<name>Apron</name>
+		<visibility>0</visibility>
 		<Placemark>
 			<name>Apron</name>
+			<visibility>0</visibility>
 			<snippet></snippet>
 			<Style>
 				<LineStyle>
@@ -429,9 +436,10 @@
 	</Folder>
 	<Folder>
 		<name>Taxiways</name>
-		<open>1</open>
+		<visibility>0</visibility>
 		<Placemark>
 			<name>Taxiways</name>
+			<visibility>0</visibility>
 			<snippet></snippet>
 			<Style>
 				<LineStyle>
@@ -474,8 +482,10 @@
 	</Folder>
 	<Folder>
 		<name>Buildings</name>
+		<visibility>0</visibility>
 		<Placemark>
 			<name>Buildings</name>
+			<visibility>0</visibility>
 			<snippet></snippet>
 			<Style>
 				<LineStyle>
@@ -509,8 +519,10 @@
 	</Folder>
 	<Folder>
 		<name>Fence</name>
+		<visibility>0</visibility>
 		<Placemark>
 			<name>Fence</name>
+			<visibility>0</visibility>
 			<snippet></snippet>
 			<Style>
 				<LineStyle>
@@ -631,8 +643,10 @@
 	</Folder>
 	<Folder>
 		<name>Markings</name>
+		<visibility>0</visibility>
 		<Placemark>
 			<name>03</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -664,6 +678,7 @@
 		</Placemark>
 		<Placemark>
 			<name>21</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -695,6 +710,7 @@
 		</Placemark>
 		<Placemark>
 			<name>Parking</name>
+			<visibility>0</visibility>
 			<snippet></snippet>
 			<Style>
 				<LineStyle>
@@ -725,11 +741,14 @@
 	</Folder>
 	<Folder>
 		<name>Holding Points</name>
+		<visibility>0</visibility>
 		<Folder>
 			<name>L</name>
+			<visibility>0</visibility>
 			<open>1</open>
 			<Placemark>
 				<name>E I</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -746,6 +765,7 @@
 			</Placemark>
 			<Placemark>
 				<name>C I</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -762,6 +782,7 @@
 			</Placemark>
 			<Placemark>
 				<name>D I</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -778,6 +799,7 @@
 			</Placemark>
 			<Placemark>
 				<name>F I</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -794,6 +816,7 @@
 			</Placemark>
 			<Placemark>
 				<name>A I</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -811,9 +834,11 @@
 		</Folder>
 		<Folder>
 			<name>P</name>
+			<visibility>0</visibility>
 			<open>1</open>
 			<Placemark>
 				<name>E I</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -834,6 +859,7 @@
 			</Placemark>
 			<Placemark>
 				<name>C I</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -854,6 +880,7 @@
 			</Placemark>
 			<Placemark>
 				<name>D I</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -874,6 +901,7 @@
 			</Placemark>
 			<Placemark>
 				<name>F I</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -894,6 +922,7 @@
 			</Placemark>
 			<Placemark>
 				<name>A I</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -914,6 +943,7 @@
 			</Placemark>
 			<Placemark>
 				<name>A III</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -934,6 +964,7 @@
 			</Placemark>
 			<Placemark>
 				<name>C III</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -954,6 +985,7 @@
 			</Placemark>
 			<Placemark>
 				<name>D III</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -974,6 +1006,7 @@
 			</Placemark>
 			<Placemark>
 				<name>E III</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -994,6 +1027,7 @@
 			</Placemark>
 			<Placemark>
 				<name>F III</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -1014,6 +1048,7 @@
 			</Placemark>
 			<Placemark>
 				<name>M III</name>
+				<visibility>0</visibility>
 				<Style>
 					<LineStyle>
 						<color>ff0000ff</color>
@@ -1036,8 +1071,10 @@
 	</Folder>
 	<Folder>
 		<name>LVP</name>
+		<visibility>0</visibility>
 		<Placemark>
 			<name>Sensitive Area</name>
+			<visibility>0</visibility>
 			<snippet></snippet>
 			<Style>
 				<LineStyle>
@@ -1062,6 +1099,7 @@
 		</Placemark>
 		<Placemark>
 			<name>Critical Area</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -1083,50 +1121,59 @@
 	</Folder>
 	<Folder>
 		<name>TORA</name>
+		<visibility>0</visibility>
 		<Placemark>
 			<name>03 B1</name>
+			<visibility>0</visibility>
 			<Point>
 				<coordinates>7.247858484078201,49.93152592325379,0</coordinates>
 			</Point>
 		</Placemark>
 		<Placemark>
 			<name>03 B2</name>
+			<visibility>0</visibility>
 			<Point>
 				<coordinates>7.249403765665569,49.9330940701375,0</coordinates>
 			</Point>
 		</Placemark>
 		<Placemark>
 			<name>03 C</name>
+			<visibility>0</visibility>
 			<Point>
 				<coordinates>7.25578354641284,49.9395669712367,0</coordinates>
 			</Point>
 		</Placemark>
 		<Placemark>
 			<name>03 D</name>
+			<visibility>0</visibility>
 			<Point>
 				<coordinates>7.26197175582569,49.945843535817,0</coordinates>
 			</Point>
 		</Placemark>
 		<Placemark>
 			<name>21</name>
+			<visibility>0</visibility>
 			<Point>
 				<coordinates>7.27507310288761,49.9591255481122,0</coordinates>
 			</Point>
 		</Placemark>
 		<Placemark>
 			<name>21 F</name>
+			<visibility>0</visibility>
 			<Point>
 				<coordinates>7.2731194461918,49.95714550185749,0</coordinates>
 			</Point>
 		</Placemark>
 		<Placemark>
 			<name>21 E</name>
+			<visibility>0</visibility>
 			<Point>
 				<coordinates>7.266717279049629,49.9506555022952,0</coordinates>
 			</Point>
 		</Placemark>
 		<Placemark>
 			<name>21 D</name>
+			<visibility>0</visibility>
 			<Point>
 				<coordinates>7.26141417404071,49.9452780723561,0</coordinates>
 			</Point>
@@ -1134,8 +1181,10 @@
 	</Folder>
 	<Folder>
 		<name>AoR</name>
+		<visibility>0</visibility>
 		<Placemark>
 			<name>FHG</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -1152,6 +1201,7 @@
 		</Placemark>
 		<Placemark>
 			<name>FHT</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -1168,6 +1218,7 @@
 		</Placemark>
 		<Placemark>
 			<name>LVP FHG</name>
+			<visibility>0</visibility>
 			<snippet></snippet>
 			<Style>
 				<LineStyle>
@@ -1192,6 +1243,7 @@
 		</Placemark>
 		<Placemark>
 			<name>LVP FHT</name>
+			<visibility>0</visibility>
 			<snippet></snippet>
 			<Style>
 				<LineStyle>
@@ -1216,24 +1268,28 @@
 		</Placemark>
 		<Placemark>
 			<name>FHG_</name>
+			<visibility>0</visibility>
 			<Point>
 				<coordinates>7.26495979489304,49.9474519145066,0</coordinates>
 			</Point>
 		</Placemark>
 		<Placemark>
 			<name>FHT_</name>
+			<visibility>0</visibility>
 			<Point>
 				<coordinates>7.26227853982963,49.94855290169049,0</coordinates>
 			</Point>
 		</Placemark>
 		<Placemark>
 			<name>LVP1_</name>
+			<visibility>0</visibility>
 			<Point>
 				<coordinates>7.274296387392029,49.9554392903708,0</coordinates>
 			</Point>
 		</Placemark>
 		<Placemark>
 			<name>LVP2_</name>
+			<visibility>0</visibility>
 			<Point>
 				<coordinates>7.2584807619798,49.9372673010153,0</coordinates>
 			</Point>
@@ -1241,14 +1297,17 @@
 	</Folder>
 	<Folder>
 		<name>Closures</name>
+		<visibility>0</visibility>
 		<Placemark>
 			<name>Apron</name>
+			<visibility>0</visibility>
 			<Point>
 				<coordinates>7.275909202957401,49.9554379475841,0</coordinates>
 			</Point>
 		</Placemark>
 		<Placemark>
 			<name>Runway</name>
+			<visibility>0</visibility>
 			<MultiGeometry>
 				<Point>
 					<coordinates>7.25581665880295,49.9398492896014,0</coordinates>
@@ -1261,8 +1320,11 @@
 	</Folder>
 	<Folder>
 		<name>Labels</name>
+		<visibility>0</visibility>
+		<open>1</open>
 		<Placemark>
 			<name>Buffer</name>
+			<visibility>0</visibility>
 			<snippet></snippet>
 			<Style>
 				<LineStyle>
@@ -1394,281 +1456,538 @@
 		</Placemark>
 		<Placemark>
 			<name>APN 2</name>
+			<visibility>0</visibility>
 			<Point>
 				<coordinates>7.2634998684481,49.9421163395361,0</coordinates>
 			</Point>
 		</Placemark>
 		<Placemark>
 			<name>APN 3</name>
+			<visibility>0</visibility>
 			<Point>
 				<coordinates>7.27034892841799,49.94971160906941,0</coordinates>
 			</Point>
 		</Placemark>
 		<Placemark>
 			<name>APN 4</name>
+			<visibility>0</visibility>
 			<Point>
 				<coordinates>7.273846509086559,49.9532942037291,0</coordinates>
 			</Point>
 		</Placemark>
 		<Placemark>
 			<name>APN 5</name>
+			<visibility>0</visibility>
 			<Point>
 				<coordinates>7.27938204181928,49.957478114233,0</coordinates>
 			</Point>
 		</Placemark>
 		<Folder>
 			<name>Taxiways</name>
+			<visibility>0</visibility>
 			<Placemark>
 				<name>D</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.26252915047739,49.9452321958955,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
 				<name>C</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.2563656434324,49.93898071616179,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
 				<name>B2</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.249605473528609,49.9325842185784,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
 				<name>B1</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.248073224182799,49.9310292905913,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
 				<name>E</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.26735925959119,49.94998153967181,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
 				<name>A#1</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.249938012858869,49.9313347651177,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
 				<name>A#2</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.25397855430095,49.93543460272421,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
 				<name>A#3</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.26176067870063,49.94110291621201,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
 				<name>A#4</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.266861277140699,49.94682321332871,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
 				<name>A#5</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.27182165986707,49.95183507875859,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
 				<name>F</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.274714995471509,49.95663921891531,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
 				<name>G</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.27599135210713,49.9572481624303,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
 				<name>M</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.27590116570618,49.9563009747294,0</coordinates>
 				</Point>
 			</Placemark>
 		</Folder>
 		<Folder>
-			<name>Stands</name>
+			<name>Stands New</name>
+			<visibility>0</visibility>
+			<open>1</open>
 			<Placemark>
-				<name>M3</name>
+				<name>#M3</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.28040730828048,49.9579722549497,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
-				<name>M1</name>
+				<name>#M1</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.279828834936089,49.9568045870188,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
-				<name>B5</name>
+				<name>325</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.27025031671587,49.9486534868233,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
-				<name>D2</name>
+				<name>331</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.27146824758274,49.9489177892172,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
-				<name>F</name>
+				<name>351</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.27276271332536,49.95035271360901,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
-				<name>G4</name>
+				<name>441</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.27643800790709,49.9537043530924,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
-				<name>M2</name>
+				<name>#M2</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.28064185519067,49.95762833433229,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
-				<name>G1</name>
+				<name>411</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.274305645464169,49.951885353905,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
-				<name>A6</name>
+				<name>316</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.26849506165164,49.9475566135221,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
-				<name>M5</name>
+				<name>#M5</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.281588711152799,49.9585874952329,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
-				<name>B1</name>
+				<name>321</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.26969617865857,49.9474181599458,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
-				<name>A2</name>
+				<name>312</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.26794850414244,49.9463197386682,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
-				<name>A5</name>
+				<name>315</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.268970982150309,49.94736091265441,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
-				<name>G2</name>
+				<name>421</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.27523331751804,49.9523578118438,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
-				<name>D3</name>
+				<name>332</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.271435306742831,49.949141164308,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
-				<name>A1</name>
+				<name>311</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.26842462537205,49.9461242927114,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
-				<name>B4</name>
+				<name>324</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.270726641297471,49.9484582244921,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
-				<name>G3</name>
+				<name>431</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.27588063029198,49.95302532256801,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
-				<name>B3</name>
+				<name>323</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.26874361466195,49.9478083545191,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
-				<name>D1</name>
+				<name>333</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.27113265511035,49.9488339280964,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
-				<name>A3</name>
+				<name>313</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.267472489976641,49.9465151877034,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
-				<name>C</name>
+				<name>326</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.27012873691384,49.94775378292529,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
-				<name>M4</name>
+				<name>#M4</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.281274528849659,49.9582693317827,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
-				<name>E</name>
+				<name>341</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.27213599044491,49.94975340357071,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
-				<name>B2</name>
+				<name>322</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.269219244824389,49.94761271799669,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
-				<name>D4</name>
+				<name>334</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.27076197321144,49.9488738239272,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
-				<name>A4</name>
+				<name>314</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.26944732693237,49.9471658580378,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
-				<name>G5</name>
+				<name>451</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.27663977983155,49.9552093762244,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
 				<name>GAT</name>
+				<visibility>0</visibility>
+				<Point>
+					<coordinates>7.264990540754459,49.94355957302771,0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Stands</name>
+			<visibility>0</visibility>
+			<open>1</open>
+			<Placemark>
+				<name>M3</name>
+				<visibility>0</visibility>
+				<Point>
+					<coordinates>7.28040730828048,49.9579722549497,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>M1</name>
+				<visibility>0</visibility>
+				<Point>
+					<coordinates>7.279828834936089,49.9568045870188,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>B5</name>
+				<visibility>0</visibility>
+				<Point>
+					<coordinates>7.27025031671587,49.9486534868233,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>D2</name>
+				<visibility>0</visibility>
+				<Point>
+					<coordinates>7.27146824758274,49.9489177892172,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>F</name>
+				<visibility>0</visibility>
+				<Point>
+					<coordinates>7.27276271332536,49.95035271360901,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>G4</name>
+				<visibility>0</visibility>
+				<Point>
+					<coordinates>7.27643800790709,49.9537043530924,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>M2</name>
+				<visibility>0</visibility>
+				<Point>
+					<coordinates>7.28064185519067,49.95762833433229,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>G1</name>
+				<visibility>0</visibility>
+				<Point>
+					<coordinates>7.274305645464169,49.951885353905,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>A6</name>
+				<visibility>0</visibility>
+				<Point>
+					<coordinates>7.26849506165164,49.9475566135221,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>M5</name>
+				<visibility>0</visibility>
+				<Point>
+					<coordinates>7.281588711152799,49.9585874952329,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>B1</name>
+				<visibility>0</visibility>
+				<Point>
+					<coordinates>7.26969617865857,49.9474181599458,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>A2</name>
+				<visibility>0</visibility>
+				<Point>
+					<coordinates>7.26794850414244,49.9463197386682,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>A5</name>
+				<visibility>0</visibility>
+				<Point>
+					<coordinates>7.268970982150309,49.94736091265441,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>G2</name>
+				<visibility>0</visibility>
+				<Point>
+					<coordinates>7.27523331751804,49.9523578118438,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>D3</name>
+				<visibility>0</visibility>
+				<Point>
+					<coordinates>7.271435306742831,49.949141164308,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>A1</name>
+				<visibility>0</visibility>
+				<Point>
+					<coordinates>7.26842462537205,49.9461242927114,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>B4</name>
+				<visibility>0</visibility>
+				<Point>
+					<coordinates>7.270726641297471,49.9484582244921,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>G3</name>
+				<visibility>0</visibility>
+				<Point>
+					<coordinates>7.27588063029198,49.95302532256801,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>B3</name>
+				<visibility>0</visibility>
+				<Point>
+					<coordinates>7.26874361466195,49.9478083545191,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>D1</name>
+				<visibility>0</visibility>
+				<Point>
+					<coordinates>7.27113265511035,49.9488339280964,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>A3</name>
+				<visibility>0</visibility>
+				<Point>
+					<coordinates>7.267472489976641,49.9465151877034,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>C</name>
+				<visibility>0</visibility>
+				<Point>
+					<coordinates>7.27012873691384,49.94775378292529,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>M4</name>
+				<visibility>0</visibility>
+				<Point>
+					<coordinates>7.281274528849659,49.9582693317827,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>E</name>
+				<visibility>0</visibility>
+				<Point>
+					<coordinates>7.27213599044491,49.94975340357071,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>B2</name>
+				<visibility>0</visibility>
+				<Point>
+					<coordinates>7.269219244824389,49.94761271799669,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>D4</name>
+				<visibility>0</visibility>
+				<Point>
+					<coordinates>7.27076197321144,49.9488738239272,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>A4</name>
+				<visibility>0</visibility>
+				<Point>
+					<coordinates>7.26944732693237,49.9471658580378,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>G5</name>
+				<visibility>0</visibility>
+				<Point>
+					<coordinates>7.27663977983155,49.9552093762244,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>GAT</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.264990540754459,49.94355957302771,0</coordinates>
 				</Point>
@@ -1677,9 +1996,10 @@
 	</Folder>
 	<Folder>
 		<name>Deicing</name>
-		<open>1</open>
+		<visibility>0</visibility>
 		<Placemark>
 			<name>S</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -1700,6 +2020,7 @@
 		</Placemark>
 		<Placemark>
 			<name>N</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -1720,6 +2041,7 @@
 		</Placemark>
 		<Placemark>
 			<name>N-</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -1736,6 +2058,7 @@
 		</Placemark>
 		<Placemark>
 			<name>N=</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -1757,143 +2080,333 @@
 	</Folder>
 	<Folder>
 		<name>Restrictions</name>
+		<visibility>0</visibility>
 		<open>1</open>
 		<Folder>
+			<name>Stands New</name>
+			<visibility>0</visibility>
+			<Placemark>
+				<name>325</name>
+				<visibility>0</visibility>
+				<Point>
+					<coordinates>7.27009198052619,49.9484856322304,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>331</name>
+				<visibility>0</visibility>
+				<Point>
+					<coordinates>7.27088722009475,49.9491502162494,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>351</name>
+				<visibility>0</visibility>
+				<Point>
+					<coordinates>7.27232637950329,49.9505308423777,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>441</name>
+				<visibility>0</visibility>
+				<Point>
+					<coordinates>7.275806770898431,49.953964683453,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>411</name>
+				<visibility>0</visibility>
+				<Point>
+					<coordinates>7.273801931909141,49.95209499364879,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>316</name>
+				<visibility>0</visibility>
+				<Point>
+					<coordinates>7.26834646193789,49.9473978833484,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>321</name>
+				<visibility>0</visibility>
+				<Point>
+					<coordinates>7.26987188940736,49.94758432318341,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>312</name>
+				<visibility>0</visibility>
+				<Point>
+					<coordinates>7.268127224564381,49.94649361792079,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>315</name>
+				<visibility>0</visibility>
+				<Point>
+					<coordinates>7.26882238144247,49.9472021830753,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>421</name>
+				<visibility>0</visibility>
+				<Point>
+					<coordinates>7.2744931589094,49.9526645669328,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>332</name>
+				<visibility>0</visibility>
+				<Point>
+					<coordinates>7.2709506071357,49.94933979706691,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>311</name>
+				<visibility>0</visibility>
+				<Point>
+					<coordinates>7.26860334682166,49.9462981712463,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>324</name>
+				<visibility>0</visibility>
+				<Point>
+					<coordinates>7.27056830405845,49.9482903705335,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>431</name>
+				<visibility>0</visibility>
+				<Point>
+					<coordinates>7.27516620410553,49.95331543188671,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>323</name>
+				<visibility>0</visibility>
+				<Point>
+					<coordinates>7.26891932348178,49.9479745191697,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>333</name>
+				<visibility>0</visibility>
+				<Point>
+					<coordinates>7.27064795740665,49.9490325596197,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>313</name>
+				<visibility>0</visibility>
+				<Point>
+					<coordinates>7.2676512093713,49.9466890676736,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>326</name>
+				<visibility>0</visibility>
+				<Point>
+					<coordinates>7.26952377345166,49.94799898994089,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>341</name>
+				<visibility>0</visibility>
+				<Point>
+					<coordinates>7.27169965984275,49.9499315300314,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>322</name>
+				<visibility>0</visibility>
+				<Point>
+					<coordinates>7.26939495460454,49.9477788819418,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>334</name>
+				<visibility>0</visibility>
+				<Point>
+					<coordinates>7.27090069859047,49.9490150629828,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>314</name>
+				<visibility>0</visibility>
+				<Point>
+					<coordinates>7.2692987252271,49.9470071290539,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>451</name>
+				<visibility>0</visibility>
+				<Point>
+					<coordinates>7.27632988060218,49.9546671660642,0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Folder>
 			<name>Stands</name>
+			<visibility>0</visibility>
 			<Placemark>
 				<name>B5</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.27009198052619,49.9484856322304,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
 				<name>D2</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.27088722009475,49.9491502162494,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
 				<name>F</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.27232637950329,49.9505308423777,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
 				<name>G4</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.275806770898431,49.953964683453,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
 				<name>G1</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.273801931909141,49.95209499364879,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
 				<name>A6</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.26834646193789,49.9473978833484,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
 				<name>B1</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.26987188940736,49.94758432318341,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
 				<name>A2</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.268127224564381,49.94649361792079,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
 				<name>A5</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.26882238144247,49.9472021830753,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
 				<name>G2</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.2744931589094,49.9526645669328,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
 				<name>D3</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.2709506071357,49.94933979706691,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
 				<name>A1</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.26860334682166,49.9462981712463,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
 				<name>B4</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.27056830405845,49.9482903705335,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
 				<name>G3</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.27516620410553,49.95331543188671,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
 				<name>B3</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.26891932348178,49.9479745191697,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
 				<name>D1</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.27064795740665,49.9490325596197,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
 				<name>A3</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.2676512093713,49.9466890676736,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
 				<name>C</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.26952377345166,49.94799898994089,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
 				<name>E</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.27169965984275,49.9499315300314,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
 				<name>B2</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.26939495460454,49.9477788819418,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
 				<name>D4</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.27090069859047,49.9490150629828,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
 				<name>A4</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.2692987252271,49.9470071290539,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
 				<name>G5</name>
+				<visibility>0</visibility>
 				<Point>
 					<coordinates>7.27632988060218,49.9546671660642,0</coordinates>
 				</Point>
@@ -1901,30 +2414,35 @@
 		</Folder>
 		<Placemark>
 			<name>Ref</name>
+			<visibility>0</visibility>
 			<Point>
 				<coordinates>7.27337220667568,49.9439969741674,0</coordinates>
 			</Point>
 		</Placemark>
 		<Placemark>
 			<name>A_</name>
+			<visibility>0</visibility>
 			<Point>
 				<coordinates>7.26050220589286,49.93930674164599,0</coordinates>
 			</Point>
 		</Placemark>
 		<Placemark>
 			<name>D_</name>
+			<visibility>0</visibility>
 			<Point>
 				<coordinates>7.262869625140699,49.9446772513966,0</coordinates>
 			</Point>
 		</Placemark>
 		<Placemark>
 			<name>03_</name>
+			<visibility>0</visibility>
 			<Point>
 				<coordinates>7.25221374980333,49.937815662997,0</coordinates>
 			</Point>
 		</Placemark>
 		<Placemark>
 			<name>D</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -1945,6 +2463,7 @@
 		</Placemark>
 		<Placemark>
 			<name>A</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>
@@ -1965,6 +2484,7 @@
 		</Placemark>
 		<Placemark>
 			<name>03=</name>
+			<visibility>0</visibility>
 			<Style>
 				<LineStyle>
 					<color>ff0000ff</color>

@@ -29,9 +29,33 @@ TEXTALIGN:RC
 {{ data.edfh_layout['layout']['Restrictions']['D'] | to_poly('') }}
 {{ data.edfh_layout['layout']['Restrictions']['D_'] | to_text('Max MTOW 14t') }}
 
+// Restriction Stands New
+TEXTALIGN:CC
+FONTSIZE:=:9
+COLOR:restrictions-C
+{% for desig in ['311', '312', '313', '314', '315', '316', '321', '322', '323', '324', '325', '333', '332'] %}
+{{- data.edfh_layout['layout']['Restrictions']['Stands New'][desig | string] | to_symbol('STAND') }}
+{% endfor %}
+{% for desig in ['334'] %}
+{{- data.edfh_layout['layout']['Restrictions']['Stands New'][desig | string] | to_symbol('STAND_S') }}
+{% endfor %}
+COLOR:restrictions-E
+{% for desig in ['341', '351', '411', '441', '451'] %}
+{{- data.edfh_layout['layout']['Restrictions']['Stands New'][desig | string] | to_symbol('STAND') }}
+{% endfor %}
+{% for desig in ['326'] %}
+{{- data.edfh_layout['layout']['Restrictions']['Stands New'][desig | string] | to_symbol('STAND_S') }}
+{% endfor %}
+COLOR:restrictions-F
+{% for desig in ['421', '431'] %}
+{{- data.edfh_layout['layout']['Restrictions']['Stands New'][desig | string] | to_symbol('STAND') }}
+{% endfor %}
+{% for desig in ['331'] %}
+{{- data.edfh_layout['layout']['Restrictions']['Stands New'][desig | string] | to_symbol('STAND_S') }}
+{% endfor %}
+
+{#
 // Restriction Stands
-
-
 TEXTALIGN:CC
 FONTSIZE:=:9
 COLOR:restrictions-C
@@ -55,6 +79,7 @@ COLOR:restrictions-F
 {% for desig in ['D2'] %}
 {{- data.edfh_layout['layout']['Restrictions']['Stands'][desig | string] | to_symbol('STAND_S') }}
 {% endfor %}
+#}
 
 // Reference
 COLOR:layout-label-stand
