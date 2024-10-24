@@ -34,10 +34,10 @@ STYLE:Solid:1
 
 // Arrows
 COORDTYPE:OTHER:REGION
-{{ data.eddl_layout['layout']['Deicing']['PADE='] | to_multipoly('', 'layout-eddl-taxiline-yellow') }}
+{{ data.eddl_layout['layout']['Deicing']['PADE='] | to_multipoly('', 'layout-taxiline-white') }}
 
 // Taxilines
-COLOR:layout-eddl-taxiline-yellow
+COLOR:layout-taxiline-white
 STYLE:Solid:2
 {% for desig in ['AE_V11B_O', 'AE_V11B_W', 'DEICI_O_2', 'DEICI_O_3', 'DEICI_O_4_1', 'DEICI_O_4_2', 'DEICI_O_5', 'DEICI_O_6', 'DEICI_O_7', 'DEICI_O_8', 'DEICI_O_9', 'DEICI_O_M2', 'DEICI_O_O', 'DEICI_O_W', 'TLL3_2', 'TLL3_3', 'TLT_53', 'TLT_54', 'TLT_55', 'TLT_56', 'TLT_57', 'TLT_58', 'TLT_59', 'TLT_60', 'TLT_61', 'TLT_62', 'TLT_63'] %}
 {{- data.eddl['GuidanceLineByDesig'][desig | string] | join_segments | simplify(default) | to_line(desig) }}
@@ -111,10 +111,10 @@ STYLE:Solid:1
 
 // Arrows
 COORDTYPE:OTHER:REGION
-{{ data.eddl_layout['layout']['Deicing']['PADW='] | to_multipoly('', 'layout-eddl-taxiline-yellow') }}
+{{ data.eddl_layout['layout']['Deicing']['PADW='] | to_multipoly('', 'layout-taxiline-white') }}
 
 // Taxilines
-COLOR:layout-eddl-taxiline-yellow
+COLOR:layout-taxiline-white
 STYLE:Solid:2
 {% for desig in ['PAD1W-', 'PAD2W-', 'PAD3W-', 'PAD4W-'] %}
 {{- data.eddl_layout['layout']['Deicing'][desig | string] | to_line(desig) }}

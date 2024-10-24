@@ -8,7 +8,7 @@ ACTIVE:LVP:EDDL:0
 {{- data.eddl_layout['layout']['Holding Points']['P'][ desig | string ] | to_poly(desig, 'layout-holdingpoint') }}
 {% endfor %}
 {% for desig in ['K1 III', 'K1/K III', 'K2_N III', 'K2_S III', 'K3_N III', 'K3_S III', 'K5_N III', 'K5_S III', 'L1 III', 'L2 III', 'L3 III', 'L4 III', 'L5 III', 'L6 III', 'L7 III', 'L8 III', 'L9 III'] %}
-{{- data.eddl_layout['layout']['Holding Points']['P'][ desig | string ] | to_poly(desig, 'layout-runway') }}
+{{- data.eddl_layout['layout']['Holding Points']['P'][ desig | string ] | to_poly(desig, 'layout-holdingpoint-grey') }}
 {% endfor %}
 COLOR:layout-holdingpoint
 {% for desig in ['K1 I', 'K1/K I', 'K2_N I', 'K2_S I', 'K3_N I', 'K3_S I', 'K5_N I', 'K5_S I', 'L1 I', 'L2 I', 'L3 I', 'L4 I', 'L5 I', 'L6 I', 'L7 I', 'L8 I', 'L9 I'] %}

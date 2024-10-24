@@ -106,7 +106,7 @@ FOLDER:Stands
 
 // V02A, V03A, V04A, V05A, V07A
 
-COLOR:layout-eddl-taxiline-yellow
+COLOR:layout-taxiline-white
 STYLE:Solid
 {% for desig in ['DEICI_O_1', 'DEICI_O_2', 'DEICI_O_3', 'DEICI_O_4_1', 'DEICI_O_4_2', 'DEICI_O_5', 'DEICI_O_6', 'DEICI_O_7', 'DEICI_O_8', 'DEICI_O_9', 'DEICI_O_W'] %}
 {{- data.eddl['GuidanceLineByDesig'][desig | string] | join_segments | simplify(default) | to_line(desig) }}

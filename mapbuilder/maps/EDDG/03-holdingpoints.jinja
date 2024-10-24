@@ -8,7 +8,7 @@ ACTIVE:LVP:EDDG:0
 {{- data.eddg_layout['layout']['Holding Points']['P'][ holdingpoint | string ] | to_poly(holdingpoint, 'layout-holdingpoint') }}
 {% endfor %}
 {% for holdingpoint in ['A III', 'B III', 'Glider III'] %}
-{{- data.eddg_layout['layout']['Holding Points']['P'][ holdingpoint | string ] | to_poly(holdingpoint, 'layout-runway') }}
+{{- data.eddg_layout['layout']['Holding Points']['P'][ holdingpoint | string ] | to_poly(holdingpoint, 'layout-holdingpoint-grey') }}
 {% endfor %}
 COLOR:layout-holdingpoint
 {% for holdingpoint in ['A I', 'B I', 'C I', 'Glider I'] %}
