@@ -163,6 +163,15 @@
 { "type": "Feature", "properties": { "name": "D36" }, "geometry": { "type": "Point", "coordinates": [ 367569.918390914332122, 5638546.023512504994869 ] } },
 { "type": "Feature", "properties": { "name": "D34" }, "geometry": { "type": "Point", "coordinates": [ 367531.026691293751355, 5638535.455452051945031 ] } },
 { "type": "Feature", "properties": { "name": "D40" }, "geometry": { "type": "Point", "coordinates": [ 367647.413326276291627, 5638569.908116730861366 ] } },
-{ "type": "Feature", "properties": { "name": "D38" }, "geometry": { "type": "Point", "coordinates": [ 367608.352545527683105, 5638559.757182616740465 ] } }
+{ "type": "Feature", "properties": { "name": "D38" }, "geometry": { "type": "Point", "coordinates": [ 367608.352545527683105, 5638559.757182616740465 ] } },
+{ "type": "Feature", "properties": { "name": "A22" }, "geometry": { "type": "Point", "coordinates": [ 367720.62746197253, 5637701.856263070367277 ] } },
+{ "type": "Feature", "properties": { "name": "A07" }, "geometry": { "type": "Point", "coordinates": [ 367695.858430952124763, 5637712.560829444788396 ] } },
+{ "type": "Feature", "properties": { "name": "A24" }, "geometry": { "type": "Point", "coordinates": [ 367689.957552444480825, 5637729.784614097326994 ] } },
+{ "type": "Feature", "properties": { "name": "A23" }, "geometry": { "type": "Point", "coordinates": [ 367679.602502961177379, 5637724.389629397541285 ] } },
+{ "type": "Feature", "properties": { "name": "A26" }, "geometry": { "type": "Point", "coordinates": [ 367658.955508756276686, 5637741.576084969565272 ] } },
+{ "type": "Feature", "properties": { "name": "A28" }, "geometry": { "type": "Point", "coordinates": [ 367622.112536927103065, 5637750.429539517499506 ] } },
+{ "type": "Feature", "properties": { "name": "A30" }, "geometry": { "type": "Point", "coordinates": [ 367603.451077786856331, 5637855.434705205261707 ] } },
+{ "type": "Feature", "properties": { "name": "A32" }, "geometry": { "type": "Point", "coordinates": [ 367647.098278928431682, 5637853.365102221257985 ] } },
+{ "type": "Feature", "properties": { "name": "A34" }, "geometry": { "type": "Point", "coordinates": [ 367690.643018808157649, 5637849.792543223127723 ] } }
 ]
 }

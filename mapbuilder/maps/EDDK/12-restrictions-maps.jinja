@@ -37,6 +37,14 @@ STYLE:SOLID:1
 TEXTALIGN:LC
 {{ data.eddk_layout['layout']['Restrictions']['B/L_'] | to_text('Max code E') }}
 
+// L
+COLOR:restrictions-C
+COORDTYPE:OTHER:REGION:/
+STYLE:SOLID:1
+{{ data.eddk_layout['layout']['Restrictions']['L'] | to_poly('') }}
+TEXTALIGN:RC
+{{ data.eddk_layout['layout']['Restrictions']['L_'] | to_text('Max code C') }}
+
 // B (Bridge)
 COLOR:restrictions-D
 COORDTYPE:OTHER:REGION:/
@@ -165,6 +173,13 @@ COLOR:restrictions-C
     'A16',
     'A18',
     'A20',
+    'A22',
+    'A24',
+    'A26',
+    'A28',
+    'A30',
+    'A32',
+    'A34',
     'B10',
     'B12',
     'B14',
@@ -296,9 +311,11 @@ COLOR:restrictions-E
     'A01',
     'A03',
     'A05',
+    'A07',
     'A11',
     'A17',
     'A21',
+    'A23',
     'B11',
     'B17',
     'B21',
@@ -311,6 +328,22 @@ COLOR:restrictions-E
 ] %}
 {{- data.eddk_layout['layout']['Restrictions']['Stands'][desig | string] | to_symbol('STAND_S') }}
 {% endfor %}
+{#{% for desig in [
+    'A01',
+    'A03',
+    'A05',
+    'A07',
+    'A11',
+    'A17',
+    'A21',
+    'A23',
+    'B11',
+    'D23',
+] %}
+{{- data.eddk_layout['layout']['Restrictions']['Stands'][desig | string] | to_text('MAX A343:0:15') }}
+{% endfor %}#}
+
+
 
 COLOR:restrictions-F
 {% for desig in [
@@ -361,9 +394,11 @@ COLOR:layout-label-stand
     'A01',
     'A03',
     'A05',
+    'A07',
     'A11',
     'A17',
     'A21',
+    'A23',
     'B11',
     'B17',
     'B21',
@@ -455,9 +490,11 @@ COLOR:layout-label-stand
     'A01',
     'A03',
     'A05',
+    'A07',
     'A11',
     'A17',
     'A21',
+    'A23',
     'B11',
     'B17',
     'B21',

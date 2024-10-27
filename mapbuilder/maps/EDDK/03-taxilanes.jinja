@@ -307,6 +307,11 @@ COLOR:layout-taxiline-white
     'GL_TWYZ2_1A',
     'GL_TWYZ2_2',
     'GL_TWYZ2_3',
+    'GL_APA_[A26-34]',
+    'GL_APA_[A28-32]',
+    'GL_APA_[A30-28]',
+    'GL_APA_[A32-26]',
+    'GL_APA_[A34-24]',
 ] %}
 {{- data.eddk['GuidanceLineByDesig'][desig | string] | join_segments | simplify(default) | to_line(desig) }}
 {% endfor %}

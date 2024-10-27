@@ -19,10 +19,19 @@ COLOR:layout-taxiline-grey
     'GL_APA_[A18_2]',
     'GL_APA_[A18_3]',
     'GL_APA_[A20]',
+    'GL_APA_[A22_1]',
+    'GL_APA_[A22_2]',
+    'GL_APA_[A22_3]',
+    'GL_APA_[A24]',
+    'GL_APA_[A26',
+    'GL_APA_[A28]',
+    'GL_APA_[A30]',
+    'GL_APA_[A32]',
+    'GL_APA_[A34]',
     ] %}
 {{- data.eddk['GuidanceLineByDesig'][desig | string] | join_segments | simplify(default) | to_line(desig) -}}
 {% endfor %}
-{% for desig in ['A01', 'A03', 'A05', 'A11', 'A17', 'A21'] %}
+{% for desig in ['A01', 'A03', 'A05', 'A07', 'A11', 'A17', 'A21', 'A23'] %}
 {{- data.eddk_layout['layout']['Markings']['Leadin Lines'][desig | string] | to_multiline('Dashed ' + desig) }}
 {% endfor %}
 
@@ -540,9 +549,11 @@ COLOR:layout-label-stand
     'A01',
     'A03',
     'A05',
+    'A07',
     'A11',
     'A17',
     'A21',
+    'A23',
     'B11',
     'B17',
     'B21',
@@ -634,9 +645,11 @@ COLOR:layout-label-stand
     'A01',
     'A03',
     'A05',
+    'A07',
     'A11',
     'A17',
     'A21',
+    'A23',
     'B11',
     'B17',
     'B21',
