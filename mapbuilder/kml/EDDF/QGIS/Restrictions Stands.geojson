@@ -230,6 +230,7 @@
 { "type": "Feature", "properties": { "name": "G13" }, "geometry": { "type": "Point", "coordinates": [ 470337.302178843761794, 5542635.487066946923733 ] } },
 { "type": "Feature", "properties": { "name": "D4A" }, "geometry": { "type": "Point", "coordinates": [ 470404.863796891644597, 5544321.894470874220133 ] } },
 { "type": "Feature", "properties": { "name": "V113" }, "geometry": { "type": "Point", "coordinates": [ 470602.658252215362154, 5544198.111609898507595 ] } },
-{ "type": "Feature", "properties": { "name": "A62A" }, "geometry": { "type": "Point", "coordinates": [ 468627.068575742305256, 5543944.215919996611774 ] } }
+{ "type": "Feature", "properties": { "name": "A62A" }, "geometry": { "type": "Point", "coordinates": [ 468627.068575742305256, 5543944.215919996611774 ] } },
+{ "type": "Feature", "properties": { "name": "V93" }, "geometry": { "type": "Point", "coordinates": [ 471353.411803672031965, 5544246.999446217902005 ] } }
 ]
 }

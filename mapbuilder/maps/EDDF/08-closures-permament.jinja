@@ -40,6 +40,14 @@ COORDTYPE:TWYCLOSED:REGION
 STYLE:Solid:1
 {{ data.eddf_layout['layout']['Closures']['R#2_'] | to_poly('Cross','closure-symbol') }}
 
+MAP:W, W9
+AIRPORT:EDDF
+FOLDER:Closures
+ACTIVE:1
+STYLE:Solid:2
+COORDTYPE:TWYCLOSED:REGION
+{{ data.eddf_notam['notam']['W'] | to_poly('','closure') }}
+
 MAP:W7
 AIRPORT:EDDF
 FOLDER:Closures

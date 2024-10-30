@@ -4,17 +4,17 @@
 #type = "raw"
 #source = "data"
 #
-#[data.eddf]
-#type = "aixm"
-#source = "aixm/EDDF_AerodromeMapping_2024-10-03_2024-10-03_snapshot.xml"
-#
-#[data.eddf_layout]
-#type = "kml"
-#source = "kml/EDDF/layout.kml"
-#
-#[data.eddf_notam]
-#type = "kml"
-#source = "kml/EDDF/notam.kml"
+[data.eddf]
+type = "aixm"
+source = "aixm/EDDF_AerodromeMapping_2024-10-03_2024-10-03_snapshot.xml"
+
+[data.eddf_layout]
+type = "kml"
+source = "kml/EDDF/layout.kml"
+
+[data.eddf_notam]
+type = "kml"
+source = "kml/EDDF/notam.kml"
 #
 #[data.eddl]
 #type = "aixm"
@@ -24,13 +24,13 @@
 #type = "kml"
 #source = "kml/EDDL/layout.kml"
 #
-[data.eddk]
-type = "aixm"
-source = "aixm/EDDK_AerodromeMapping_2024-09-05_2024-09-05_snapshot.xml"
-
-[data.eddk_layout]
-type = "kml"
-source = "kml/EDDK/layout.kml"
+#[data.eddk]
+#type = "aixm"
+#source = "aixm/EDDK_AerodromeMapping_2024-09-05_2024-09-05_snapshot.xml"
+#
+#[data.eddk_layout]
+#type = "kml"
+#source = "kml/EDDK/layout.kml"
 #
 #[data.eddl_notam]
 #type = "kml"
@@ -110,9 +110,9 @@ source = "kml/EDDK/layout.kml"
 
 [profiles.Default]
 maps = [
-#    { map = "EDDF", target = "grp/eddf.txt" },
+    { map = "EDDF", target = "grp/eddf.txt" },
 #    { map = "EDDL", target = "grp/eddl.txt" },
-    { map = "EDDK", target = "grp/eddk.txt" },
+#    { map = "EDDK", target = "grp/eddk.txt" },
 #    { map = "EDDG", target = "grp/eddg.txt" },
 #    { map = "EDDR", target = "grp/eddr.txt" },
 #    { map = "EDLP", target = "grp/edlp.txt" },

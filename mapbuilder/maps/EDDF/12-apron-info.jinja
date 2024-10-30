@@ -41,6 +41,7 @@ ZOOM:400
     'S9=',
     'Y7 1=',
     'Y7 2=',
+    'Y7 3=',
 ] %}
 {{- data.eddf_layout['layout']['Breakaway'][desig | string] | to_poly('', 'break-away-area') }}
 {% endfor %}
@@ -82,6 +83,7 @@ COLOR:break-away-area
     'S9a',
     'Y7 1a',
     'Y7 2a',
+    'Y7 3a',
 ] %}
 {{- data.eddf_layout['layout']['Breakaway'][desig | string] | to_line('') -}}
 {% endfor %}
@@ -108,9 +110,7 @@ STYLE:Solid:2
     'N7/N8 7b',
     'N7/N8 9b',
     'N-N4 1b',
-    'N-N4 1c',
     'N-N4 2b',
-    'N-N4 2c',
     'P1 1b',
     'P1 1c',
     'P1 2b',
@@ -128,6 +128,7 @@ STYLE:Solid:2
     'S9c',
     'Y7 1b',
     'Y7 2b',
+    'Y7 3b',
 ] %}
 {{- data.eddf_layout['layout']['Breakaway'][desig | string] | to_line('') -}}
 {% endfor %}
@@ -155,6 +156,7 @@ STYLE:Solid:2
     '3#N5',
     '3#N7/N8',
     '3#S5',
+    '3#Y7',
     '4#N7/N8',
     '4#S15',
     '5#N7/N8',

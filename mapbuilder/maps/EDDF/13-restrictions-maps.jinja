@@ -217,6 +217,7 @@ COLOR:restrictions-C
     'G5',
     'H14',
     'K2',
+    'V93',
     'V94',
     'V95',
     'V96',
@@ -500,6 +501,8 @@ FONTSIZE:=:12
 {{ data.eddf_layout['layout']['Restrictions']['Ref 2'] | to_text('   Taxiing on orange and blue lines') }}
 {{ data.eddf_layout['layout']['Restrictions']['Ref 2'] | to_text('   only for ACFT up to code C      :0:15') }}
 {{ data.eddf_layout['layout']['Restrictions']['Ref 2'] | to_text('   Turn only for ACFT up A343      :0:30') }}
+{{ data.eddf_layout['layout']['Restrictions']['Ref 2'] | to_text('   Stands C14S, C15S, C16S are     :0:60') }}
+{{ data.eddf_layout['layout']['Restrictions']['Ref 2'] | to_text('   assigned specifically for A388  :0:75') }}
 COLOR:restrictions-C
 {{ data.eddf_layout['layout']['Restrictions']['Ref 2'] | to_text('1.                                 ') }}
 {{ data.eddf_layout['layout']['Restrictions']['Ref 2'] | to_text('2.                                 :0:30') }}
@@ -576,14 +579,37 @@ COLOR:layout-label-stand
     'V718',
     'V719',
     'V721',
+    'V108',
+    'V109',
+    'V112',
+    'V115',
+    'V116',
+    'V175',
+    'V177',
+    'V267',
+    'V269',
 ] %}
 {{- geom | to_text(desig) }}
 {% endfor %}
 
 {{ data.eddf_layout['layout']['Labels']['GAT'] | to_text('GAT - V7xx') }}
 
+ZOOM:600
+{% for desig in [
+    'V108',
+    'V109',
+    'V112',
+    'V115',
+    'V116',
+    'V175',
+    'V177',
+    'V267',
+    'V269',
+] %}
+{{- data.eddf_layout['layout']['Labels']['Stands'][desig | string] | to_text(desig) }}
+{% endfor %}
+
 ZOOM:1000
-COLOR:layout-label-stand
 {% for desig in [
     'A54A',
     'A54B',
@@ -653,4 +679,7 @@ COLOR:layout-label-stand
     'V721',
 ] %}
 {{- data.eddf_layout['layout']['Labels']['Stands'][desig | string] | to_text(desig) }}
+{% endfor %}
+{% for desig in ['C14', 'C15', 'C16'] %}
+{{- data.eddf_layout['layout']['Labels']['Stands'][desig | string] | to_text(' ' + desig + 'S:0:12') }}
 {% endfor %}

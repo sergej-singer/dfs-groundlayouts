@@ -231,6 +231,7 @@
 { "type": "Feature", "properties": { "name": "D4A" }, "geometry": { "type": "Point", "coordinates": [ 470397.478396211576182, 5544344.028103034943342 ] } },
 { "type": "Feature", "properties": { "name": "V113" }, "geometry": { "type": "Point", "coordinates": [ 470611.94519784336444, 5544171.568465274758637 ] } },
 { "type": "Feature", "properties": { "name": "A62A" }, "geometry": { "type": "Point", "coordinates": [ 468620.151030079636257, 5543967.158474322408438 ] } },
-{ "type": "Feature", "properties": { "name": "GAT" }, "geometry": { "type": "Point", "coordinates": [ 466579.248274089535698, 5541124.127236819826066 ] } }
+{ "type": "Feature", "properties": { "name": "GAT" }, "geometry": { "type": "Point", "coordinates": [ 466579.248274089535698, 5541124.127236819826066 ] } },
+{ "type": "Feature", "properties": { "name": "V93" }, "geometry": { "type": "Point", "coordinates": [ 471331.824412516783923, 5544258.39350027218461 ] } }
 ]
 }
