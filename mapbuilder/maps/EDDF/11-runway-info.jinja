@@ -4,18 +4,18 @@ MAP:TORA 25L
 AIRPORT:EDDF
 FOLDER:Runway Info
 COLOR:tora-label
-ZOOM:400
+ZOOM:300
 TEXTALIGN:LC
 {{ data.eddf_layout['layout']['TORA']['25L R3'] | to_text('4000') }}
 {{ data.eddf_layout['layout']['TORA']['25L R5/M7'] | to_text('3494') }}
 {{ data.eddf_layout['layout']['TORA']['25L R7'] | to_text('2872') }}
-{{ data.eddf_layout['layout']['TORA']['25L R11/M19'] | to_text('1700') }}
+{{ data.eddf_layout['layout']['TORA']['25L M19'] | to_text('1700') }}
 
 MAP:TORA 07R
 AIRPORT:EDDF
 FOLDER:Runway Info
 COLOR:tora-label
-ZOOM:400
+ZOOM:300
 TEXTALIGN:RC
 {{ data.eddf_layout['layout']['TORA']['07R R17/M29'] | to_text('4000') }}
 {{ data.eddf_layout['layout']['TORA']['07R R15/M25'] | to_text('3085') }}
@@ -25,9 +25,11 @@ MAP:TORA 25C
 AIRPORT:EDDF
 FOLDER:Runway Info
 COLOR:tora-label
-ZOOM:400
+ZOOM:300
+TEXTALIGN:RC
+{{ data.eddf_layout['layout']['TORA']['25C L1'] | to_text('4000') }}
 TEXTALIGN:LC
-{{ data.eddf_layout['layout']['TORA']['25C L1/L3/M6'] | to_text('4000') }}
+{{ data.eddf_layout['layout']['TORA']['25C L3/M6'] | to_text('3972') }}
 {{ data.eddf_layout['layout']['TORA']['25C L4'] | to_text('3700') }}
 {{ data.eddf_layout['layout']['TORA']['25C L5/M8'] | to_text('3595') }}
 {{ data.eddf_layout['layout']['TORA']['25C L6/M10'] | to_text('3266') }}
@@ -36,7 +38,7 @@ MAP:TORA 07C
 AIRPORT:EDDF
 FOLDER:Runway Info
 COLOR:tora-label
-ZOOM:400
+ZOOM:300
 TEXTALIGN:RC
 {{ data.eddf_layout['layout']['TORA']['07C L21/M34'] | to_text('4000') }}
 {{ data.eddf_layout['layout']['TORA']['07C L20'] | to_text('3942') }}
@@ -48,123 +50,18 @@ MAP:TORA 18
 AIRPORT:EDDF
 FOLDER:Runway Info
 COLOR:tora-label
-ZOOM:400
+ZOOM:300
 TEXTALIGN:LC
+{{ data.eddf_layout['layout']['TORA']['18 W3'] | to_text('3817') }}
+{#{{ data.eddf_layout['layout']['TORA']['18 W7'] | to_text('2823') }}#}
+{{ data.eddf_layout['layout']['TORA']['18 W9'] | to_text('2726') }}
+TEXTALIGN:RC
 {{ data.eddf_layout['layout']['TORA']['18 N/W1'] | to_text('3970') }}
 {{ data.eddf_layout['layout']['TORA']['18 N-South'] | to_text('3894') }}
-{{ data.eddf_layout['layout']['TORA']['18 L/W3'] | to_text('3823') }}
+{{ data.eddf_layout['layout']['TORA']['18 L'] | to_text('3823') }}
 {{ data.eddf_layout['layout']['TORA']['18 M'] | to_text('3454') }}
-{#{{ data.eddf_layout['layout']['TORA']['18 R/W7'] | to_text('2842') }}#}
-{{ data.eddf_layout['layout']['TORA']['18 S/W9'] | to_text('2726') }}
-
-MAP:RRS 25L
-AIRPORT:EDDF
-FOLDER:Runway Info
-ACTIVE:RWY:ARR:EDDF25L:DEP:*
-ACTIVE:RWY:ARR:*:DEP:EDDF25L
-COLOR:rrs-marker
-{{ data.eddf_layout['layout']['RRS']['25L 600'] | to_symbol('RRS') }}
-{{ data.eddf_layout['layout']['RRS']['25L 1500'] | to_symbol('RRS') }}
-{{ data.eddf_layout['layout']['RRS']['25L 2400'] | to_symbol('RRS') }}
-FONTSIZE:=:12
-ZOOM:400
-TEXTALIGN:CB
-{{ data.eddf_layout['layout']['RRS']['25L 600'] | to_text('600:0:-10') }}
-{{ data.eddf_layout['layout']['RRS']['25L 1500'] | to_text('1500:0:-10') }}
-{{ data.eddf_layout['layout']['RRS']['25L 2400'] | to_text('2400:0:-10') }}
-
-MAP:RRS 07R
-AIRPORT:EDDF
-FOLDER:Runway Info
-ACTIVE:RWY:ARR:EDDF07R:DEP:*
-ACTIVE:RWY:ARR:*:DEP:EDDF07R
-COLOR:rrs-marker
-{{ data.eddf_layout['layout']['RRS']['07R 600'] | to_symbol('RRS') }}
-{{ data.eddf_layout['layout']['RRS']['07R 1500'] | to_symbol('RRS') }}
-{{ data.eddf_layout['layout']['RRS']['07R 2400'] | to_symbol('RRS') }}
-FONTSIZE:=:12
-ZOOM:400
-TEXTALIGN:CB
-{{ data.eddf_layout['layout']['RRS']['07R 600'] | to_text('600:0:-10') }}
-{{ data.eddf_layout['layout']['RRS']['07R 1500'] | to_text('1500:0:-10') }}
-{{ data.eddf_layout['layout']['RRS']['07R 2400'] | to_text('2400:0:-10') }}
-
-MAP:RRS 25C
-AIRPORT:EDDF
-FOLDER:Runway Info
-ACTIVE:RWY:ARR:EDDF25C:DEP:*
-ACTIVE:RWY:ARR:*:DEP:EDDF25C
-COLOR:rrs-marker
-{{ data.eddf_layout['layout']['RRS']['25C 600'] | to_symbol('RRS') }}
-{{ data.eddf_layout['layout']['RRS']['25C 1500'] | to_symbol('RRS') }}
-{{ data.eddf_layout['layout']['RRS']['25C 2400'] | to_symbol('RRS') }}
-FONTSIZE:=:12
-ZOOM:400
-TEXTALIGN:CB
-{{ data.eddf_layout['layout']['RRS']['25C 600'] | to_text('600:0:-10') }}
-{{ data.eddf_layout['layout']['RRS']['25C 1500'] | to_text('1500:0:-10') }}
-{{ data.eddf_layout['layout']['RRS']['25C 2400'] | to_text('2400:0:-10') }}
-
-MAP:RRS 07C
-AIRPORT:EDDF
-FOLDER:Runway Info
-ACTIVE:RWY:ARR:EDDF07C:DEP:*
-ACTIVE:RWY:ARR:*:DEP:EDDF07C
-COLOR:rrs-marker
-{{ data.eddf_layout['layout']['RRS']['07C 600'] | to_symbol('RRS') }}
-{{ data.eddf_layout['layout']['RRS']['07C 1500'] | to_symbol('RRS') }}
-{{ data.eddf_layout['layout']['RRS']['07C 2400'] | to_symbol('RRS') }}
-FONTSIZE:=:12
-ZOOM:400
-TEXTALIGN:CB
-{{ data.eddf_layout['layout']['RRS']['07C 600'] | to_text('600:0:-10') }}
-{{ data.eddf_layout['layout']['RRS']['07C 1500'] | to_text('1500:0:-10') }}
-{{ data.eddf_layout['layout']['RRS']['07C 2400'] | to_text('2400:0:-10') }}
-
-MAP:RRS 25R
-AIRPORT:EDDF
-FOLDER:Runway Info
-ACTIVE:RWY:ARR:EDDF25R:DEP:*
-COLOR:rrs-marker
-{{ data.eddf_layout['layout']['RRS']['25R 600'] | to_symbol('RRS') }}
-{{ data.eddf_layout['layout']['RRS']['25R 1500'] | to_symbol('RRS') }}
-{{ data.eddf_layout['layout']['RRS']['25R 2400'] | to_symbol('RRS') }}
-FONTSIZE:=:12
-ZOOM:400
-TEXTALIGN:CB
-{{ data.eddf_layout['layout']['RRS']['25R 600'] | to_text('600:0:-10') }}
-{{ data.eddf_layout['layout']['RRS']['25R 1500'] | to_text('1500:0:-10') }}
-{{ data.eddf_layout['layout']['RRS']['25R 2400'] | to_text('2400:0:-10') }}
-
-MAP:RRS 07L
-AIRPORT:EDDF
-FOLDER:Runway Info
-ACTIVE:RWY:ARR:EDDF07L:DEP:*
-COLOR:rrs-marker
-{{ data.eddf_layout['layout']['RRS']['07L 600'] | to_symbol('RRS') }}
-{{ data.eddf_layout['layout']['RRS']['07L 1500'] | to_symbol('RRS') }}
-{{ data.eddf_layout['layout']['RRS']['07L 2400'] | to_symbol('RRS') }}
-FONTSIZE:=:12
-ZOOM:400
-TEXTALIGN:CB
-{{ data.eddf_layout['layout']['RRS']['07L 600'] | to_text('600:0:-10') }}
-{{ data.eddf_layout['layout']['RRS']['07L 1500'] | to_text('1500:0:-10') }}
-{{ data.eddf_layout['layout']['RRS']['07L 2400'] | to_text('2400:0:-10') }}
-
-MAP:RRS 18
-AIRPORT:EDDF
-FOLDER:Runway Info
-ACTIVE:RWY:ARR:*:DEP:EDDF18
-COLOR:rrs-marker
-{{ data.eddf_layout['layout']['RRS']['18 600'] | to_symbol('RRS-18') }}
-{{ data.eddf_layout['layout']['RRS']['18 1500'] | to_symbol('RRS-18') }}
-{{ data.eddf_layout['layout']['RRS']['18 2400'] | to_symbol('RRS-18') }}
-FONTSIZE:=:12
-ZOOM:400
-TEXTALIGN:LC
-{{ data.eddf_layout['layout']['RRS']['18 600'] | to_text('600:13:0') }}
-{{ data.eddf_layout['layout']['RRS']['18 1500'] | to_text('1500:13:0') }}
-{{ data.eddf_layout['layout']['RRS']['18 2400'] | to_text('2400:13:0') }}
+{#{{ data.eddf_layout['layout']['TORA']['18 R'] | to_text('2842') }}#}
+{{ data.eddf_layout['layout']['TORA']['18 S'] | to_text('2755') }}
 
 MAP:Runway Designators
 AIRPORT:EDDF

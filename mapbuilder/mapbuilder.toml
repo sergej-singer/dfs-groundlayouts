@@ -6,7 +6,7 @@
 #
 [data.eddf]
 type = "aixm"
-source = "aixm/EDDF_AerodromeMapping_2024-10-03_2024-10-03_snapshot.xml"
+source = "aixm/EDDF_AerodromeMapping_2024-10-31_2024-10-31_snapshot.xml"
 
 [data.eddf_layout]
 type = "kml"

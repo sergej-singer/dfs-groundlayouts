@@ -4,7 +4,7 @@ MAP:Taxiways
 AIRPORT:EDDF
 FOLDER:Labels
 ACTIVE:1
-ZOOM:400
+ZOOM:300
 FONTSIZE:=:10
 COLOR:layout-label-taxiway
 {% for desig, geom in data.eddf_layout['layout']['Labels']['Taxiways'].items() %}
@@ -15,7 +15,7 @@ MAP:Stands
 AIRPORT:EDDF
 FOLDER:Labels
 ACTIVE:1
-ZOOM:500
+ZOOM:400
 FONTSIZE:=:9
 COLOR:layout-label-stand
 {% for desig, geom in data.eddf_layout['layout']['Labels']['Stands'].items() if not desig in [
@@ -85,11 +85,15 @@ COLOR:layout-label-stand
     'V718',
     'V719',
     'V721',
+    'A28',
+    'A34',
+    'A38',
     'V108',
     'V109',
     'V112',
     'V115',
     'V116',
+    'V172',
     'V175',
     'V177',
     'V267',
@@ -102,11 +106,15 @@ COLOR:layout-label-stand
 
 ZOOM:600
 {% for desig in [
+    'A28',
+    'A34',
+    'A38',
     'V108',
     'V109',
     'V112',
     'V115',
     'V116',
+    'V172',
     'V175',
     'V177',
     'V267',
@@ -115,7 +123,7 @@ ZOOM:600
 {{- data.eddf_layout['layout']['Labels']['Stands'][desig | string] | to_text(desig) }}
 {% endfor %}
 
-ZOOM:1000
+ZOOM:800
 {% for desig in [
     'A54A',
     'A54B',
@@ -214,7 +222,7 @@ MAP:Links
 AIRPORT:EDDF
 FOLDER:Labels
 ACTIVE:1
-ZOOM:1000
+ZOOM:800
 FONTSIZE:=:9
 COLOR:layout-label-stand
 TEXTALIGN:CC
@@ -228,7 +236,7 @@ TEXTALIGN:RC
 MAP:Heli Stands
 AIRPORT:EDDF
 FOLDER:Labels
-ZOOM:500
+ZOOM:400
 FONTSIZE:=:10
 COLOR:layout-label-stand
 {{ data.eddf_layout['layout']['Restrictions']['Stands']['V701'] | to_text('H:-1:0') }}

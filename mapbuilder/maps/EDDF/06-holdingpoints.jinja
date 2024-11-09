@@ -293,7 +293,7 @@ ACTIVE:LVP:EDDF:1
     'Y4',
     'Y6',
 ] %}
-{{- data.eddf_layout['layout']['Holding Points']['CAT I P'][ desig | string ] | to_poly(desig, 'layout-holdingpoint') }}
+{{- data.eddf_layout['layout']['Holding Points']['CAT I P'][ desig | string ] | to_poly(desig, 'layout-holdingpoint-red') }}
 {% endfor %}
 {% for desig in [
     'L',
@@ -382,10 +382,10 @@ ACTIVE:LVP:EDDF:1
     'R7-W III',
     'Y3 III',
 ] %}
-{{- data.eddf_layout['layout']['Holding Points']['CAT III'][ desig | string ] | to_poly(desig, 'layout-holdingpoint') }}
+{{- data.eddf_layout['layout']['Holding Points']['CAT III'][ desig | string ] | to_poly(desig, 'layout-holdingpoint-red') }}
 {% endfor %}
 STYLE:SOLID:2
-COLOR:layout-holdingpoint
+COLOR:layout-holdingpoint-red
 {% for desig in [
     'M2',
     'S40',
