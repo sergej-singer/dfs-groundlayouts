@@ -284,6 +284,10 @@ COLOR:restrictions-C
     'G1',
     'G3',
     'G5',
+    'H2',
+    'H8',
+    'H10',
+    'H12',
     'H14',
     'K2',
     'V93',
@@ -441,6 +445,8 @@ COLOR:restrictions-E
     'F216',
     'F222',
     'F224',
+    'H4',
+    'H6',
     'K4',
 ] %}
 {{- data.eddf_layout['layout']['Restrictions']['Stands'][desig | string] | to_symbol('STAND') }}
@@ -464,6 +470,7 @@ COLOR:restrictions-E
     'F216',
     'F222',
     'F224',
+    'H4',
     'K4',
 ] %}
 {{- data.eddf_layout['layout']['Restrictions']['Stands'][desig | string] | to_text('MAX A343:0:15') }}
@@ -488,9 +495,6 @@ COLOR:restrictions-F
     'G14',
     'G15',
     'G16',
-    'J7',
-    'J9',
-    'J11',
     'K6',
     'V322',
     'V324',
@@ -659,6 +663,9 @@ COLOR:layout-label-stand
     'V177',
     'V267',
     'V269',
+    'J7',
+    'J9',
+    'J11',
 ] %}
 {{- geom | to_text(desig) }}
 {% endfor %}

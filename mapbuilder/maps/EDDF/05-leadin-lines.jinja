@@ -40,7 +40,6 @@ COLOR:layout-taxiline-grey
     '1b4ce629-afee-4b4a-b0af-fbe1708120a8',
     '1b58e021-53da-4176-a6b1-4e0c221e4a23',
     '1b61616f-062a-4380-974e-3fd76e1c16fc',
-    '1d2be0cb-a3b6-43ea-a500-f579c8150ab3',
     '1d724a5e-fc82-463b-bda0-34dc5e7ef7a5',
     '1deff8cf-e902-4424-98bf-e3ce7bacfc7b',
     '1eaf96fe-2099-43de-a130-0d3a8df940da',
@@ -100,7 +99,6 @@ COLOR:layout-taxiline-grey
     '572b4b3d-5855-4c0b-83f8-2b7bdf9096ab',
     '574f40c1-2f1d-4849-a21f-04a3ff474d83',
     '57c21a60-1cda-4084-8835-c537934aae35',
-    '583533a4-1128-4514-936a-e3fec8c148a1',
     '58982520-9e06-14b4-e053-b3472c0a70d2',
     '58987080-bd0f-0d1a-e053-b4472c0aa97d',
     '58987080-be27-0d1a-e053-b4472c0aa97d',
@@ -239,7 +237,6 @@ COLOR:layout-taxiline-grey
     'd9bee34f-95dd-423f-953a-a21635641e95',
     'da50790c-28ab-47b4-a437-c87e7c4fa593',
     'dc202213-ddd5-458c-bb9b-f7f4911663dc',
-    'dc48c8d3-c9a2-4efe-858f-0ae6a5c64bb1',
     'e031868d-040c-48b1-8143-350f42309495',
     'e116b60f-51e2-48fe-a795-9b4a4cd3fa67',
     'e2a2d8b6-6a5a-4b38-93cd-65625a87eea9',
@@ -273,9 +270,26 @@ COLOR:layout-taxiline-grey
     'feee2b27-5b95-4f2c-a4c9-d4747dd89b6d',
     'ff3184cb-ab4a-4471-a35a-b0833fc61ee1',
     'ffb522bb-48e2-45aa-8cd2-471bbbe24b0c',
+    '0ad6ba94-3988-4ffa-bb57-e1f3a6ae001d',
+    '747204e3-38da-42b9-b28a-6a09135f2076'
     ] %}
 {{- data.eddf['GuidanceLineMarking'][id | string] | join_segments | simplify(default) | to_line('') -}}
 {% endfor %}
+{% for desig in [
+    'H12',
+    'H10',
+    'H8',
+    'H6',
+    'H4',
+    'H2',
+] %}
+{{- data.eddf_layout['layout']['Markings']['Leadin Lines'][desig | string] | to_line(desig) }}
+{% endfor %}
+
+// J7 J9 J11 - closed
+// 583533a4-1128-4514-936a-e3fec8c148a1
+// dc48c8d3-c9a2-4efe-858f-0ae6a5c64bb1
+// 1d2be0cb-a3b6-43ea-a500-f579c8150ab3
 
 // Dash Leadin Lines
 {% for desig in [

@@ -170,6 +170,60 @@ STYLE:Solid:2
 {{- data.eddf_layout['layout']['Breakaway'][desig | string] | to_text(desig) }}
 {% endfor %}
 
+// ----------------------------- Old GAT ----------------------------
+
+MAP:Old South Apron
+AIRPORT:EDDF
+FOLDER:Apron Info
+COLOR:closure-symbol
+{{ data.eddf_layout['layout']['Old GAT']['Taxilines'] | to_multiline('') }}
+{{ data.eddf_layout['layout']['Old GAT']['Leadin Lines'] | to_multiline('') }}
+{{ data.eddf_layout['layout']['Old GAT']['Arrows'] | to_multipoly('', 'closure-symbol') }}
+
+ZOOM:300
+COLOR:layout-label-taxiway
+FONTSIZE:=:10
+{% for desig in ['S16', 'S21'] %}
+{{- data.eddf_layout['layout']['Old GAT'][desig | string] | to_text(desig) }}
+{% endfor %}
+
+ZOOM:400
+COLOR:layout-label-stand
+FONTSIZE:=:9
+{% for desig, geom in data.eddf_layout['layout']['Old GAT']['Stands'].items() if desig in [
+    'S501',
+    'S503',
+    'S504',
+    'S505',
+    'S506',
+    'S507',
+    'S508',
+    'S601',
+    'S602',
+    'S603',
+    'S604',
+] %}
+{{- geom | to_text(desig) }}
+{% endfor %}
+{{ data.eddf_layout['layout']['Old GAT']['GAT'] | to_text('GAT - S4xx') }}
+
+ZOOM:800
+{% for desig, geom in data.eddf_layout['layout']['Old GAT']['Stands'].items() if not desig in [
+    'S501',
+    'S503',
+    'S504',
+    'S505',
+    'S506',
+    'S507',
+    'S508',
+    'S601',
+    'S602',
+    'S603',
+    'S604',
+] %}
+{{- geom | to_text(desig) }}
+{% endfor %}
+
 // --------------------------- vSID Areas ---------------------------
 
 MAP:vSID Areas

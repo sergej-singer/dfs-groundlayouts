@@ -28,8 +28,8 @@ FOLDER:Labels
 ACTIVE:1
 ZOOM:600
 FONTSIZE:=:9
-TEXTALIGN:BR
 COLOR:layout-label-stand
-{% for holdingpoint in ['STOP 1', 'STOP 2'] %}
-{{- data.edlw_layout['layout']['Holding Points'][ holdingpoint | string ] | to_text(holdingpoint) }}
-{% endfor %}
+TEXTALIGN:BC
+{{ data.edlw_layout['layout']['Holding Points']['STOP 1'] | to_text('L1') }}
+TEXTALIGN:BR
+{{ data.edlw_layout['layout']['Holding Points']['STOP 2'] | to_text('L2') }}
