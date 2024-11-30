@@ -68,6 +68,14 @@ COORDTYPE:TWYCLOSED:REGION
 STYLE:Solid:1
 {{ data.eddf_layout['layout']['Closures']['Y_'] | to_multipoly('Cross','closure-symbol') }}
 
+MAP:S
+AIRPORT:EDDF
+FOLDER:Closures
+ACTIVE:1
+STYLE:Solid:2
+COORDTYPE:TWYCLOSED:REGION
+{{ data.eddf_layout['layout']['Closures']['S'] | to_poly('','closure') }}
+
 MAP:S10
 AIRPORT:EDDF
 FOLDER:Closures
@@ -87,6 +95,7 @@ COORDTYPE:TWYCLOSED:POLYGON
 STYLE:Solid:1
 COORDTYPE:TWYCLOSED:REGION
 {{ data.eddf_layout['layout']['Closures']['S16/S21_'] | to_multipoly('Cross','closure-symbol') }}
+{{ data.eddf_layout['layout']['Closures']['S_'] | to_poly('Cross','closure-symbol') }}
 
 MAP:Terminal 3
 AIRPORT:EDDF
