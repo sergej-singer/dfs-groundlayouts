@@ -39,7 +39,7 @@ jobs:
 
       - name: Execute script # run mapbuilder
         working-directory: ./.github/workflows
-        run: poetry run mapbuilder -s "./mapbuilder" --debug "./grp"
+        run: poetry run mapbuilder --debug -s "/" "./grp"
 
       #- name: commit files
       #  run: |
