@@ -1,0 +1,54 @@
+name: mapbuilder
+run-name: Push by ${{ github.actor }} is building Maps (Mapbuilder)
+on:
+  push:
+    branches:
+      - "*"
+      - "*/**"
+      - "!main"
+permissions: write-all
+jobs:
+  mapbuilder-build-maps:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo content
+        uses: actions/checkout@v4 # checkout the repository content
+
+      - name: Install Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.12" # install the python version needed
+
+      - name: Install poetry
+        uses: abatilo/actions-poetry@v2
+
+      - name: Setup a local virtual environment (if no poetry.toml file)
+        run: |
+          poetry config virtualenvs.create true --local
+          poetry config virtualenvs.in-project true --local
+
+      - uses: actions/cache@v3
+        name: Define a cache for the virtual environment based on the dependencies lock file
+        with:
+          path: ./.venv
+          key: venv-${{ hashFiles('poetry.lock') }}
+
+      - name: Install the project dependencies
+        run: poetry install
+
+      - name: Execute script # run mapbuilder
+        working-directory: .
+        run: poetry run mapbuilder --debug "grp"
+
+      #- name: commit files
+      #  run: |
+      #    git config --local user.email "action@github.com"
+      #    git config --local user.name "GitHub Action"
+      #    git add -A
+      #    git diff-index --quiet HEAD || (git commit -a -m "Build maps action" --allow-empty)
+#
+      #- name: push changes
+      #  uses: ad-m/github-push-action@v0.6.0
+      #  with:
+      #    github_token: ${{ secrets.GITHUB_TOKEN }}
+      #    branch: ${{ github.ref }}
