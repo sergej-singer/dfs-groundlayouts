@@ -38,8 +38,8 @@ jobs:
         run: poetry install
 
       - name: Execute script # run mapbuilder
-        working-directory: .
-        run: poetry run mapbuilder --debug "grp"
+        working-directory: ./.github/workflows
+        run: poetry run mapbuilder "./grp" -s "./mapbuilder" --debug 
 
       #- name: commit files
       #  run: |
