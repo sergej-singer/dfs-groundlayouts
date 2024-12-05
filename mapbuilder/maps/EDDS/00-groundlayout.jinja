@@ -1,0 +1,42 @@
+// ------------------------------------------------------------------
+//                                 EDDS
+// ------------------------------------------------------------------
+
+// ---------------------------- Perimeter ---------------------------
+{% set default = 0.000005 %}
+MAP:Perimeter
+AIRPORT:EDDS
+FOLDER:Airport Layout
+//ACTIVE:1
+{{ data.edds_layout['layout']['Base']['Base'] | to_poly('Base', 'layout-base') }}
+
+// ---------------------------- Apron Area --------------------------
+
+MAP:Apron Area
+AIRPORT:EDDS
+FOLDER:Airport Layout
+ACTIVE:1
+{{ data.edds_layout['layout']['Apron']['Apron'] | to_multipoly('Apron','layout-apron') }}
+
+// ------------------------------- Roads ----------------------------
+
+MAP:Roads
+AIRPORT:EDDS
+FOLDER:Airport Layout
+COLOR:layout-taxiway
+{{ data.edds_layout['layout']['Roads']['Roads'] | simplify(default) | to_multiline('Roads') }}
+
+// -------------------------- Ground Layout -------------------------
+
+MAP:Taxiway Movement Area
+AIRPORT:EDDS
+FOLDER:Airport Layout
+ACTIVE:1
+{{ data.edds_layout['layout']['Taxiways']['Taxiways'] | to_multipoly('Taxi Area','layout-taxiway') }}
+
+MAP:Runways
+AIRPORT:EDDS
+FOLDER:Airport Layout
+ACTIVE:1
+{{ data.edds['RunwayElement']['0d48f5ad-f099-464d-b13d-94cf0014d057'] | simplify(0.00001) | to_poly('Runway 25/07','layout-runway') }}
+{{ data.edds['RunwayElement']['5f954a0a-08d7-48c3-9875-19263da9b4de'] | simplify(0.00001) | to_poly('Runway 25/07','layout-runway') }}

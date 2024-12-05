@@ -22,11 +22,6 @@ RESTRICTION:MAXCODE:E
 RESTRICTION:MAXCODE:C
 {{ data.eddk_layout['layout']['Restrictions']['L'] | to_poly('') }}
 
-// B (Bridge)
-RESTRICTION:MAXCODE:D
-RESTRICTION:MAXWEIGHT:200000
-{{ data.eddk_layout['layout']['Restrictions']['B#1'] | to_poly('') }}
-
 // B (South)
 RESTRICTION:MAXCODE:E
 {{ data.eddk_layout['layout']['Restrictions']['B#2'] | to_poly('') }}
@@ -48,9 +43,16 @@ RESTRICTION:MAXCODE:C
 {{ data.eddk_layout['layout']['Restrictions']['C'] | to_poly('') }}
 
 // D (North of 31R/13L)
+RESTRICTION:MAXCODE:F
 RESTRICTION:NOTATYP:A388,A225,C5M,A124,A225
 {{ data.eddk_layout['layout']['Restrictions']['D'] | to_poly('') }}
 
 // A1
+RESTRICTION:MAXCODE:E
 RESTRICTION:NOTATYP:A346
 {{ data.eddk_layout['layout']['Restrictions']['A1'] | to_poly('') }}
+
+// B (Bridge)
+RESTRICTION:MAXCODE:D
+RESTRICTION:MAXWEIGHT:200000
+{{ data.eddk_layout['layout']['Restrictions']['B#1'] | to_poly('') }}
