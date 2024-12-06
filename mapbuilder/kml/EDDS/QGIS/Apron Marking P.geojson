@@ -1,8 +1,0 @@
-{
-"type": "FeatureCollection",
-"name": "Apron Marking P",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
-"features": [
-
-]
-}
